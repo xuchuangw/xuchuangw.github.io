@@ -1,7 +1,7 @@
 ---
 layout: about
 title: about
-permalink: xuchuangw.com
+permalink: /
 subtitle: 
 # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
