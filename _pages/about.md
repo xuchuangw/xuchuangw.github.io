@@ -24,6 +24,6 @@ I am a postdoc at [University of Massachusetts - Amherst](https://www.umass.edu/
 I received my Ph.D. in the Department of Computer Science & Engineering at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/english/index.html) under the guidance of [John C.S. Lui](https://www.cse.cuhk.edu.hk/~cslui/).
  
 My research is dedicated to the following three directions: 
-- Multi-agent sequential decision-making: communication-efficient algorithms (SIGMETRICS'25, ICLR'23, AISTATS'23), 
-- Quantum network performance evaluation: quantum network routing optimization (INFOCOM'25, INFOCOM'24), quantum best arm identification (AAAI'25)
-- Online learning theory: bandit algorithms robust to adversarial attack (ICLR'25), multi-fidelity best arm identification (NeurIPS'23), bandit algorithm with unknown-capacity shareable arms (ICML'22, IJCAI'22)
+- Multi-agent sequential decision-making: communication-efficient algorithms (SIGMETRICS'25, ICLR'23, AISTATS'23), heterogenous cooperation algorithms (AAAI'25, UAI'23).
+- Quantum network performance evaluation: quantum network routing optimization (INFOCOM'25, INFOCOM'24), quantum best arm identification (AAAI'25).
+- Online learning theory: bandit algorithms robust to adversarial attack (ICLR'25), multi-fidelity best arm identification (NeurIPS'23), bandit algorithms with unknown-capacity shareable arms (ICML'22, IJCAI'22).
