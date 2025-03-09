@@ -32,6 +32,6 @@ I received my Ph.D. in the Department of Computer Science & Engineering at [The 
   - quantum network routing optimization (INFOCOM'25, [INFOCOM'24](https://ieeexplore.ieee.org/document/10621263)), 
   - quantum best arm identification (AAAI'25b).
 - **Online learning theory:** 
-  - bandit algorithms robust to adversarial attack ([ICLR'25](https://openreview.net/forum?id=7F5znfostC)), 
+  - bandit algorithms robust to adversarial attack ([ICLR'25](https://openreview.net/pdf?id=vOFx8HDcvF)), 
   - multi-fidelity best arm identification ([NeurIPS'23](https://proceedings.neurips.cc/paper_files/paper/2023/hash/64602b87c31db70a3ef060f6c5d5b01d-Abstract-Conference.html)), 
   - bandit algorithms with unknown-capacity shareable arms ([ICML'22](https://proceedings.mlr.press/v162/wang22af), [IJCAI'22](https://www.ijcai.org/proceedings/2022/491)).
