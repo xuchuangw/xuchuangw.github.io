@@ -27,10 +27,10 @@ I received my Ph.D. in the Department of Computer Science & Engineering at [The 
 
 - **Multi-agent sequential decision-making:** 
   - communication-efficient algorithms (SIGMETRICS'25, [ICLR'23](https://openreview.net/forum?id=QTXKTXJKIh), [AISTATS'23](https://proceedings.mlr.press/v206/chen23c)), 
-  - heterogenous cooperation algorithms (AAAI'25, [UAI'23](https://proceedings.mlr.press/v216/wang23a.html)).
+  - heterogenous cooperation algorithms (AAAI'25a, [UAI'23](https://proceedings.mlr.press/v216/wang23a.html)).
 - **Quantum network performance evaluation:** 
   - quantum network routing optimization (INFOCOM'25, [INFOCOM'24](https://ieeexplore.ieee.org/document/10621263)), 
-  - quantum best arm identification (AAAI'25).
+  - quantum best arm identification (AAAI'25b).
 - **Online learning theory:** 
   - bandit algorithms robust to adversarial attack ([ICLR'25](https://openreview.net/forum?id=7F5znfostC)), 
   - multi-fidelity best arm identification ([NeurIPS'23](https://proceedings.neurips.cc/paper_files/paper/2023/hash/64602b87c31db70a3ef060f6c5d5b01d-Abstract-Conference.html)), 
