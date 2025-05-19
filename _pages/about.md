@@ -23,7 +23,7 @@ social: false # includes social icons at the bottom of the page
 I am a postdoc at [University of Massachusetts - Amherst](https://www.umass.edu/), working with [Don Towsley](https://www-net.cs.umass.edu/personnel/towsley.html) and [Mohammad Hajiesmaili](https://groups.cs.umass.edu/hajiesmaili/).
 I received my Ph.D. in the Department of Computer Science & Engineering at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/english/index.html) under the guidance of [John C.S. Lui](https://www.cse.cuhk.edu.hk/~cslui/).
  
-#### Research Highlights
+#### research highlights
 
 - **Multi-agent sequential decision-making:** 
   - communication-efficient algorithms (SIGMETRICS'25, [ICLR'23](https://openreview.net/forum?id=QTXKTXJKIh), [AISTATS'23](https://proceedings.mlr.press/v206/chen23c)), 
