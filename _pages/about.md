@@ -22,14 +22,16 @@ social: false # includes social icons at the bottom of the page
 
 I am a postdoc at [University of Massachusetts - Amherst](https://www.umass.edu/), working with [Don Towsley](https://www-net.cs.umass.edu/personnel/towsley.html) and [Mohammad Hajiesmaili](https://groups.cs.umass.edu/hajiesmaili/).
 I received my Ph.D. in the Department of Computer Science & Engineering at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/english/index.html) under the guidance of [John C.S. Lui](https://www.cse.cuhk.edu.hk/~cslui/).
+
+**I am on the 2025-2026 job market looking for full-time academia positions. Please feel free to reach out!**
  
-### research highlights
+## research highlights
 
 - **multi-agent sequential decision-making:** 
   - communication-efficient algorithms ([SIGMETRICS'25](https://dl.acm.org/doi/10.1145/3711696), [ICLR'23](https://openreview.net/forum?id=QTXKTXJKIh), [AISTATS'23](https://proceedings.mlr.press/v206/chen23c)), 
   - heterogenous cooperation algorithms ([AAAI'25a](https://ojs.aaai.org/index.php/AAAI/article/view/34143), [UAI'23](https://proceedings.mlr.press/v216/wang23a.html)).
 - **quantum network performance evaluation:** 
-  - quantum network routing optimization (INFOCOM'25, [INFOCOM'24](https://ieeexplore.ieee.org/document/10621263)), 
+  - quantum network routing optimization ([INFOCOM'25](https://www.arxiv.org/pdf/2506.12462), [INFOCOM'24](https://ieeexplore.ieee.org/document/10621263)), 
   - quantum best arm identification ([AAAI'25b](https://ojs.aaai.org/index.php/AAAI/article/view/35432)).
 - **online learning theory:** 
   - bandit algorithms robust to adversarial attack ([ICLR'25](https://openreview.net/pdf?id=vOFx8HDcvF), [L4DC'25](https://arxiv.org/abs/2411.08167)), 
