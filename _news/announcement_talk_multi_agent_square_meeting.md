@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Give a talk at Caltech on multi-agent ski-rental.
+Give a talk on multi-agent ski-rental at Caltech.

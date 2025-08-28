@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-Will present an invited talk at INFORMS Annual Meeting at Atlanta, GA. 
+Will give an invited talk at INFORMS Annual Meeting at Atlanta, GA. 
 
