@@ -1,9 +1,9 @@
 ---
 layout: post
-date: 2025-10-26
+date: 2025-10-29
 inline: true
 related_posts: false
 ---
 
-Will give an invited talk at INFORMS Annual Meeting at Atlanta, GA. 
+I will give an invited talk at Wednesday 9:30 AM on ``Asynchronous Decision-Making in Multi-Agent Bandits`` in INFORMS Annual Meeting at Atlanta, GA. 
 

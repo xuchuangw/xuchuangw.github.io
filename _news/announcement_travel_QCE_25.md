@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-Will present one poster on "Quantum Top M Arms Identification" at  IEEE International Conference on Quantum Computing and Engineering (QCE)'25 at Albuquerque, NM. 
+Present a poster on "Quantum Top M Arms Identification" at  IEEE International Conference on Quantum Computing and Engineering (QCE)'25 at Albuquerque, NM. 
 
