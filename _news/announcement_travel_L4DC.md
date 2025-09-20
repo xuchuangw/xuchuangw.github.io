@@ -5,5 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Present one paper at L4DC'2025 at Ann Arbor, MI. 
-
+Present one paper at L4DC'2025 at Ann Arbor, MI.
