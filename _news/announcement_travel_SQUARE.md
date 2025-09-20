@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Attend an AIM SQUARE meeting at Caltech.
+Attend an AIM SQUARE meeting at Caltech, CA.
