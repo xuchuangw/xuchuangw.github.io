@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle:
+subtitle: multi-agent learning & quantum networks
 # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
@@ -21,7 +21,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a postdoc at [University of Massachusetts - Amherst](https://www.umass.edu/), working with [Don Towsley](https://www-net.cs.umass.edu/personnel/towsley.html) and [Mohammad Hajiesmaili](https://groups.cs.umass.edu/hajiesmaili/).
+I am a postdoc at [University of Massachusetts Amherst](https://www.umass.edu/), working with [Don Towsley](https://www-net.cs.umass.edu/personnel/towsley.html) and [Mohammad Hajiesmaili](https://groups.cs.umass.edu/hajiesmaili/).
 I received my Ph.D. in the Department of Computer Science & Engineering at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/english/index.html) under the guidance of [John C.S. Lui](https://www.cse.cuhk.edu.hk/~cslui/).
 
 **I am on the 2025-2026 job market looking for full-time academia positions. Please feel free to reach out!**
