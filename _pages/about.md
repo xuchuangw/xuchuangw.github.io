@@ -31,7 +31,9 @@ deepen theoretical understanding of decision-making with **realistic feedback** 
 practical performance in advanced application domains—especially **multi-agent** systems and
 **quantum networks**.
 
-**I am on the 2025-2026 job market looking for full-time academia positions. Please feel free to reach out!**
+<!-- **I am on the 2025-2026 job market looking for full-time academia positions. Please feel free to reach out!** -->
+
+<span style="color: var(--global-theme-color); font-weight: bold;">I am on the 2025-2026 job market looking for full-time academia positions. Please feel free to reach out!</span>
 
 ## research highlights
 

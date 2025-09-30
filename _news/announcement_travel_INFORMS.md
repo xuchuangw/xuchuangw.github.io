@@ -5,4 +5,5 @@ inline: true
 related_posts: false
 ---
 
-I will give an invited talk at Wednesday 9:30 AM on [Asynchronous Decision-Making in Multi-Agent Bandits](https://dl.acm.org/doi/10.1145/3711696) in INFORMS Annual Meeting at Atlanta, GA.
+I will give an invited talk on Asynchronous Decision-Making in Multi-Agent Bandits in INFORMS Annual Meeting, Atlanta, GA. 
+Oct. 29 (Wed.), 10:15-10:30 AM, Building B Level 3 B306.
