@@ -23,6 +23,13 @@ social: true # includes social icons at the bottom of the page
 
 I am a postdoc at [University of Massachusetts Amherst](https://www.umass.edu/), working with [Don Towsley](https://www-net.cs.umass.edu/personnel/towsley.html) and [Mohammad Hajiesmaili](https://groups.cs.umass.edu/hajiesmaili/).
 I received my Ph.D. in the Department of Computer Science & Engineering at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/english/index.html) under the guidance of [John C.S. Lui](https://www.cse.cuhk.edu.hk/~cslui/).
+I also interned at [Theory Center](https://www.microsoft.com/en-us/research/group/msr-asia-theory-center/), Microsoft Research Asia, mentored by [Wei Chen](https://www.microsoft.com/en-us/research/people/weic/).
+I obtained my B.Eng. with Hons. from [Xi'an Jiaotong University](https://en.xjtu.edu.cn/).
+
+My current research focuses on **sequential decision-making under uncertainty**, aiming both to
+deepen theoretical understanding of decision-making with **realistic feedback** and to enhance
+practical performance in advanced application domains—especially **multi-agent** systems and
+**quantum networks**.
 
 **I am on the 2025-2026 job market looking for full-time academia positions. Please feel free to reach out!**
 
@@ -36,7 +43,7 @@ I received my Ph.D. in the Department of Computer Science & Engineering at [The 
   - quantum network routing optimization ([INFOCOM'25](https://www.arxiv.org/pdf/2506.12462), [INFOCOM'24](https://ieeexplore.ieee.org/document/10621263)),
   - quantum best arm identification ([AAAI'25b](https://ojs.aaai.org/index.php/AAAI/article/view/35432)).
   - quantum network tomography ([In submission](https://xuchuangw.com))
-- **online learning theory:**
+- **online learning with realistic feedback:**
   - bandit algorithms robust to adversarial attack ([ICLR'25](https://openreview.net/pdf?id=vOFx8HDcvF), [L4DC'25](https://arxiv.org/abs/2411.08167)),
   - fusing absolute and relative feedback ([ICML'25](https://arxiv.org/pdf/2504.15812)),
   - multi-fidelity best arm identification ([NeurIPS'23](https://proceedings.neurips.cc/paper_files/paper/2023/hash/64602b87c31db70a3ef060f6c5d5b01d-Abstract-Conference.html)).
