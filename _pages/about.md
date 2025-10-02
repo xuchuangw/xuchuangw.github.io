@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: multi-agent learning & quantum networks
+subtitle: multi-agent learning & quantum networking
 # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
