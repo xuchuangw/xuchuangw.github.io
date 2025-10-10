@@ -23,6 +23,7 @@ social: true # includes social icons at the bottom of the page
 
 I am a postdoc at [University of Massachusetts Amherst](https://www.umass.edu/), working with [Don Towsley](https://www-net.cs.umass.edu/personnel/towsley.html) at [ACQuIRe Lab](https://acquire.cs.umass.edu/) and [Mohammad Hajiesmaili](https://groups.cs.umass.edu/hajiesmaili/) at [SOLAR Lab](https://solar.cs.umass.edu/).
 I received my Ph.D. in the Department of Computer Science & Engineering at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/english/index.html) under the guidance of [John C.S. Lui](https://www.cse.cuhk.edu.hk/~cslui/) at [ANSR Lab](http://ansrlab.cse.cuhk.edu.hk/).
+I received my Ph.D. in the Department of Computer Science & Engineering at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/english/index.html) under the guidance of [John C.S. Lui](https://www.cse.cuhk.edu.hk/~cslui/) at [ANSR Lab](http://ansrlab.cse.cuhk.edu.hk/).
 I also interned at [Theory Center](https://www.microsoft.com/en-us/research/group/msr-asia-theory-center/), Microsoft Research Asia, mentored by [Wei Chen](https://www.microsoft.com/en-us/research/people/weic/).
 I obtained my B.Eng. with Hons. from [Xi'an Jiaotong University](https://en.xjtu.edu.cn/).
 
