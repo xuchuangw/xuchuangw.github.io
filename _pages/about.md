@@ -9,10 +9,8 @@ profile:
   align: right
   image: headshot-0825.png
   image_circular: true # crops the image to make it circular
-  # more_info: >
-  #   <p>Amherst, MA 01003</p>
-  # <p>xuchuangwang@umass.edu</p>
-  #   <p>123 your address street</p>
+  more_info: >
+  <p>xuchuangwang@umass.edu</p>
     
 
 news: true # includes a list of news items
