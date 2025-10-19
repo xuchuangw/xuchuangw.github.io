@@ -9,8 +9,7 @@ profile:
   align: right
   image: headshot-0825.png
   image_circular: true # crops the image to make it circular
-  more_info: >
-  <p>xuchuangwang@umass.edu</p>
+  more_info: xuchuangwang@umass.edu
     
 
 news: true # includes a list of news items
