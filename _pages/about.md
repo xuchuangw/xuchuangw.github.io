@@ -42,12 +42,12 @@ I also devise practical algorithms for quantum networks, with a focus on **routi
 - **multi-agent sequential decision-making:**
   - communication-efficient algorithms ([SIGMETRICS'25](https://dl.acm.org/doi/10.1145/3711696), [NeurIPS'25](https://xuchuangw.com), [ICLR'23](https://openreview.net/forum?id=QTXKTXJKIh), [AISTATS'23](https://proceedings.mlr.press/v206/chen23c)),
   - heterogenous cooperation algorithms ([SIGMETRICS'26](https://arxiv.org/abs/2502.08003), [AAAI'25a](https://ojs.aaai.org/index.php/AAAI/article/view/34143), [UAI'25](https://openreview.net/pdf?id=CaIlqE8AKU), [UAI'23](https://proceedings.mlr.press/v216/wang23a.html)),
-  - shareable actions ([ICML'22](https://proceedings.mlr.press/v162/wang22af), [IJCAI'22](https://www.ijcai.org/proceedings/2022/491)).
+  - agents with grouping or shareable policies ([Preprint'1](https://arxiv.org/abs/2507.15727), [ICML'22](https://proceedings.mlr.press/v162/wang22af), [IJCAI'22](https://www.ijcai.org/proceedings/2022/491)).
 - **quantum network optimization and evaluation:**
   - quantum network routing optimization ([INFOCOM'25](https://www.arxiv.org/pdf/2506.12462), [INFOCOM'24](https://ieeexplore.ieee.org/document/10621263)),
-  - quantum best arm identification ([AAAI'25b](https://ojs.aaai.org/index.php/AAAI/article/view/35432)).
-  - quantum network tomography ([Preprint'1](https://arxiv.org/abs/2504.21549))
+  - quantum best arm identification ([AAAI'25b](https://ojs.aaai.org/index.php/AAAI/article/view/35432)),
+  - quantum network tomography ([Preprint'2](https://arxiv.org/abs/2504.21549)).
 - **online learning with realistic feedback:**
-  - bandit algorithms robust to adversarial attack ([ICLR'25](https://openreview.net/pdf?id=vOFx8HDcvF), [L4DC'25](https://arxiv.org/abs/2411.08167)),
+  - strong-adversary manipulated feedback ([ICLR'25](https://openreview.net/pdf?id=vOFx8HDcvF), [L4DC'25](https://arxiv.org/abs/2411.08167)),
   - fusing absolute and relative feedback ([ICML'25](https://arxiv.org/pdf/2504.15812)),
-  - multi-fidelity best arm identification ([NeurIPS'23](https://proceedings.neurips.cc/paper_files/paper/2023/hash/64602b87c31db70a3ef060f6c5d5b01d-Abstract-Conference.html)).
+  - multi-fidelity feedback ([NeurIPS'23](https://proceedings.neurips.cc/paper_files/paper/2023/hash/64602b87c31db70a3ef060f6c5d5b01d-Abstract-Conference.html)).
