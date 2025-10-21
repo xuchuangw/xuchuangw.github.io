@@ -41,7 +41,7 @@ practical performance in advanced application domains—especially **multi-agent
 - **quantum network performance evaluation:**
   - quantum network routing optimization ([INFOCOM'25](https://www.arxiv.org/pdf/2506.12462), [INFOCOM'24](https://ieeexplore.ieee.org/document/10621263)),
   - quantum best arm identification ([AAAI'25b](https://ojs.aaai.org/index.php/AAAI/article/view/35432)).
-  - quantum network tomography ([In submission](https://xuchuangw.com))
+  - quantum network tomography ([Preprint'1](https://arxiv.org/abs/2504.21549))
 - **online learning with realistic feedback:**
   - bandit algorithms robust to adversarial attack ([ICLR'25](https://openreview.net/pdf?id=vOFx8HDcvF), [L4DC'25](https://arxiv.org/abs/2411.08167)),
   - fusing absolute and relative feedback ([ICML'25](https://arxiv.org/pdf/2504.15812)),
