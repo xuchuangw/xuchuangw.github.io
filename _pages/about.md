@@ -43,7 +43,7 @@ I also devise practical algorithms for quantum networks, with a focus on **routi
   - communication-efficient algorithms ([SIGMETRICS'25](https://dl.acm.org/doi/10.1145/3711696), [NeurIPS'25](https://xuchuangw.com), [ICLR'23](https://openreview.net/forum?id=QTXKTXJKIh), [AISTATS'23](https://proceedings.mlr.press/v206/chen23c)),
   - heterogenous cooperation algorithms ([SIGMETRICS'26](https://arxiv.org/abs/2502.08003), [AAAI'25a](https://ojs.aaai.org/index.php/AAAI/article/view/34143), [UAI'25](https://openreview.net/pdf?id=CaIlqE8AKU), [UAI'23](https://proceedings.mlr.press/v216/wang23a.html)),
   - shareable actions ([ICML'22](https://proceedings.mlr.press/v162/wang22af), [IJCAI'22](https://www.ijcai.org/proceedings/2022/491)).
-- **quantum network performance evaluation:**
+- **quantum network optimization and evaluation:**
   - quantum network routing optimization ([INFOCOM'25](https://www.arxiv.org/pdf/2506.12462), [INFOCOM'24](https://ieeexplore.ieee.org/document/10621263)),
   - quantum best arm identification ([AAAI'25b](https://ojs.aaai.org/index.php/AAAI/article/view/35432)).
   - quantum network tomography ([Preprint'1](https://arxiv.org/abs/2504.21549))
