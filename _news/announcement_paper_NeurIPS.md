@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper on multi-agent communication-efficient algorithm is accepted by NeurIPS 2025.
+One paper on multi-agent communication-efficient algorithm is accepted by **NeurIPS 2025**.
