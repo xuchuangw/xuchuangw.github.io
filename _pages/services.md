@@ -12,7 +12,7 @@ nav_order: 4
 
 ### Technical Program Committee Member
 - ACM SIGMETRICS (2026)
-- ACM MobiHoc (2025)
+- ACM MobiHoc (2025, 2026)
 
 ### Session Chair
 - "Entanglement in Quantum Networks I," IEEE International Conference of Quantum Computer and Engineering (QCE), 2025.
