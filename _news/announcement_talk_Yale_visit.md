@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Invited to give a talk at Yale. See you at New Haven!
+Invited to give a talk at Yale. See you at New Haven, CT!
