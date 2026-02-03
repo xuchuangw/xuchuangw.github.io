@@ -10,7 +10,6 @@ profile:
   image: headshot-0825.png
   image_circular: true # crops the image to make it circular
   more_info: xuchuangwang@umass.edu
-    
 
 news: true # includes a list of news items
 latest_posts: false # includes a list of the newest posts
@@ -28,10 +27,9 @@ deepen theoretical understanding of decision-making with **realistic feedback** 
 practical performance in advanced application domains—especially **multi-agent** systems and
 **quantum networks**.  -->
 
-My research centers on **online learning** (*theory*, also known as sequential decision-making under uncertainty) and **quantum networking** (*application*). 
+My research centers on **online learning** (_theory_, also known as sequential decision-making under uncertainty) and **quantum networking** (_application_).
 I develop rigorous algorithms for **multi-agent** online learning, with a focus on efficient communications, heterogeneous agents, and realistic feedback.
 I also devise practical algorithms for quantum networks, with a focus on **routing** (optimization) and **network tomography** (evaluation).
-
 
 <!-- **I am on the 2025-2026 job market looking for full-time academia positions. Please feel free to reach out!** -->
 

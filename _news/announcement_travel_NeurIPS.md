@@ -6,4 +6,3 @@ related_posts: false
 ---
 
 Attend **NeurIPS 2025** in San Diego, CA---plenty of sunshine in SD.
-
