@@ -44,7 +44,7 @@ I also devise practical algorithms for quantum networks, with a focus on **routi
 - **quantum network optimization and evaluation:**
   - quantum network routing optimization ([INFOCOM'25](https://www.arxiv.org/pdf/2506.12462), [INFOCOM'24](https://ieeexplore.ieee.org/document/10621263)),
   - quantum best arm identification ([AAAI'25b](https://ojs.aaai.org/index.php/AAAI/article/view/35432)),
-  - quantum network tomography ([Mergecast Preprint](https://arxiv.org/abs/2511.01074), [OPAL Preprint](https://arxiv.org/abs/2504.21549)).
+  - quantum network tomography ([Mergecast Preprint](https://arxiv.org/abs/2511.01074), [QCNC'26](https://arxiv.org/abs/2504.21549)).
 - **online learning with realistic feedback:**
   - strong-adversary manipulated feedback ([ICLR'25](https://openreview.net/pdf?id=vOFx8HDcvF), [L4DC'25](https://arxiv.org/abs/2411.08167)),
   - fusing absolute and relative feedback ([ICML'25](https://arxiv.org/pdf/2504.15812)),
