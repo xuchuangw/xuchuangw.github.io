@@ -2,14 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: multi-agent learning & quantum networking
+subtitle: Research Fellow @ CUHK CSE || Incoming AP @ HKBU CS
 # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: headshot-0825.png
+  image: # headshot-0825.png
   image_circular: true # crops the image to make it circular
-  more_info: xuchuangwang@umass.edu
+  more_info: # xuchuangwang@umass.edu
 
 news: true # includes a list of news items
 latest_posts: false # includes a list of the newest posts
@@ -17,23 +17,29 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-I am a postdoctoral researcher in the [Manning College of Information & Computer Science](https://www.cics.umass.edu/) at [University of Massachusetts Amherst](https://www.umass.edu/), working with [Don Towsley](https://www-net.cs.umass.edu/personnel/towsley.html) at [ACQuIRe Lab](https://acquire.cs.umass.edu/) and [Mohammad Hajiesmaili](https://groups.cs.umass.edu/hajiesmaili/) at [SOLAR Lab](https://solar.cs.umass.edu/).
+My research centers on **online learning** (_theory_, also known as sequential decision-making under uncertainty) and **quantum networking** (_application_).
+I develop rigorous algorithms for **multi-agent** online learning, with a focus on efficient communications, heterogeneous agents, and realistic feedback.
+I also devise practical algorithms for quantum networks, with a focus on **routing** (optimization) and **network tomography** (evaluation).
+
+I am an incoming Assistant Professor in the [Department of Computer Science](https://www.comp.hkbu.edu.hk/v1/) at [Hong Kong Baptist University](https://www.hkbu.edu.hk/) and an [RGC Junior Research Fellow](https://www.ugc.edu.hk/eng/rgc/funding_opport/jrfs/) in the [Department of Computer Science and Engineering](https://www.cse.cuhk.edu.hk/) at [Chinese University of Hong Kong](https://www.cuhk.edu.hk/).
+
+Prior to this, I was a postdoctoral researcher in the [Manning College of Information & Computer Science](https://www.cics.umass.edu/) at [University of Massachusetts Amherst](https://www.umass.edu/), working with [Don Towsley](https://www-net.cs.umass.edu/personnel/towsley.html) at [ACQuIRe Lab](https://acquire.cs.umass.edu/) and [Mohammad Hajiesmaili](https://groups.cs.umass.edu/hajiesmaili/) at [SOLAR Lab](https://solar.cs.umass.edu/).
 I received my Ph.D. in the Department of Computer Science & Engineering at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/english/index.html) under the guidance of [John C.S. Lui](https://www.cse.cuhk.edu.hk/~cslui/) at [ANSR Lab](http://ansrlab.cse.cuhk.edu.hk/).
-I also interned at [Theory Center](https://www.microsoft.com/en-us/research/group/msr-asia-theory-center/), Microsoft Research Asia, mentored by [Wei Chen](https://www.microsoft.com/en-us/research/people/weic/).
-I obtained my B.Eng. with Hons. from [Xi'an Jiaotong University](https://en.xjtu.edu.cn/).
+<!-- I also interned at [Theory Center](https://www.microsoft.com/en-us/research/group/msr-asia-theory-center/), Microsoft Research Asia, mentored by [Wei Chen](https://www.microsoft.com/en-us/research/people/weic/). -->
+I obtained my B.Eng. with Hons. (now [Qian Xuesen Honors College](https://bjb.xjtu.edu.cn/index.htm)) from [Xi'an Jiaotong University](https://en.xjtu.edu.cn/).
 
 <!-- My current research focuses on **sequential decision-making under uncertainty**, aiming both to
 deepen theoretical understanding of decision-making with **realistic feedback** and to enhance
 practical performance in advanced application domains—especially **multi-agent** systems and
 **quantum networks**.  -->
 
-My research centers on **online learning** (_theory_, also known as sequential decision-making under uncertainty) and **quantum networking** (_application_).
-I develop rigorous algorithms for **multi-agent** online learning, with a focus on efficient communications, heterogeneous agents, and realistic feedback.
-I also devise practical algorithms for quantum networks, with a focus on **routing** (optimization) and **network tomography** (evaluation).
+
 
 <!-- **I am on the 2025-2026 job market looking for full-time academia positions. Please feel free to reach out!** -->
 
-<span style="color: var(--global-theme-color); font-weight: bold;">I am on the 2025-2026 job market looking for full-time academia positions. Please feel free to reach out!</span>
+<!-- <span style="color: var(--global-theme-color); font-weight: bold;">I am on the 2025-2026 job market looking for full-time academia positions. Please feel free to reach out!</span> -->
+
+<span style="color: var(--global-theme-color); font-weight: bold;">I am <a href="/team/#Openning" style="text-decoration: underline;">actively looking</a> for P.h.D students starting in Fall 2026! Please feel free to reach out!</span>
 
 ## research highlights
 

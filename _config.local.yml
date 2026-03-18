@@ -1,0 +1,37 @@
+# Local-only overrides for development.
+# Excludes the twitter demo post to avoid SSL fetch failures from jekyll-twitter-plugin.
+exclude:
+  - bin
+  - CONTRIBUTING.md
+  - CUSTOMIZE.md
+  - docker-compose.yml
+  - Dockerfile
+  - FAQ.md
+  - Gemfile
+  - Gemfile.lock
+  - INSTALL.md
+  - LICENSE
+  - package.json
+  - package-lock.json
+  - purgecss.config.js
+  - README.md
+  - vendor
+  - _posts/2020-09-28-twitter.md
+
+# Disable external post fetching locally to avoid network timeouts.
+external_sources: []
+
+# Keep plugin behavior close to production, but disable two plugins that fail locally.
+plugins:
+  - jekyll-archives
+  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-get-json
+  - jekyll-imagemagick
+  - jekyll-jupyter-notebook
+  - jekyll-link-attributes
+  - jekyll-paginate-v2
+  - jekyll/scholar
+  - jekyll-sitemap
+  - jekyll-toc
+  - jemoji

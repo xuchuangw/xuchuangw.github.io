@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <radialGradient id="nodeGrad" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </radialGradient>
+    <radialGradient id="nodeGrad2" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </radialGradient>
+    <linearGradient id="linkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.7"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <marker id="qubitArrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6" fill="#06b6d4"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="400" rx="16" fill="#0f172a"/>
+
+  <!-- Quantum links (wavy lines) -->
+  <path d="M160,140 Q280,100 400,140 Q520,180 640,140" stroke="url(#linkGrad)" stroke-width="3" fill="none" stroke-dasharray="8,4" filter="url(#glow)"/>
+  <path d="M160,140 Q200,220 240,280" stroke="url(#linkGrad)" stroke-width="3" fill="none" stroke-dasharray="8,4" filter="url(#glow)"/>
+  <path d="M640,140 Q600,220 560,280" stroke="url(#linkGrad)" stroke-width="3" fill="none" stroke-dasharray="8,4" filter="url(#glow)"/>
+  <path d="M240,280 Q400,320 560,280" stroke="url(#linkGrad)" stroke-width="3" fill="none" stroke-dasharray="8,4" filter="url(#glow)"/>
+  <path d="M400,140 Q320,210 240,280" stroke="url(#linkGrad)" stroke-width="2" fill="none" stroke-dasharray="6,4" opacity="0.5"/>
+  <path d="M400,140 Q480,210 560,280" stroke="url(#linkGrad)" stroke-width="2" fill="none" stroke-dasharray="6,4" opacity="0.5"/>
+
+  <!-- Entanglement symbols on links -->
+  <text x="280" y="110" fill="#a78bfa" font-size="18" text-anchor="middle" font-style="italic">|Ψ⁺⟩</text>
+  <text x="520" y="110" fill="#a78bfa" font-size="18" text-anchor="middle" font-style="italic">|Φ⁺⟩</text>
+  <text x="400" y="310" fill="#a78bfa" font-size="18" text-anchor="middle" font-style="italic">|Ψ⁻⟩</text>
+
+  <!-- Qubit in transit -->
+  <circle cx="300" cy="125" r="8" fill="#06b6d4" filter="url(#glow)" opacity="0.9"/>
+  <text x="300" y="129" fill="white" font-size="10" text-anchor="middle" font-weight="bold">q</text>
+
+  <circle cx="500" cy="155" r="8" fill="#06b6d4" filter="url(#glow)" opacity="0.9"/>
+  <text x="500" y="159" fill="white" font-size="10" text-anchor="middle" font-weight="bold">q</text>
+
+  <!-- Nodes -->
+  <!-- Node A -->
+  <circle cx="160" cy="140" r="36" fill="url(#nodeGrad)" filter="url(#glow)"/>
+  <text x="160" y="136" fill="white" font-size="14" text-anchor="middle" font-weight="bold">Node</text>
+  <text x="160" y="152" fill="#c4b5fd" font-size="12" text-anchor="middle">A</text>
+
+  <!-- Node B -->
+  <circle cx="400" cy="140" r="36" fill="url(#nodeGrad)" filter="url(#glow)"/>
+  <text x="400" y="136" fill="white" font-size="14" text-anchor="middle" font-weight="bold">Node</text>
+  <text x="400" y="152" fill="#c4b5fd" font-size="12" text-anchor="middle">B</text>
+
+  <!-- Node C -->
+  <circle cx="640" cy="140" r="36" fill="url(#nodeGrad)" filter="url(#glow)"/>
+  <text x="640" y="136" fill="white" font-size="14" text-anchor="middle" font-weight="bold">Node</text>
+  <text x="640" y="152" fill="#c4b5fd" font-size="12" text-anchor="middle">C</text>
+
+  <!-- Node D -->
+  <circle cx="240" cy="280" r="36" fill="url(#nodeGrad2)" filter="url(#glow)"/>
+  <text x="240" y="276" fill="white" font-size="14" text-anchor="middle" font-weight="bold">Node</text>
+  <text x="240" y="292" fill="#bae6fd" font-size="12" text-anchor="middle">D</text>
+
+  <!-- Node E -->
+  <circle cx="560" cy="280" r="36" fill="url(#nodeGrad2)" filter="url(#glow)"/>
+  <text x="560" y="276" fill="white" font-size="14" text-anchor="middle" font-weight="bold">Node</text>
+  <text x="560" y="292" fill="#bae6fd" font-size="12" text-anchor="middle">E</text>
+
+  <!-- Title -->
+  <text x="400" y="375" fill="#94a3b8" font-size="16" text-anchor="middle" letter-spacing="2">QUANTUM NETWORK — TRANSMITTING QUANTUM INFORMATION</text>
+</svg>

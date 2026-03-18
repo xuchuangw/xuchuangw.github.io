@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="'Segoe UI', Arial, sans-serif">
+  <defs>
+    <linearGradient id="card1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#5b21b6"/>
+    </linearGradient>
+    <linearGradient id="card2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#0e7490"/>
+    </linearGradient>
+    <linearGradient id="card3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="420" rx="16" fill="#0f172a"/>
+
+  <!-- ===== Card 1: Distributed Quantum Computing ===== -->
+  <g filter="url(#shadow)">
+    <rect x="30" y="30" width="230" height="340" rx="14" fill="url(#card1)"/>
+  </g>
+  <!-- Icon: interconnected processors -->
+  <rect x="90" y="60" width="44" height="34" rx="6" fill="#a78bfa" opacity="0.9"/>
+  <rect x="150" y="60" width="44" height="34" rx="6" fill="#a78bfa" opacity="0.9"/>
+  <rect x="90" y="110" width="44" height="34" rx="6" fill="#a78bfa" opacity="0.9"/>
+  <rect x="150" y="110" width="44" height="34" rx="6" fill="#a78bfa" opacity="0.9"/>
+  <text x="112" y="82" fill="#1e1b4b" font-size="14" text-anchor="middle" font-weight="bold">Q₁</text>
+  <text x="172" y="82" fill="#1e1b4b" font-size="14" text-anchor="middle" font-weight="bold">Q₂</text>
+  <text x="112" y="132" fill="#1e1b4b" font-size="14" text-anchor="middle" font-weight="bold">Q₃</text>
+  <text x="172" y="132" fill="#1e1b4b" font-size="14" text-anchor="middle" font-weight="bold">Q₄</text>
+  <!-- connections -->
+  <line x1="134" y1="77" x2="150" y2="77" stroke="#c4b5fd" stroke-width="2" stroke-dasharray="4,2"/>
+  <line x1="134" y1="127" x2="150" y2="127" stroke="#c4b5fd" stroke-width="2" stroke-dasharray="4,2"/>
+  <line x1="112" y1="94" x2="112" y2="110" stroke="#c4b5fd" stroke-width="2" stroke-dasharray="4,2"/>
+  <line x1="172" y1="94" x2="172" y2="110" stroke="#c4b5fd" stroke-width="2" stroke-dasharray="4,2"/>
+  <line x1="134" y1="77" x2="150" y2="127" stroke="#e9d5ff" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.6"/>
+  <line x1="150" y1="77" x2="134" y2="127" stroke="#e9d5ff" stroke-width="1.5" stroke-dasharray="3,3" opacity="0.6"/>
+
+  <text x="145" y="180" fill="white" font-size="15" text-anchor="middle" font-weight="bold">Scalable Quantum</text>
+  <text x="145" y="200" fill="white" font-size="15" text-anchor="middle" font-weight="bold">Computing</text>
+
+  <text x="145" y="230" fill="#ddd6fe" font-size="12" text-anchor="middle">Distributed quantum</text>
+  <text x="145" y="248" fill="#ddd6fe" font-size="12" text-anchor="middle">processors interconnected</text>
+  <text x="145" y="266" fill="#ddd6fe" font-size="12" text-anchor="middle">to form one powerful</text>
+  <text x="145" y="284" fill="#ddd6fe" font-size="12" text-anchor="middle">fault-tolerant machine</text>
+
+  <!-- ===== Card 2: Distributed Quantum Sensing ===== -->
+  <g filter="url(#shadow)">
+    <rect x="285" y="30" width="230" height="340" rx="14" fill="url(#card2)"/>
+  </g>
+  <!-- Icon: sensors with entanglement -->
+  <circle cx="340" cy="90" r="18" fill="#67e8f9" opacity="0.85"/>
+  <circle cx="400" cy="65" r="18" fill="#67e8f9" opacity="0.85"/>
+  <circle cx="460" cy="90" r="18" fill="#67e8f9" opacity="0.85"/>
+  <text x="340" y="95" fill="#083344" font-size="16" text-anchor="middle">S₁</text>
+  <text x="400" y="70" fill="#083344" font-size="16" text-anchor="middle">S₂</text>
+  <text x="460" y="95" fill="#083344" font-size="16" text-anchor="middle">S₃</text>
+  <!-- entanglement arcs -->
+  <path d="M340,90 Q370,50 400,65" stroke="#a5f3fc" stroke-width="2" fill="none" stroke-dasharray="4,3"/>
+  <path d="M400,65 Q430,50 460,90" stroke="#a5f3fc" stroke-width="2" fill="none" stroke-dasharray="4,3"/>
+  <path d="M340,90 Q400,130 460,90" stroke="#a5f3fc" stroke-width="2" fill="none" stroke-dasharray="4,3"/>
+  <!-- wave signal -->
+  <path d="M370,115 Q380,105 390,115 Q400,125 410,115 Q420,105 430,115" stroke="#22d3ee" stroke-width="2" fill="none"/>
+
+  <text x="400" y="170" fill="white" font-size="15" text-anchor="middle" font-weight="bold">Advanced Physics</text>
+  <text x="400" y="190" fill="white" font-size="15" text-anchor="middle" font-weight="bold">Discovery</text>
+
+  <text x="400" y="220" fill="#cffafe" font-size="12" text-anchor="middle">Entangled sensor networks</text>
+  <text x="400" y="238" fill="#cffafe" font-size="12" text-anchor="middle">surpass classical limits for</text>
+  <text x="400" y="256" fill="#cffafe" font-size="12" text-anchor="middle">gravitational wave detection,</text>
+  <text x="400" y="274" fill="#cffafe" font-size="12" text-anchor="middle">dark matter searches,</text>
+  <text x="400" y="292" fill="#cffafe" font-size="12" text-anchor="middle">and precision metrology</text>
+
+  <!-- ===== Card 3: Quantum Key Distribution ===== -->
+  <g filter="url(#shadow)">
+    <rect x="540" y="30" width="230" height="340" rx="14" fill="url(#card3)"/>
+  </g>
+  <!-- Icon: key + lock -->
+  <circle cx="620" cy="72" r="16" fill="none" stroke="#6ee7b7" stroke-width="3"/>
+  <rect x="614" y="88" width="12" height="18" rx="2" fill="#6ee7b7"/>
+  <!-- Key shape -->
+  <circle cx="690" cy="82" r="10" fill="none" stroke="#a7f3d0" stroke-width="2.5"/>
+  <line x1="680" y1="82" x2="660" y2="82" stroke="#a7f3d0" stroke-width="2.5"/>
+  <line x1="665" y1="82" x2="665" y2="90" stroke="#a7f3d0" stroke-width="2"/>
+  <line x1="660" y1="82" x2="660" y2="88" stroke="#a7f3d0" stroke-width="2"/>
+  <!-- Secure channel -->
+  <path d="M636,82 L650,82" stroke="#34d399" stroke-width="2" stroke-dasharray="3,2" marker-end="url(#secArrow)"/>
+  <!-- Photon -->
+  <circle cx="643" cy="68" r="5" fill="#34d399" opacity="0.8"/>
+  <line x1="643" y1="62" x2="643" y2="74" stroke="#6ee7b7" stroke-width="1"/>
+  <line x1="637" y1="68" x2="649" y2="68" stroke="#6ee7b7" stroke-width="1"/>
+
+  <text x="655" y="140" fill="white" font-size="15" text-anchor="middle" font-weight="bold">Secured</text>
+  <text x="655" y="160" fill="white" font-size="15" text-anchor="middle" font-weight="bold">Communication</text>
+
+  <text x="655" y="190" fill="#d1fae5" font-size="12" text-anchor="middle">Quantum Key Distribution</text>
+  <text x="655" y="208" fill="#d1fae5" font-size="12" text-anchor="middle">enables information-theoretic</text>
+  <text x="655" y="226" fill="#d1fae5" font-size="12" text-anchor="middle">security backed by the</text>
+  <text x="655" y="244" fill="#d1fae5" font-size="12" text-anchor="middle">laws of quantum physics</text>
+
+  <!-- Footer -->
+  <text x="400" y="400" fill="#94a3b8" font-size="15" text-anchor="middle" letter-spacing="2">WHY QUANTUM NETWORKS?</text>
+</svg>
