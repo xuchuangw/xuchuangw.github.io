@@ -3,7 +3,7 @@ layout: page
 permalink: /quantum-network/
 title: quantum network
 description:
-nav: true
+nav: false
 nav_order: 7
 ---
 
