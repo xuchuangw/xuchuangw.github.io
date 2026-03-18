@@ -8,20 +8,20 @@ nav_order: 3
 ---
 
 <a id="Openning"></a>
+
 # Opening :blossom:
 
 I am seeking multiple PhD students starting in Fall 2026 and Spring 2027. We will work on cutting-edge research topics, including:
 
 - Quantum Networking [Application / Methodology]
-    - Quantum Network Optimization
-    - Quantum Network Tomography
-    - Quantum Machine Learning (theory)
 
+  - Quantum Network Optimization
+  - Quantum Network Tomography
+  - Quantum Machine Learning (theory)
 
 - Multi-Agent Learning [Methodology / Theory]
-    - Multi-Agent Online/Reinforcement Learning
-    - Multi-Agent System (include LLM/Agentic ones)
-
+  - Multi-Agent Online/Reinforcement Learning
+  - Multi-Agent System (include LLM/Agentic ones)
 
 If you are interested, please email me (xuchuangw [@] gmail [dot] com) with the subject line: “Application for PhD in [Start Cycle]”. Kindly include
 
@@ -31,16 +31,11 @@ If you are interested, please email me (xuchuangw [@] gmail [dot] com) with the 
 
 While I will make sure to read all inquiries, I apologize in advance if I am unable to respond to each one due to time constraints.
 
-
-
-
 # Mentoring :evergreen_tree:
 
-
-*note:* **bold** means the mentored student is the first author, while I am typically the second or third.
+_note:_ **bold** means the mentored student is the first author, while I am typically the second or third.
 
 #### UMass Amherst (with Prof. Don Towsley and Prof. Mohammad Hajiesmaili), CICS
-
 
 - [Fatemeh Ghaffari](https://scholar.google.com/citations?user=n0N3AtMAAAAJ&hl=en) (Ph.D. @ UMass Amherst with Prof. Hajiesmaili), 2024 - Present: **L4DC'25**, ICML'26 in submission, KDD'26 in submission
 - [Amirmahdi Mirfakhar](https://amirmahdi-mirfakhar.github.io/) (Ph.D. @ UMass Amherst with Prof. Hajiesmaili), 2023 - Present: **AAAI’25**, ICML'26 in submission
@@ -50,8 +45,6 @@ While I will make sure to read all inquiries, I apologize in advance if I am una
 - Ezra R. Johnson (Undergrad. @ Caltech with Prof. Hajiesmaili), 2026 - Present
 - Richard Lin (Undergrad. @ UMass Amherst), 2026 - Present
 <!-- - Anvi  -->
-
-
 
 #### Chinese University of Hong Kong (with Prof. John C.S. Lui), CSE
 
@@ -65,13 +58,10 @@ While I will make sure to read all inquiries, I apologize in advance if I am una
 
 #### Nanjing University (with Prof. Lin Yang), SIST
 
-- Haoran Zhang (Ph.D. @ NJU), 2023 - Present: **NeurIPS’25**, **UAI’25** 
+- Haoran Zhang (Ph.D. @ NJU), 2023 - Present: **NeurIPS’25**, **UAI’25**
 - Jingyuan Liu (Undergrad. @ NJU), 2023 - Present: ICML'26 in submission, KDD'26 in submission
-
 
 #### Shanghai Jiao Tong University (with Prof. Shuai Li), John Hopcroft Center
 
-- [Zichun Ye](https://alchemistye.github.io/) (Master @ SJTU), 2025 - Present: ICML'26 in submission 
+- [Zichun Ye](https://alchemistye.github.io/) (Master @ SJTU), 2025 - Present: ICML'26 in submission
 - Runqi Wang (Undergrad.t @ SJTU), 2025 - Present: ICML'26 in submission
-
-

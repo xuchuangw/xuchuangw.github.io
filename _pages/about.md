@@ -25,15 +25,15 @@ I am a [RGC Junior Research Fellow](https://www.ugc.edu.hk/eng/rgc/funding_oppor
 
 Prior to this, I was a postdoctoral researcher for three years in the [Manning College of Information & Computer Science](https://www.cics.umass.edu/) at [University of Massachusetts Amherst](https://www.umass.edu/), working with [Don Towsley](https://www-net.cs.umass.edu/personnel/towsley.html) at [ACQuIRe Lab](https://acquire.cs.umass.edu/) and [Mohammad Hajiesmaili](https://groups.cs.umass.edu/hajiesmaili/) at [SOLAR Lab](https://solar.cs.umass.edu/).
 I received my Ph.D. in the Department of Computer Science & Engineering at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/english/index.html) under the guidance of [John C.S. Lui](https://www.cse.cuhk.edu.hk/~cslui/) at [ANSR Lab](http://ansrlab.cse.cuhk.edu.hk/).
+
 <!-- I also interned at [Theory Center](https://www.microsoft.com/en-us/research/group/msr-asia-theory-center/), Microsoft Research Asia, mentored by [Wei Chen](https://www.microsoft.com/en-us/research/people/weic/). -->
+
 I obtained my B.Eng. with Hons. (now [Qian Xuesen Honors College](https://bjb.xjtu.edu.cn/index.htm)) from [Xi'an Jiaotong University](https://en.xjtu.edu.cn/).
 
 <!-- My current research focuses on **sequential decision-making under uncertainty**, aiming both to
 deepen theoretical understanding of decision-making with **realistic feedback** and to enhance
 practical performance in advanced application domains—especially **multi-agent** systems and
 **quantum networks**.  -->
-
-
 
 <!-- **I am on the 2025-2026 job market looking for full-time academia positions. Please feel free to reach out!** -->
 
