@@ -9,13 +9,12 @@ nav_order: 3
 
 <a id="Openning"></a>
 
-# Opening :blossom:
+# Opening
 
 I am seeking multiple PhD students starting in Fall 2026 and Spring 2027. We will work on cutting-edge research topics, including:
 
 - Quantum Networking [Application / Methodology]
-  - Quantum Network Optimization
-  - Quantum Network Tomography
+  - Quantum Network Optimization & Evaluation
   - Quantum Machine Learning (theory)
 
 
@@ -31,7 +30,7 @@ If you are interested, please email me (xuchuangw [@] gmail [dot] com) with the 
 
 While I will make sure to read all inquiries, I apologize in advance if I am unable to respond to each one due to time constraints.
 
-# Mentoring :evergreen_tree:
+# Mentoring
 
 _note:_ **bold** means the mentored student is the first author, while I am typically the second or third.
 
