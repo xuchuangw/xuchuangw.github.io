@@ -14,10 +14,10 @@ nav_order: 3
 I am seeking multiple PhD students starting in Fall 2026 and Spring 2027. We will work on cutting-edge research topics, including:
 
 - Quantum Networking [Application / Methodology]
-
   - Quantum Network Optimization
   - Quantum Network Tomography
   - Quantum Machine Learning (theory)
+
 
 - Multi-Agent Learning [Methodology / Theory]
   - Multi-Agent Online/Reinforcement Learning
