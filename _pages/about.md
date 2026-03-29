@@ -7,7 +7,7 @@ subtitle: Research Fellow @ CUHK CSE || Incoming AP @ HKBU CS
 
 profile:
   align: right
-  image: # headshot-0825.png
+  image: xuchuangw_formal.jpeg
   image_circular: true # crops the image to make it circular
   more_info: # xuchuangwang@umass.edu
 
