@@ -1,93 +1,96 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" font-family="'Segoe UI', Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="'Inter', 'Segoe UI', Arial, sans-serif">
   <defs>
-    <radialGradient id="endNode" cx="50%" cy="40%" r="50%">
-      <stop offset="0%" stop-color="#7c3aed"/>
-      <stop offset="100%" stop-color="#4f46e5"/>
-    </radialGradient>
-    <radialGradient id="repNode" cx="50%" cy="40%" r="50%">
-      <stop offset="0%" stop-color="#f59e0b"/>
-      <stop offset="100%" stop-color="#d97706"/>
-    </radialGradient>
-    <linearGradient id="seg" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.6"/>
-      <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.6"/>
-    </linearGradient>
-    <linearGradient id="e2e" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7c3aed"/>
-      <stop offset="50%" stop-color="#06b6d4"/>
-      <stop offset="100%" stop-color="#7c3aed"/>
-    </linearGradient>
-    <filter id="glow2">
-      <feGaussianBlur stdDeviation="2.5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
+    <marker id="arrowDown" markerWidth="10" markerHeight="10" refX="5" refY="9" orient="auto">
+      <path d="M0,0 L10,0 L5,9 Z" fill="#475569"/>
+    </marker>
   </defs>
 
   <!-- Background -->
-  <rect width="800" height="360" rx="16" fill="#0f172a"/>
-
-  <!-- ===== Top row: Segment links ===== -->
-  <!-- Segment lines -->
-  <line x1="130" y1="100" x2="270" y2="100" stroke="url(#seg)" stroke-width="3" stroke-dasharray="8,4" filter="url(#glow2)"/>
-  <line x1="330" y1="100" x2="470" y2="100" stroke="url(#seg)" stroke-width="3" stroke-dasharray="8,4" filter="url(#glow2)"/>
-  <line x1="530" y1="100" x2="670" y2="100" stroke="url(#seg)" stroke-width="3" stroke-dasharray="8,4" filter="url(#glow2)"/>
-
-  <!-- Entanglement labels on segments -->
-  <text x="200" y="85" fill="#a78bfa" font-size="14" text-anchor="middle" font-style="italic">EPR</text>
-  <text x="400" y="85" fill="#fbbf24" font-size="14" text-anchor="middle" font-style="italic">EPR</text>
-  <text x="600" y="85" fill="#a78bfa" font-size="14" text-anchor="middle" font-style="italic">EPR</text>
-
-  <!-- Node A (end node) -->
-  <circle cx="100" cy="100" r="30" fill="url(#endNode)" filter="url(#glow2)"/>
-  <text x="100" y="96" fill="white" font-size="13" text-anchor="middle" font-weight="bold">Alice</text>
-  <text x="100" y="110" fill="#c4b5fd" font-size="10" text-anchor="middle">End Node</text>
-
-  <!-- Repeater 1 -->
-  <rect x="270" y="72" width="60" height="56" rx="10" fill="url(#repNode)" filter="url(#glow2)"/>
-  <text x="300" y="96" fill="white" font-size="11" text-anchor="middle" font-weight="bold">Repeater</text>
-  <text x="300" y="112" fill="#fef3c7" font-size="10" text-anchor="middle">R₁</text>
-
-  <!-- Repeater 2 -->
-  <rect x="470" y="72" width="60" height="56" rx="10" fill="url(#repNode)" filter="url(#glow2)"/>
-  <text x="500" y="96" fill="white" font-size="11" text-anchor="middle" font-weight="bold">Repeater</text>
-  <text x="500" y="112" fill="#fef3c7" font-size="10" text-anchor="middle">R₂</text>
-
-  <!-- Node B (end node) -->
-  <circle cx="700" cy="100" r="30" fill="url(#endNode)" filter="url(#glow2)"/>
-  <text x="700" y="96" fill="white" font-size="13" text-anchor="middle" font-weight="bold">Bob</text>
-  <text x="700" y="110" fill="#c4b5fd" font-size="10" text-anchor="middle">End Node</text>
-
-  <!-- ===== Arrow down: Entanglement Swapping ===== -->
-  <text x="400" y="165" fill="#94a3b8" font-size="13" text-anchor="middle" letter-spacing="1">▼  ENTANGLEMENT SWAPPING  ▼</text>
-
-  <!-- ===== Bottom row: End-to-end entanglement ===== -->
-  <path d="M130,250 Q400,210 670,250" stroke="url(#e2e)" stroke-width="4" fill="none" filter="url(#glow2)"/>
-  <text x="400" y="222" fill="#22d3ee" font-size="15" text-anchor="middle" font-weight="bold">End-to-End Entanglement</text>
-  <text x="400" y="240" fill="#67e8f9" font-size="13" text-anchor="middle" font-style="italic">|Φ⁺⟩</text>
-
-  <!-- End nodes (bottom) -->
-  <circle cx="100" cy="250" r="30" fill="url(#endNode)" filter="url(#glow2)"/>
-  <text x="100" y="246" fill="white" font-size="13" text-anchor="middle" font-weight="bold">Alice</text>
-  <text x="100" y="260" fill="#c4b5fd" font-size="10" text-anchor="middle">End Node</text>
-
-  <circle cx="700" cy="250" r="30" fill="url(#endNode)" filter="url(#glow2)"/>
-  <text x="700" y="246" fill="white" font-size="13" text-anchor="middle" font-weight="bold">Bob</text>
-  <text x="700" y="260" fill="#c4b5fd" font-size="10" text-anchor="middle">End Node</text>
-
-  <!-- Distillation label -->
-  <text x="400" y="275" fill="#94a3b8" font-size="12" text-anchor="middle">+ Entanglement Distillation → High-Fidelity Link</text>
-
-  <!-- Process labels at bottom -->
-  <rect x="130" y="305" width="170" height="30" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-  <text x="215" y="325" fill="#a78bfa" font-size="12" text-anchor="middle">① Generation</text>
-
-  <rect x="315" y="305" width="170" height="30" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-  <text x="400" y="325" fill="#fbbf24" font-size="12" text-anchor="middle">② Swapping</text>
-
-  <rect x="500" y="305" width="170" height="30" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-  <text x="585" y="325" fill="#34d399" font-size="12" text-anchor="middle">③ Distillation</text>
+  <rect width="800" height="420" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
 
   <!-- Title -->
-  <text x="400" y="350" fill="#94a3b8" font-size="14" text-anchor="middle" letter-spacing="2">QUANTUM REPEATER CHAIN</text>
+  <text x="400" y="34" fill="#0f172a" font-size="20" text-anchor="middle" font-weight="700">How a quantum repeater chain builds an end-to-end link</text>
+  <text x="400" y="56" fill="#64748b" font-size="13" text-anchor="middle">Short EPR pairs are generated, swapped at repeaters, and distilled into one high-fidelity long-range pair.</text>
+
+  <!-- ======================== TOP ROW: segment-by-segment entanglement ======================== -->
+  <text x="60" y="92" fill="#334155" font-size="12" font-weight="600">① Generation</text>
+
+  <!-- Segments -->
+  <g stroke-linecap="round">
+    <line x1="135" y1="130" x2="275" y2="130" stroke="#4338ca" stroke-width="2.5"/>
+    <line x1="335" y1="130" x2="465" y2="130" stroke="#4338ca" stroke-width="2.5"/>
+    <line x1="525" y1="130" x2="665" y2="130" stroke="#4338ca" stroke-width="2.5"/>
+  </g>
+
+  <!-- EPR pair badges on segments -->
+  <g>
+    <rect x="180" y="106" width="50" height="20" rx="10" fill="#eef2ff" stroke="#c7d2fe"/>
+    <text x="205" y="121" fill="#3730a3" font-size="12" text-anchor="middle" font-style="italic">EPR</text>
+    <rect x="375" y="106" width="50" height="20" rx="10" fill="#eef2ff" stroke="#c7d2fe"/>
+    <text x="400" y="121" fill="#3730a3" font-size="12" text-anchor="middle" font-style="italic">EPR</text>
+    <rect x="570" y="106" width="50" height="20" rx="10" fill="#eef2ff" stroke="#c7d2fe"/>
+    <text x="595" y="121" fill="#3730a3" font-size="12" text-anchor="middle" font-style="italic">EPR</text>
+  </g>
+
+  <!-- Alice -->
+  <g>
+    <circle cx="105" cy="130" r="28" fill="#4338ca"/>
+    <text x="105" y="127" fill="#ffffff" font-size="12" text-anchor="middle" font-weight="700">Alice</text>
+    <text x="105" y="142" fill="#c7d2fe" font-size="10" text-anchor="middle">end node</text>
+  </g>
+
+  <!-- Repeater R1 -->
+  <g>
+    <rect x="275" y="104" width="60" height="52" rx="8" fill="#d97706"/>
+    <text x="305" y="128" fill="#ffffff" font-size="12" text-anchor="middle" font-weight="700">R₁</text>
+    <text x="305" y="144" fill="#fde68a" font-size="10" text-anchor="middle">repeater</text>
+  </g>
+
+  <!-- Repeater R2 -->
+  <g>
+    <rect x="465" y="104" width="60" height="52" rx="8" fill="#d97706"/>
+    <text x="495" y="128" fill="#ffffff" font-size="12" text-anchor="middle" font-weight="700">R₂</text>
+    <text x="495" y="144" fill="#fde68a" font-size="10" text-anchor="middle">repeater</text>
+  </g>
+
+  <!-- Bob -->
+  <g>
+    <circle cx="695" cy="130" r="28" fill="#4338ca"/>
+    <text x="695" y="127" fill="#ffffff" font-size="12" text-anchor="middle" font-weight="700">Bob</text>
+    <text x="695" y="142" fill="#c7d2fe" font-size="10" text-anchor="middle">end node</text>
+  </g>
+
+  <!-- ======================== ARROW: swapping ======================== -->
+  <g>
+    <line x1="400" y1="180" x2="400" y2="218" stroke="#475569" stroke-width="2" marker-end="url(#arrowDown)"/>
+    <rect x="288" y="186" width="224" height="22" rx="11" fill="#fff7ed" stroke="#fed7aa"/>
+    <text x="400" y="201" fill="#9a3412" font-size="12" text-anchor="middle" font-weight="600">② Entanglement swapping at R₁, R₂</text>
+  </g>
+
+  <!-- ======================== MIDDLE ROW: end-to-end entanglement ======================== -->
+  <text x="60" y="262" fill="#334155" font-size="12" font-weight="600">③ End-to-end pair</text>
+
+  <!-- Long entangled link -->
+  <path d="M135,290 Q400,255 665,290" stroke="#0891b2" stroke-width="3" fill="none"/>
+  <rect x="365" y="258" width="70" height="22" rx="11" fill="#ecfeff" stroke="#67e8f9"/>
+  <text x="400" y="273" fill="#0e7490" font-size="12" text-anchor="middle" font-style="italic">|Φ⁺⟩ A,B</text>
+
+  <!-- Alice / Bob bottom -->
+  <g>
+    <circle cx="105" cy="290" r="28" fill="#4338ca"/>
+    <text x="105" y="287" fill="#ffffff" font-size="12" text-anchor="middle" font-weight="700">Alice</text>
+    <text x="105" y="302" fill="#c7d2fe" font-size="10" text-anchor="middle">end node</text>
+  </g>
+  <g>
+    <circle cx="695" cy="290" r="28" fill="#4338ca"/>
+    <text x="695" y="287" fill="#ffffff" font-size="12" text-anchor="middle" font-weight="700">Bob</text>
+    <text x="695" y="302" fill="#c7d2fe" font-size="10" text-anchor="middle">end node</text>
+  </g>
+
+  <!-- ======================== ARROW: distillation ======================== -->
+  <g>
+    <line x1="400" y1="328" x2="400" y2="358" stroke="#475569" stroke-width="2" marker-end="url(#arrowDown)"/>
+    <rect x="262" y="364" width="276" height="22" rx="11" fill="#ecfdf5" stroke="#a7f3d0"/>
+    <text x="400" y="379" fill="#065f46" font-size="12" text-anchor="middle" font-weight="600">④ Distillation → fewer pairs, higher fidelity</text>
+  </g>
 </svg>

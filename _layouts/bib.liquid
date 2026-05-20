@@ -154,6 +154,16 @@
       {{ entry.note | strip }}
     </div>
 
+    {% if entry.significance %}
+      <div
+        class="significance"
+        style="margin: 0.4rem 0 0.6rem; padding: 0.4rem 0.75rem; border-left: 3px solid var(--global-theme-color); font-size: 0.95em; line-height: 1.45;"
+      >
+        <strong style="color: var(--global-theme-color);">Why it matters:</strong>
+        {{ entry.significance | strip }}
+      </div>
+    {% endif %}
+
     <!-- Links/Buttons -->
     <div class="links">
       {% if entry.abstract %}
