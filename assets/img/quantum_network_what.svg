@@ -1,76 +1,86 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" font-family="'Segoe UI', Arial, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="'Inter', 'Segoe UI', Arial, sans-serif">
   <defs>
-    <radialGradient id="nodeGrad" cx="50%" cy="40%" r="50%">
-      <stop offset="0%" stop-color="#7c3aed"/>
-      <stop offset="100%" stop-color="#4f46e5"/>
-    </radialGradient>
-    <radialGradient id="nodeGrad2" cx="50%" cy="40%" r="50%">
-      <stop offset="0%" stop-color="#06b6d4"/>
-      <stop offset="100%" stop-color="#0284c7"/>
-    </radialGradient>
-    <linearGradient id="linkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.7"/>
-      <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.7"/>
-    </linearGradient>
-    <filter id="glow">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <marker id="qubitArrow" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
-      <path d="M0,0 L8,3 L0,6" fill="#06b6d4"/>
+    <marker id="arrowQ" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#4338ca"/>
     </marker>
   </defs>
 
   <!-- Background -->
-  <rect width="800" height="400" rx="16" fill="#0f172a"/>
-
-  <!-- Quantum links (wavy lines) -->
-  <path d="M160,140 Q280,100 400,140 Q520,180 640,140" stroke="url(#linkGrad)" stroke-width="3" fill="none" stroke-dasharray="8,4" filter="url(#glow)"/>
-  <path d="M160,140 Q200,220 240,280" stroke="url(#linkGrad)" stroke-width="3" fill="none" stroke-dasharray="8,4" filter="url(#glow)"/>
-  <path d="M640,140 Q600,220 560,280" stroke="url(#linkGrad)" stroke-width="3" fill="none" stroke-dasharray="8,4" filter="url(#glow)"/>
-  <path d="M240,280 Q400,320 560,280" stroke="url(#linkGrad)" stroke-width="3" fill="none" stroke-dasharray="8,4" filter="url(#glow)"/>
-  <path d="M400,140 Q320,210 240,280" stroke="url(#linkGrad)" stroke-width="2" fill="none" stroke-dasharray="6,4" opacity="0.5"/>
-  <path d="M400,140 Q480,210 560,280" stroke="url(#linkGrad)" stroke-width="2" fill="none" stroke-dasharray="6,4" opacity="0.5"/>
-
-  <!-- Entanglement symbols on links -->
-  <text x="280" y="110" fill="#a78bfa" font-size="18" text-anchor="middle" font-style="italic">|Ψ⁺⟩</text>
-  <text x="520" y="110" fill="#a78bfa" font-size="18" text-anchor="middle" font-style="italic">|Φ⁺⟩</text>
-  <text x="400" y="310" fill="#a78bfa" font-size="18" text-anchor="middle" font-style="italic">|Ψ⁻⟩</text>
-
-  <!-- Qubit in transit -->
-  <circle cx="300" cy="125" r="8" fill="#06b6d4" filter="url(#glow)" opacity="0.9"/>
-  <text x="300" y="129" fill="white" font-size="10" text-anchor="middle" font-weight="bold">q</text>
-
-  <circle cx="500" cy="155" r="8" fill="#06b6d4" filter="url(#glow)" opacity="0.9"/>
-  <text x="500" y="159" fill="white" font-size="10" text-anchor="middle" font-weight="bold">q</text>
-
-  <!-- Nodes -->
-  <!-- Node A -->
-  <circle cx="160" cy="140" r="36" fill="url(#nodeGrad)" filter="url(#glow)"/>
-  <text x="160" y="136" fill="white" font-size="14" text-anchor="middle" font-weight="bold">Node</text>
-  <text x="160" y="152" fill="#c4b5fd" font-size="12" text-anchor="middle">A</text>
-
-  <!-- Node B -->
-  <circle cx="400" cy="140" r="36" fill="url(#nodeGrad)" filter="url(#glow)"/>
-  <text x="400" y="136" fill="white" font-size="14" text-anchor="middle" font-weight="bold">Node</text>
-  <text x="400" y="152" fill="#c4b5fd" font-size="12" text-anchor="middle">B</text>
-
-  <!-- Node C -->
-  <circle cx="640" cy="140" r="36" fill="url(#nodeGrad)" filter="url(#glow)"/>
-  <text x="640" y="136" fill="white" font-size="14" text-anchor="middle" font-weight="bold">Node</text>
-  <text x="640" y="152" fill="#c4b5fd" font-size="12" text-anchor="middle">C</text>
-
-  <!-- Node D -->
-  <circle cx="240" cy="280" r="36" fill="url(#nodeGrad2)" filter="url(#glow)"/>
-  <text x="240" y="276" fill="white" font-size="14" text-anchor="middle" font-weight="bold">Node</text>
-  <text x="240" y="292" fill="#bae6fd" font-size="12" text-anchor="middle">D</text>
-
-  <!-- Node E -->
-  <circle cx="560" cy="280" r="36" fill="url(#nodeGrad2)" filter="url(#glow)"/>
-  <text x="560" y="276" fill="white" font-size="14" text-anchor="middle" font-weight="bold">Node</text>
-  <text x="560" y="292" fill="#bae6fd" font-size="12" text-anchor="middle">E</text>
+  <rect width="800" height="420" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
 
   <!-- Title -->
-  <text x="400" y="375" fill="#94a3b8" font-size="16" text-anchor="middle" letter-spacing="2">QUANTUM NETWORK — TRANSMITTING QUANTUM INFORMATION</text>
+  <text x="400" y="36" fill="#0f172a" font-size="20" text-anchor="middle" font-weight="700">A quantum network shares entanglement between distant nodes</text>
+  <text x="400" y="58" fill="#64748b" font-size="13" text-anchor="middle">Each link distributes an entangled pair (an EPR pair); end nodes consume them to teleport qubits, generate keys, or sense in concert.</text>
+
+  <!-- Entanglement links (solid, gentle curves) -->
+  <path d="M170,170 Q285,130 400,170" stroke="#4338ca" stroke-width="2.5" fill="none"/>
+  <path d="M400,170 Q515,130 630,170" stroke="#4338ca" stroke-width="2.5" fill="none"/>
+  <path d="M170,170 Q205,255 260,310" stroke="#4338ca" stroke-width="2.5" fill="none"/>
+  <path d="M630,170 Q595,255 540,310" stroke="#4338ca" stroke-width="2.5" fill="none"/>
+  <path d="M260,310 Q400,355 540,310" stroke="#4338ca" stroke-width="2.5" fill="none"/>
+  <path d="M400,170 L260,310" stroke="#94a3b8" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+  <path d="M400,170 L540,310" stroke="#94a3b8" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+
+  <!-- EPR pair labels on links -->
+  <g font-family="'STIX Two Math', 'Cambria Math', serif" font-style="italic">
+    <rect x="252" y="118" width="68" height="22" rx="11" fill="#eef2ff" stroke="#c7d2fe"/>
+    <text x="286" y="134" fill="#3730a3" font-size="14" text-anchor="middle">|Φ⁺⟩</text>
+    <rect x="482" y="118" width="68" height="22" rx="11" fill="#eef2ff" stroke="#c7d2fe"/>
+    <text x="516" y="134" fill="#3730a3" font-size="14" text-anchor="middle">|Φ⁺⟩</text>
+    <rect x="366" y="346" width="68" height="22" rx="11" fill="#eef2ff" stroke="#c7d2fe"/>
+    <text x="400" y="362" fill="#3730a3" font-size="14" text-anchor="middle">|Ψ⁻⟩</text>
+  </g>
+
+  <!-- A qubit in transit (single, with arrow) -->
+  <g>
+    <circle cx="285" cy="151" r="9" fill="#0891b2"/>
+    <text x="285" y="154" fill="#ffffff" font-size="10" text-anchor="middle" font-weight="700">q</text>
+    <path d="M295,148 L322,142" stroke="#4338ca" stroke-width="1.6" fill="none" marker-end="url(#arrowQ)"/>
+  </g>
+
+  <!-- Nodes (top row) -->
+  <g>
+    <circle cx="170" cy="170" r="34" fill="#4338ca"/>
+    <circle cx="170" cy="170" r="34" fill="none" stroke="#312e81" stroke-width="1.5"/>
+    <text x="170" y="167" fill="#ffffff" font-size="13" text-anchor="middle" font-weight="700">Alice</text>
+    <text x="170" y="183" fill="#c7d2fe" font-size="10" text-anchor="middle">end node</text>
+  </g>
+  <g>
+    <circle cx="400" cy="170" r="34" fill="#4338ca"/>
+    <circle cx="400" cy="170" r="34" fill="none" stroke="#312e81" stroke-width="1.5"/>
+    <text x="400" y="167" fill="#ffffff" font-size="13" text-anchor="middle" font-weight="700">Hub</text>
+    <text x="400" y="183" fill="#c7d2fe" font-size="10" text-anchor="middle">repeater</text>
+  </g>
+  <g>
+    <circle cx="630" cy="170" r="34" fill="#4338ca"/>
+    <circle cx="630" cy="170" r="34" fill="none" stroke="#312e81" stroke-width="1.5"/>
+    <text x="630" y="167" fill="#ffffff" font-size="13" text-anchor="middle" font-weight="700">Bob</text>
+    <text x="630" y="183" fill="#c7d2fe" font-size="10" text-anchor="middle">end node</text>
+  </g>
+
+  <!-- Nodes (bottom row) -->
+  <g>
+    <circle cx="260" cy="310" r="30" fill="#0891b2"/>
+    <circle cx="260" cy="310" r="30" fill="none" stroke="#0e7490" stroke-width="1.5"/>
+    <text x="260" y="307" fill="#ffffff" font-size="12" text-anchor="middle" font-weight="700">Carol</text>
+    <text x="260" y="322" fill="#cffafe" font-size="10" text-anchor="middle">sensor</text>
+  </g>
+  <g>
+    <circle cx="540" cy="310" r="30" fill="#0891b2"/>
+    <circle cx="540" cy="310" r="30" fill="none" stroke="#0e7490" stroke-width="1.5"/>
+    <text x="540" y="307" fill="#ffffff" font-size="12" text-anchor="middle" font-weight="700">Dave</text>
+    <text x="540" y="322" fill="#cffafe" font-size="10" text-anchor="middle">QPU</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(40, 380)">
+    <circle cx="10" cy="0" r="7" fill="#4338ca"/>
+    <text x="24" y="4" fill="#334155" font-size="12">end node / repeater</text>
+    <circle cx="200" cy="0" r="7" fill="#0891b2"/>
+    <text x="214" y="4" fill="#334155" font-size="12">application node</text>
+    <line x1="370" y1="0" x2="402" y2="0" stroke="#4338ca" stroke-width="2.5"/>
+    <text x="410" y="4" fill="#334155" font-size="12">entanglement link</text>
+    <line x1="580" y1="0" x2="612" y2="0" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="5,4"/>
+    <text x="620" y="4" fill="#334155" font-size="12">optional path</text>
+  </g>
 </svg>
