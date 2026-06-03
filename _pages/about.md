@@ -9,13 +9,21 @@ profile:
   align: right
   image: xuchuangw_formal.jpeg
   image_circular: true # crops the image to make it circular
-  more_info: # xuchuangwang@umass.edu
+  more_info: >
+    Incoming Assistant Professor,<br>
+    Dept. of Computer Science, HKBU<br>
+    <a href="mailto:xuchuangw@hkbu.edu.hk">xuchuangw [at] hkbu.edu.hk</a><br>
+    <a href="https://scholar.google.com/citations?user=QJ66dEcAAAAJ">Google Scholar</a>
 
 news: true # includes a list of news items
 latest_posts: false # includes a list of the newest posts
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
+
+<div style="border-left: 3px solid var(--global-theme-color); padding: 0.4rem 0.9rem; margin: 0 0 1.4rem;">
+<strong>Prospective students:</strong> I am recruiting Ph.D. students (Fall 2026 / Spring 2027) and short-term Research Assistants (remote or onsite, 3 or 6 months). See <a href="/team/#Openning">openings and how to apply</a>.
+</div>
 
 My research builds the **algorithmic foundations of two emerging networks**:
 
@@ -26,25 +34,23 @@ A single methodology runs through both: **sequential decision-making under uncer
 
 I am a [RGC Junior Research Fellow](https://www.ugc.edu.hk/eng/rgc/funding_opport/jrfs/) in the [Department of Computer Science and Engineering](https://www.cse.cuhk.edu.hk/) at [Chinese University of Hong Kong](https://www.cuhk.edu.hk/) and an incoming Assistant Professor in the [Department of Computer Science](https://www.comp.hkbu.edu.hk/v1/) at [Hong Kong Baptist University](https://www.hkbu.edu.hk/).
 
-Prior to this, I was a postdoctoral researcher for three years in the [Manning College of Information & Computer Science](https://www.cics.umass.edu/) at [University of Massachusetts Amherst](https://www.umass.edu/), working with [Don Towsley](https://www-net.cs.umass.edu/personnel/towsley.html) at [ACQuIRe Lab](https://acquire.cs.umass.edu/) and [Mohammad Hajiesmaili](https://groups.cs.umass.edu/hajiesmaili/) at [SOLAR Lab](https://solar.cs.umass.edu/).
+Prior to this, I was a postdoctoral researcher for three years in the [Manning College of Information & Computer Science](https://www.cics.umass.edu/) at [University of Massachusetts Amherst](https://www.umass.edu/), working with [Don Towsley](https://www-net.cs.umass.edu/personnel/towsley.html) at [ACQUIRE Lab](https://acquire.cs.umass.edu/) and [Mohammad Hajiesmaili](https://groups.cs.umass.edu/hajiesmaili/) at [SOLAR Lab](https://solar.cs.umass.edu/).
 I received my Ph.D. in the Department of Computer Science & Engineering at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/english/index.html) under the guidance of [John C.S. Lui](https://www.cse.cuhk.edu.hk/~cslui/) at [ANSR Lab](http://ansrlab.cse.cuhk.edu.hk/).
 I obtained my B.Eng. with Hons. (now [Qian Xuesen Honors College](https://bjb.xjtu.edu.cn/)) from [Xi'an Jiaotong University](https://en.xjtu.edu.cn/).
 
 ## joining the lab
 
-I am building a group at **HKBU CS** that works at the intersection of **learning theory** and the **two networks of the next decade**. If you are excited to work on questions like —
+I am building a research group at **HKBU CS** at the intersection of **learning theory** and the two networks described above. Representative questions include:
 
-- _How do we route entanglement through a noisy quantum network, and how do we even know the network is healthy?_
-- _How should a population of LLM agents share what they learn without drowning each other in messages?_
-- _What do provable guarantees look like when feedback is adversarial, multi-modal, or quantum?_
+- routing entanglement through a noisy quantum network, and verifying its health from limited measurements;
+- enabling a population of LLM agents to share what they learn while keeping communication overhead low;
+- establishing provable guarantees when feedback is adversarial, multi-modal, or quantum.
 
-— then we should talk. Students will publish at top venues (NeurIPS, ICML, ICLR, AAAI, SIGMETRICS, INFOCOM), collaborate with a network of labs at UMass, CUHK, CityU, NJU, and SJTU, and work on problems that matter both mathematically and practically. See [recent mentees and their first-author papers](/team/) for a sense of what is possible.
+Students in my group publish at leading venues (NeurIPS, ICML, ICLR, AAAI, SIGMETRICS, INFOCOM) and collaborate with labs at UMass, CUHK, CityU, NJU, and SJTU; recent mentees and their first-author papers appear on the [team](/team/) page.
 
-Beyond PhD positions, I also host **Research Assistants** (remote or onsite at HKBU) on **3- or 6-month terms** — a great fit for senior undergraduates, master's students, or recent graduates who want to try research before committing to a PhD, or who already have a concrete project they want to push to publication.
+Beyond Ph.D. positions, I host **Research Assistants** (remote or onsite at HKBU) on **3- or 6-month terms** — suitable for senior undergraduates, master's students, or recent graduates who wish to gain research experience before applying to a Ph.D. program, or to develop a concrete project toward publication.
 
-<span style="color: var(--global-theme-color); font-weight: bold;">I am <a href="/team/#Openning" style="text-decoration: underline;">actively recruiting</a> Ph.D. students for Fall 2026 / Spring 2027 and short-term Research Assistants (remote or onsite, 3 or 6 months) — please reach out!</span>
-
-<!-- **I am on the 2025-2026 job market looking for full-time academia positions. Please feel free to reach out!** -->
+Ideal background: strong fundamentals in probability, optimization, or theoretical computer science. Prospective applicants should consult the [openings](/team/#Openning) page for research directions and application instructions.
 
 ## research highlights
 
