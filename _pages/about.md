@@ -8,6 +8,7 @@ subtitle: RGC Junior Research Fellow @ CUHK CSE · Incoming Assistant Professor 
 profile:
   align: right
   image: xuchuangw_formal.jpeg
+  image_alt: Xuchuang Wang
   image_circular: true # crops the image to make it circular
   more_info: >
     Incoming Assistant Professor,<br>
