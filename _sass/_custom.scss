@@ -1,0 +1,533 @@
+/*******************************************************************************
+ * _custom.scss — "Quiet Scholar" visual identity
+ *
+ * Content-first, timeless-classic academic theme that differentiates this site
+ * from stock al-folio (Roboto + Roboto Slab).
+ *   Display:   Newsreader      (optical serif — name + headings + italics)
+ *   Body:      Source Serif 4  (optical serif — running text)
+ *   UI label:  Inter           (nav, badges, buttons, coordinate line, meta)
+ *
+ * Imported AFTER "base" in assets/css/main.scss so these rules win over the
+ * bundled MDB/Bootstrap Roboto defaults.
+ *
+ * Brand accent is ALWAYS var(--global-theme-color) — never hardcoded — so it
+ * stays coherent with the unified blue color update and adapts to dark mode.
+ ******************************************************************************/
+
+// ---------------------------------------------------------------------------
+// 1. Font stacks (local SCSS vars — no color here)
+// ---------------------------------------------------------------------------
+$font-serif-body: "Source Serif 4", "Iowan Old Style", "Palatino Linotype",
+  "Book Antiqua", Georgia, Cambria, "Times New Roman", serif;
+$font-serif-display: "Newsreader", "Source Serif 4", Georgia, Cambria,
+  "Times New Roman", serif;
+$font-ui: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Helvetica, Arial, sans-serif;
+$font-mono: "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono",
+  monospace;
+
+// ---------------------------------------------------------------------------
+// 2. Global base type — override the framework's Roboto on <body>.
+//    16px base preserved; serif body with comfortable journal leading.
+// ---------------------------------------------------------------------------
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: $font-serif-body;
+  font-size: 1rem; // 16px base — accessibility floor
+  font-weight: 400;
+  line-height: 1.7; // generous, journal-like leading
+  letter-spacing: 0;
+  font-feature-settings: "kern" 1, "liga" 1, "pnum" 1;
+}
+
+p,
+li,
+.post p,
+.post li {
+  font-family: $font-serif-body;
+  line-height: 1.7;
+}
+
+// Comfortable measure for long-form prose inside the 800px column.
+.post > article > .clearfix p,
+.post-content p {
+  max-width: 68ch;
+}
+
+strong,
+b,
+.title {
+  font-weight: 700;
+}
+
+em,
+i,
+cite {
+  font-style: italic;
+}
+
+// ---------------------------------------------------------------------------
+// 3. Headings — Newsreader, restrained ~1.2 modular scale, lining figures.
+// ---------------------------------------------------------------------------
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-serif-display;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  line-height: 1.22;
+  letter-spacing: -0.005em;
+  font-feature-settings: "kern" 1, "liga" 1, "lnum" 1;
+  color: var(--global-text-color);
+  margin-top: 1.6em;
+  margin-bottom: 0.6em;
+}
+
+h1 {
+  font-size: 2.1rem;
+  letter-spacing: -0.012em;
+}
+h2 {
+  font-size: 1.55rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 1.08rem;
+}
+h5 {
+  font-size: 1rem;
+}
+h6 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--global-text-color-light);
+}
+
+// ---------------------------------------------------------------------------
+// 4. Landing masthead — name (h1.post-title) + subtitle (.desc).
+//    Bootstrap's .font-weight-bold / .font-weight-lighter utilities carry
+//    !important, so the two-weight name MUST use !important to take effect.
+// ---------------------------------------------------------------------------
+.post-header {
+  margin-top: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.post-header .post-title,
+h1.post-title {
+  font-family: $font-serif-display;
+  font-size: 2.6rem;
+  font-weight: 500; // light-but-confident, not bold
+  line-height: 1.12;
+  letter-spacing: -0.018em;
+  margin-bottom: 0.35rem;
+
+  // about.liquid wraps the surname in .font-weight-bold — give it true
+  // display weight for a tasteful two-weight name (beats Bootstrap !important).
+  .font-weight-bold {
+    font-weight: 700 !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .post-header .post-title,
+  h1.post-title {
+    font-size: 2.05rem;
+  }
+}
+
+// Subtitle (.desc) — the role / research line under the name.
+.desc {
+  font-family: $font-serif-display;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.18rem;
+  line-height: 1.45;
+  color: var(--global-text-color-light);
+  margin-top: 0.25rem;
+  margin-bottom: 0;
+  padding-bottom: 1.1rem;
+  position: relative;
+
+  // Short hairline accent rule — quiet branding flourish.
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 2.25rem;
+    height: 2px;
+    background-color: var(--global-theme-color);
+    opacity: 0.9;
+  }
+}
+
+@media (max-width: 576px) {
+  .desc {
+    font-size: 1.05rem;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 5. Profile "more-info" / coordinate line — tidy Inter small label.
+// ---------------------------------------------------------------------------
+.profile .more-info {
+  font-family: $font-ui;
+  font-size: 0.82rem;
+  font-weight: 400;
+  line-height: 1.6;
+  letter-spacing: 0.01em;
+  color: var(--global-text-color-light);
+
+  a {
+    color: var(--global-theme-color);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 6. Navigation — Inter links, serif wordmark, quiet underline-on-hover.
+// ---------------------------------------------------------------------------
+.navbar {
+  border-bottom: 1px solid var(--global-divider-color);
+  opacity: 1; // drop the stock 0.95 wash
+  background-color: var(--global-bg-color);
+
+  @supports (
+    (-webkit-backdrop-filter: saturate(180%) blur(8px)) or
+      (backdrop-filter: saturate(180%) blur(8px))
+  ) {
+    -webkit-backdrop-filter: saturate(180%) blur(8px);
+    backdrop-filter: saturate(180%) blur(8px);
+  }
+}
+
+.navbar.navbar-light {
+  .navbar-brand,
+  .navbar-brand.title {
+    font-family: $font-serif-display;
+    font-weight: 600 !important; // beat .font-weight-lighter on the brand
+    font-size: 1.15rem;
+    letter-spacing: -0.01em;
+    color: var(--global-text-color);
+
+    .font-weight-bold {
+      font-weight: 700 !important;
+    }
+  }
+
+  .navbar-nav .nav-item .nav-link {
+    font-family: $font-ui;
+    font-size: 0.92rem;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    position: relative;
+
+    // Quiet animated underline growing from the accent color.
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0.7rem;
+      right: 0.7rem;
+      bottom: 0.35rem;
+      height: 1.5px;
+      background-color: var(--global-theme-color);
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform 0.18s ease;
+    }
+
+    &:hover::after,
+    &:focus::after {
+      transform: scaleX(1);
+    }
+  }
+
+  .navbar-nav .nav-item.active > .nav-link {
+    font-weight: 600; // gentler than stock "bolder"
+    color: var(--global-theme-color);
+
+    &::after {
+      transform: scaleX(1); // active link shows the rule
+    }
+  }
+
+  // Dropdown items + dark-mode toggle use the UI face too.
+  .dropdown-item {
+    font-family: $font-ui;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+}
+
+#light-toggle {
+  font-family: $font-ui;
+}
+
+// ---------------------------------------------------------------------------
+// 7. Landing section headings (news / latest posts / selected publications).
+//    Journal-section "overline": uppercase letterspaced Inter, a full
+//    hairline rule, AND a short accent tick sitting on the rule.
+// ---------------------------------------------------------------------------
+.post > article > h2 {
+  position: relative;
+  font-family: $font-ui;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--global-text-color-light);
+  padding-top: 0.85rem;
+  padding-bottom: 0.5rem;
+  margin-top: 2.4rem;
+  margin-bottom: 1.1rem;
+  border-bottom: 1px solid var(--global-divider-color);
+
+  // Short accent tick on the top hairline rule.
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.25rem;
+    height: 2px;
+    background-color: var(--global-theme-color);
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 8. Links — accent color, restrained underline; keep prose readable.
+// ---------------------------------------------------------------------------
+a {
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
+  transition: color 0.15s ease;
+}
+
+// In running body text use a subtle underline rather than full color flood.
+.post > article > .clearfix a:not(.btn):not(.navbar-brand) {
+  color: var(--global-theme-color);
+  text-decoration: underline;
+  text-decoration-color: var(--global-divider-color);
+
+  &:hover {
+    text-decoration-color: var(--global-theme-color);
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 9. News table — give the date column a tabular, journal-index feel.
+// ---------------------------------------------------------------------------
+.news .table th {
+  font-family: $font-ui;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+  white-space: nowrap;
+}
+
+.news .table td {
+  font-family: $font-serif-body;
+}
+
+// ---------------------------------------------------------------------------
+// 10. Publications — title, author emphasis, venue badges, link buttons.
+//     Badges & buttons switch to Inter for crisp small-size legibility.
+// ---------------------------------------------------------------------------
+.publications {
+  h1 {
+    font-family: $font-serif-display;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: var(--global-text-color); // calmer than the stock accent-flood
+    letter-spacing: -0.01em;
+  }
+
+  h2.bibliography {
+    font-family: $font-ui;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--global-text-color-light);
+  }
+
+  ol.bibliography li {
+    .title {
+      font-family: $font-serif-body;
+      font-weight: 700;
+      font-size: 1.05rem;
+      line-height: 1.4;
+    }
+
+    .author {
+      font-family: $font-serif-body;
+      font-size: 0.97rem;
+
+      // The site owner's name is wrapped in <em>; base.scss already makes it
+      // upright with a bottom border — reinforce as a clear accent cue.
+      > em {
+        font-style: normal;
+        font-weight: 700;
+        border-bottom: 1.5px solid var(--global-theme-color);
+      }
+    }
+
+    .periodical {
+      font-style: italic;
+      font-family: $font-serif-display;
+      color: var(--global-text-color-light);
+    }
+
+    // Venue abbreviation badge — Inter, uppercase, tight.
+    .abbr abbr {
+      font-family: $font-ui;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border-radius: 3px;
+      padding-top: 0.12rem;
+      padding-bottom: 0.12rem;
+
+      // Venues defined in _data/venues.yml render with a custom DARK background
+      // (theme-independent) and a link, so the label is white in both themes.
+      a {
+        color: #ffffff;
+      }
+    }
+
+    // Fallback badge for a venue NOT in venues.yml: it has no inline color and
+    // falls back to the accent fill, so use the bg color for correct contrast
+    // in both themes (white on #0b57d0 light, near-black on #8ab4f8 dark).
+    .abbr abbr:not([style]) {
+      color: var(--global-bg-color);
+    }
+
+    // Award pill — outline style in accent (base sets the border/color).
+    .abbr .award {
+      font-family: $font-ui;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      border-radius: 3px;
+    }
+
+    // Link buttons (.btn) — Inter, quiet outline that fills on hover.
+    .links a.btn {
+      font-family: $font-ui;
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.02em;
+      border-radius: 4px;
+      border-width: 1px;
+      transition: color 0.15s ease, background-color 0.15s ease,
+        border-color 0.15s ease;
+
+      &:hover {
+        color: var(--global-bg-color);
+        background-color: var(--global-theme-color);
+        border-color: var(--global-theme-color);
+      }
+    }
+  }
+}
+
+// ---------------------------------------------------------------------------
+// 11. CV badges & project categories — keep the UI face for cohesion.
+// ---------------------------------------------------------------------------
+.cv .card .list-group-item .badge {
+  font-family: $font-ui;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.projects h2.category {
+  font-family: $font-ui;
+}
+
+// ---------------------------------------------------------------------------
+// 12. Blockquotes — quieter, with display-serif italic.
+// ---------------------------------------------------------------------------
+blockquote {
+  font-family: $font-serif-display;
+  font-style: italic;
+  font-size: 1.1rem;
+  line-height: 1.55;
+  color: var(--global-text-color-light);
+}
+
+// ---------------------------------------------------------------------------
+// 13. Code / monospace — keep a real mono stack (body is now serif).
+// ---------------------------------------------------------------------------
+code,
+pre,
+pre code,
+kbd,
+samp,
+tt {
+  font-family: $font-mono;
+}
+
+code {
+  font-size: 0.88em;
+}
+
+// ---------------------------------------------------------------------------
+// 14. Tables, captions, footer — align fonts with the system.
+// ---------------------------------------------------------------------------
+table th {
+  font-family: $font-ui;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.caption {
+  font-family: $font-ui;
+  font-size: 0.82rem;
+  color: var(--global-text-color-light);
+}
+
+footer.fixed-bottom .container,
+footer.sticky-bottom .container {
+  font-family: $font-ui;
+  letter-spacing: 0.01em;
+}
+
+// ---------------------------------------------------------------------------
+// 15. Blog index / page hero — tame the stock oversized header.
+// ---------------------------------------------------------------------------
+.header-bar h1 {
+  font-family: $font-serif-display;
+  font-weight: 500;
+  font-size: 3rem;
+  color: var(--global-text-color);
+  letter-spacing: -0.015em;
+}
+
+@media (max-width: 576px) {
+  .header-bar h1 {
+    font-size: 2.25rem;
+  }
+}
