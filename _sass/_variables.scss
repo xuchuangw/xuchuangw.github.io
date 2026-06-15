@@ -10,8 +10,8 @@ $orange-color: #f29105 !default;
 $blue-color: #0076df !default;
 $blue-color-dark: #00369f !default;
 $blue-lapis-color: #004b8d !default;
-$cyan-color: #1800ec !default;
-$light-cyan-color: lighten($cyan-color, 35%);
+$accent-color-light: #0b57d0 !default; // unified blue accent — dark tone for light mode (links + white-text badges on white bg)
+$accent-color-dark: #8ab4f8 !default; // unified blue accent — light tone for dark mode (accent text on #1c1c1d)
 $green-color: #00ab37 !default;
 $green-color-lime: #b7d12a !default;
 $green-color-dark: #009f06 !default;

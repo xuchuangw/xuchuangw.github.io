@@ -1,6 +1,50 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+# Venue badges for the publications list (consumed by _layouts/bib.liquid).
+# Each entry maps a paper's `abbr` to the venue's canonical homepage and a
+# badge color. Colors are grouped by area (ML/AI = blue, networking/systems =
+# teal, journals = slate) and are dark enough for white badge text (WCAG AA).
 
-"PhysRev":
-  url: https://journals.aps.org/
+"NeurIPS":
+  url: https://neurips.cc
+  color: "#1a3e72"
+"ICML":
+  url: https://icml.cc
+  color: "#1f4e9c"
+"ICLR":
+  url: https://iclr.cc
+  color: "#2a5db0"
+"AAAI":
+  url: https://aaai.org
+  color: "#26508a"
+"AISTATS":
+  url: https://aistats.org
+  color: "#3563a8"
+"UAI":
+  url: https://www.auai.org
+  color: "#2f5896"
+"IJCAI":
+  url: https://www.ijcai.org
+  color: "#1c4a85"
+"KDD":
+  url: https://www.kdd.org
+  color: "#3a5f9e"
+"L4DC":
+  url: https://l4dc.org
+  color: "#234a80"
+"SIGMETRICS":
+  url: https://www.sigmetrics.org
+  color: "#0f6b66"
+"INFOCOM":
+  url: https://www.ieee-infocom.org
+  color: "#157a6e"
+"QCNC":
+  url: https://ieee-qcnc.org
+  color: "#16745f"
+"ToN":
+  url: https://sites.google.com/view/ieee-acm-ton
+  color: "#4a5568"
+"TMC":
+  url: https://www.computer.org/csdl/journal/tm
+  color: "#3f4a5c"
+"PEVA":
+  url: https://www.sciencedirect.com/journal/performance-evaluation
+  color: "#555f70"
