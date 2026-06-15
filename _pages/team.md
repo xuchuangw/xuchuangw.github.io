@@ -36,7 +36,7 @@ Research directions include:
 
 **Ideal background:** strong fundamentals in probability, optimization, or theoretical CS; experience with one of RL/bandits, networking/systems, or quantum information is a plus but **not required** — what matters most is mathematical maturity and curiosity.
 
-**How to apply:** email me at **xuchuangw [@] gmail [dot] com** with one of the following subject lines:
+**How to apply:** email me at **xuchuangw [@] comp [dot] hkbu [dot] edu [dot] hk** with one of the following subject lines:
 
 - **"Application for Ph.D. in [Start Cycle]"** — e.g., _Application for Ph.D. in Fall 2026_
 - **"Application for RA ([Remote/Onsite], [3/6] months, [Start Month])"** — e.g., _Application for RA (Remote, 3 months, Jul 2026)_
