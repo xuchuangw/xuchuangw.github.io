@@ -31,6 +31,7 @@ $font-mono: "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono",
 //    16px base preserved; serif body with comfortable journal leading.
 // ---------------------------------------------------------------------------
 html {
+  font-size: 120%; // scale all rem-based typography up 20% site-wide
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
