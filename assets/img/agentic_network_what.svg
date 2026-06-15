@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" font-family="'Inter', 'Segoe UI', Arial, sans-serif">
+  <defs>
+    <marker id="arrowA" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto">
+      <path d="M0,0 L10,4 L0,8 Z" fill="#4338ca"/>
+    </marker>
+    <marker id="arrowAs" markerWidth="9" markerHeight="7" refX="8" refY="3.5" orient="auto">
+      <path d="M0,0 L9,3.5 L0,7 Z" fill="#059669"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="420" rx="14" fill="#ffffff" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Title -->
+  <text x="400" y="36" fill="#0f172a" font-size="20" text-anchor="middle" font-weight="700">An agentic network: agents that communicate and coordinate</text>
+  <text x="400" y="58" fill="#64748b" font-size="13" text-anchor="middle">Each agent sees its own slice of the world and shares what it learned over message links, so the group acts as one.</text>
+
+  <!-- Message links (solid, gentle curves, double-headed = two-way exchange) -->
+  <path d="M170,170 Q285,130 400,170" stroke="#4338ca" stroke-width="2.5" fill="none" marker-end="url(#arrowA)" marker-start="url(#arrowA)"/>
+  <path d="M400,170 Q515,130 630,170" stroke="#4338ca" stroke-width="2.5" fill="none" marker-end="url(#arrowA)" marker-start="url(#arrowA)"/>
+  <path d="M170,170 Q205,255 260,310" stroke="#4338ca" stroke-width="2.5" fill="none" marker-end="url(#arrowA)" marker-start="url(#arrowA)"/>
+  <path d="M630,170 Q595,255 540,310" stroke="#4338ca" stroke-width="2.5" fill="none" marker-end="url(#arrowA)" marker-start="url(#arrowA)"/>
+  <path d="M260,310 Q400,355 540,310" stroke="#4338ca" stroke-width="2.5" fill="none" marker-end="url(#arrowA)" marker-start="url(#arrowA)"/>
+  <!-- Optional / less-used coordination paths -->
+  <path d="M400,170 L260,310" stroke="#94a3b8" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+  <path d="M400,170 L540,310" stroke="#94a3b8" stroke-width="1.5" fill="none" stroke-dasharray="5,4"/>
+
+  <!-- Message-content labels on links -->
+  <g>
+    <rect x="244" y="116" width="84" height="22" rx="11" fill="#eef2ff" stroke="#c7d2fe"/>
+    <text x="286" y="131" fill="#3730a3" font-size="11" text-anchor="middle">plan / goal</text>
+    <rect x="474" y="116" width="84" height="22" rx="11" fill="#eef2ff" stroke="#c7d2fe"/>
+    <text x="516" y="131" fill="#3730a3" font-size="11" text-anchor="middle">tool result</text>
+    <rect x="354" y="346" width="92" height="22" rx="11" fill="#eef2ff" stroke="#c7d2fe"/>
+    <text x="400" y="361" fill="#3730a3" font-size="11" text-anchor="middle">observation</text>
+  </g>
+
+  <!-- A shared update in transit (single, with arrow) -->
+  <g>
+    <circle cx="285" cy="151" r="9" fill="#059669"/>
+    <text x="285" y="154" fill="#ffffff" font-size="10" text-anchor="middle" font-weight="700">u</text>
+    <path d="M295,148 L322,142" stroke="#059669" stroke-width="1.6" fill="none" marker-end="url(#arrowAs)"/>
+  </g>
+
+  <!-- Nodes (top row) -->
+  <g>
+    <circle cx="170" cy="170" r="34" fill="#4338ca"/>
+    <circle cx="170" cy="170" r="34" fill="none" stroke="#312e81" stroke-width="1.5"/>
+    <text x="170" y="167" fill="#ffffff" font-size="13" text-anchor="middle" font-weight="700">LLM</text>
+    <text x="170" y="183" fill="#c7d2fe" font-size="10" text-anchor="middle">reasoner</text>
+  </g>
+  <g>
+    <circle cx="400" cy="170" r="34" fill="#4338ca"/>
+    <circle cx="400" cy="170" r="34" fill="none" stroke="#312e81" stroke-width="1.5"/>
+    <text x="400" y="167" fill="#ffffff" font-size="13" text-anchor="middle" font-weight="700">Planner</text>
+    <text x="400" y="183" fill="#c7d2fe" font-size="10" text-anchor="middle">coordinator</text>
+  </g>
+  <g>
+    <circle cx="630" cy="170" r="34" fill="#4338ca"/>
+    <circle cx="630" cy="170" r="34" fill="none" stroke="#312e81" stroke-width="1.5"/>
+    <text x="630" y="167" fill="#ffffff" font-size="13" text-anchor="middle" font-weight="700">Tool-user</text>
+    <text x="630" y="183" fill="#c7d2fe" font-size="10" text-anchor="middle">acts via APIs</text>
+  </g>
+
+  <!-- Nodes (bottom row) -->
+  <g>
+    <circle cx="260" cy="310" r="30" fill="#0891b2"/>
+    <circle cx="260" cy="310" r="30" fill="none" stroke="#0e7490" stroke-width="1.5"/>
+    <text x="260" y="307" fill="#ffffff" font-size="12" text-anchor="middle" font-weight="700">Sensor</text>
+    <text x="260" y="322" fill="#cffafe" font-size="10" text-anchor="middle">local view</text>
+  </g>
+  <g>
+    <circle cx="540" cy="310" r="30" fill="#0891b2"/>
+    <circle cx="540" cy="310" r="30" fill="none" stroke="#0e7490" stroke-width="1.5"/>
+    <text x="540" y="307" fill="#ffffff" font-size="12" text-anchor="middle" font-weight="700">Actuator</text>
+    <text x="540" y="322" fill="#cffafe" font-size="10" text-anchor="middle">actuates</text>
+  </g>
+
+  <!-- Legend -->
+  <g transform="translate(40, 380)">
+    <circle cx="10" cy="0" r="7" fill="#4338ca"/>
+    <text x="24" y="4" fill="#334155" font-size="12">reasoning / planning agent</text>
+    <circle cx="230" cy="0" r="7" fill="#0891b2"/>
+    <text x="244" y="4" fill="#334155" font-size="12">sensing / acting agent</text>
+    <line x1="430" y1="0" x2="462" y2="0" stroke="#4338ca" stroke-width="2.5" marker-end="url(#arrowA)"/>
+    <text x="470" y="4" fill="#334155" font-size="12">message link</text>
+    <circle cx="600" cy="0" r="6" fill="#059669"/>
+    <text x="612" y="4" fill="#334155" font-size="12">shared update</text>
+  </g>
+</svg>
