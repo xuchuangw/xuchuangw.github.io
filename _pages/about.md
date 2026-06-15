@@ -59,7 +59,7 @@ Ideal background: strong fundamentals in probability, optimization, or theoretic
   - quantum network tomography and evaluation ([Mergecast Preprint](https://arxiv.org/abs/2511.01074), [QCNC'26](https://arxiv.org/abs/2504.21549)),
   - quantum-enhanced sequential learning ([AAAI'25b](https://ojs.aaai.org/index.php/AAAI/article/view/35432)).
 - **agentic networking — learning algorithms for networked AI agents:**
-  - communication-efficient cooperation across agents ([SIGMETRICS'25](https://dl.acm.org/doi/10.1145/3711696), [NeurIPS'25](https://xuchuangw.com), [ICLR'23](https://openreview.net/forum?id=QTXKTXJKIh), [AISTATS'23](https://proceedings.mlr.press/v206/chen23c)),
+  - communication-efficient cooperation across agents ([SIGMETRICS'25](https://dl.acm.org/doi/10.1145/3711696), NeurIPS'25, [ICLR'23](https://openreview.net/forum?id=QTXKTXJKIh), [AISTATS'23](https://proceedings.mlr.press/v206/chen23c)),
   - heterogeneous and asymmetric cooperation ([SIGMETRICS'26](https://arxiv.org/abs/2502.08003), [AAAI'25a](https://ojs.aaai.org/index.php/AAAI/article/view/34143), [UAI'25](https://openreview.net/pdf?id=CaIlqE8AKU), [UAI'23](https://proceedings.mlr.press/v216/wang23a.html)),
   - scalable agent grouping and shareable policies ([Ski-Rental Preprint](https://arxiv.org/abs/2507.15727), [ICML'22](https://proceedings.mlr.press/v162/wang22af), [IJCAI'22](https://www.ijcai.org/proceedings/2022/491)),
   - aligning LLM agents from interactive feedback ([AAAI'26](https://arxiv.org/abs/2501.01849)).

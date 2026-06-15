@@ -17,7 +17,7 @@ nav_order: 4
 
 ### Session Chair
 
-- "Entanglement in Quantum Networks I," IEEE International Conference of Quantum Computer and Engineering (QCE), 2025.
+- "Entanglement in Quantum Networks I," IEEE International Conference on Quantum Computing and Engineering (QCE), 2025.
 
 ### Conference Reviewer
 
@@ -38,15 +38,3 @@ nav_order: 4
   (ToMPECS)
 - ACM Transactions on Intelligent Systems and Technology (TIST)
 - Performance Evaluation (PEVA)
-
-<!-- ### Consulting
-- Technical consulting in machine learning and optimization
-- Research collaboration opportunities
-
-### Speaking Engagements
-- Invited talks at conferences and workshops
-- Guest lectures at universities
-
-## Contact
-
-For service inquiries, please reach out via email: xuchuangwang@umass.edu -->

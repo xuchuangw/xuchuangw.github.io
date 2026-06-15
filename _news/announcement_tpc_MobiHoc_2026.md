@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Invited as a TPC for **Mobihoc 2026**! :sparkles:
+Invited as a TPC for **MobiHoc 2026**! :sparkles:
