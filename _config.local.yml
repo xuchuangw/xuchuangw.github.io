@@ -1,5 +1,4 @@
 # Local-only overrides for development.
-# Excludes the twitter demo post to avoid SSL fetch failures from jekyll-twitter-plugin.
 exclude:
   - bin
   - CONTRIBUTING.md
@@ -16,7 +15,6 @@ exclude:
   - purgecss.config.js
   - README.md
   - vendor
-  - _posts/2020-09-28-twitter.md
 
 # Disable external post fetching locally to avoid network timeouts.
 external_sources: []
