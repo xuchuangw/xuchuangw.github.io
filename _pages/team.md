@@ -13,8 +13,8 @@ nav_order: 3
 
 I am recruiting for two kinds of positions in my group at **HKBU CS**:
 
-- **PhD students** — multiple openings starting **Fall 2026** and **Spring 2027**, fully funded.
-- **Research Assistants (RAs)** — short-term positions, **remote or onsite at HKBU**, on a **3- or 6-month** term. Open to senior undergraduates, master's students, or recent graduates. A good fit if you want to try out research before committing to a PhD, build a paper around a concrete project, or strengthen your application for the next admissions cycle.
+- **Ph.D. students** — multiple openings starting **Fall 2026** and **Spring 2027**, fully funded.
+- **Research Assistants (RAs)** — short-term positions, **remote or onsite at HKBU**, on a **3- or 6-month** term. Open to senior undergraduates, master's students, or recent graduates. A good fit if you want to try out research before committing to a Ph.D., build a paper around a concrete project, or strengthen your application for the next admissions cycle.
 
 We work on the algorithmic foundations of two networks that will shape the next decade — **quantum networks** that distribute entanglement across distant nodes, and **agentic networks** of AI/LLM agents — held together by a shared methodology in **online learning and sequential decision-making under uncertainty**.
 
@@ -38,7 +38,7 @@ Research directions include:
 
 **How to apply:** email me at **xuchuangw [@] gmail [dot] com** with one of the following subject lines:
 
-- **"Application for PhD in [Start Cycle]"** — e.g., _Application for PhD in Fall 2026_
+- **"Application for Ph.D. in [Start Cycle]"** — e.g., _Application for Ph.D. in Fall 2026_
 - **"Application for RA ([Remote/Onsite], [3/6] months, [Start Month])"** — e.g., _Application for RA (Remote, 3 months, Jul 2026)_
 
 Please include:
@@ -68,7 +68,7 @@ _Note:_ **bold** venue names indicate that the mentored student is the first aut
 
 - [Maoli Liu](https://liumaoli.me/) (Ph.D. student, CUHK), 2023–Present: **INFOCOM'25**, ICLR'25, INFOCOM'26
 - [Xiangxiang Dai](https://xiangxdai.github.io/) (Ph.D. student, CUHK), 2024–Present: **AAAI'26**
-- Yu Jiang (Ph.D. student, CUHK CSE), 2025–Present
+- Yu Jiang (Ph.D. student, CUHK), 2025–Present
 
 ### City University of Hong Kong — CS (with Prof. Jinhang Zuo)
 

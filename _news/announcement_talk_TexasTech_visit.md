@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Invited to give a talk at Texas Tech. See you at Lubbock, TX!
+Invited to give a talk at Texas Tech. See you in Lubbock, TX!

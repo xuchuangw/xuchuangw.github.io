@@ -27,7 +27,7 @@ nav_order: 4
 - AAAI (2023, 2024, 2025, 2026)
 - AISTATS (2025)
 
-## Journal Reviewer
+### Journal Reviewer
 
 - npj Quantum Information
 - IEEE/ACM Transactions on Networking (ToN)

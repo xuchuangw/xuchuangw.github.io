@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Invited to give a talk at USTC. See you at Hefei, AH!
+Invited to give a talk at USTC. See you in Hefei, China!

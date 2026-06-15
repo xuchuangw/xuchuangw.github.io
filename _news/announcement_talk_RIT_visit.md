@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Invited to give a talk at RIT. See you at Rochester, NY!
+Invited to give a talk at RIT. See you in Rochester, NY!

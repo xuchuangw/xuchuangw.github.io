@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Invited to give a talk at Fudan. See you at Shanghai!
+Invited to give a talk at Fudan. See you in Shanghai!

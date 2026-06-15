@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Research Fellow @ CUHK CSE || Incoming AP @ HKBU CS
+subtitle: RGC Junior Research Fellow @ CUHK CSE · Incoming Assistant Professor @ HKBU CS
 # <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
@@ -32,7 +32,7 @@ My research builds the **algorithmic foundations of two emerging networks**:
 
 A single methodology runs through both: **sequential decision-making under uncertainty** (online learning, bandits, and reinforcement learning). I use it to design rigorous, communication-efficient, and provably-good algorithms that hold up under realistic, noisy, and even adversarial feedback.
 
-I am a [RGC Junior Research Fellow](https://www.ugc.edu.hk/eng/rgc/funding_opport/jrfs/) in the [Department of Computer Science and Engineering](https://www.cse.cuhk.edu.hk/) at [Chinese University of Hong Kong](https://www.cuhk.edu.hk/) and an incoming Assistant Professor in the [Department of Computer Science](https://www.comp.hkbu.edu.hk/v1/) at [Hong Kong Baptist University](https://www.hkbu.edu.hk/).
+I am a [RGC Junior Research Fellow](https://www.ugc.edu.hk/eng/rgc/funding_opport/jrfs/) in the [Department of Computer Science and Engineering](https://www.cse.cuhk.edu.hk/) at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/) and an incoming Assistant Professor in the [Department of Computer Science](https://www.comp.hkbu.edu.hk/v1/) at [Hong Kong Baptist University](https://www.hkbu.edu.hk/).
 
 Prior to this, I was a postdoctoral researcher for three years in the [Manning College of Information & Computer Science](https://www.cics.umass.edu/) at [University of Massachusetts Amherst](https://www.umass.edu/), working with [Don Towsley](https://www-net.cs.umass.edu/personnel/towsley.html) at [ACQUIRE Lab](https://acquire.cs.umass.edu/) and [Mohammad Hajiesmaili](https://groups.cs.umass.edu/hajiesmaili/) at [SOLAR Lab](https://solar.cs.umass.edu/).
 I received my Ph.D. in the Department of Computer Science & Engineering at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/english/index.html) under the guidance of [John C.S. Lui](https://www.cse.cuhk.edu.hk/~cslui/) at [ANSR Lab](http://ansrlab.cse.cuhk.edu.hk/).
