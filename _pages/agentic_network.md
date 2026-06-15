@@ -17,6 +17,12 @@ An **agentic network** is a system of AI agents that **communicate, coordinate, 
 
 The basic primitive is not "make a prediction" but "**share what you learned, decide what to do next**." Almost every interesting question about agentic networks reduces to: *how should agents exchange information so the group learns and acts as efficiently as possible — under bandwidth, privacy, and heterogeneity constraints?*
 
+<div class="row justify-content-center">
+    <div class="col-12 col-md-10">
+        <img src="/assets/img/agentic_network_what.svg" alt="Agentic network diagram: an LLM reasoner, planner, tool-user, sensor, and actuator exchange messages over links so the group acts as one." class="img-fluid rounded" />
+    </div>
+</div>
+
 ## Why agentic networks?
 
 Three flagship application areas drive the field — and they map onto three big technological frontiers.
@@ -33,6 +39,12 @@ Real deployments mix agents with **different observations, action sets, and rewa
 
 As LLM agents proliferate, *which* response should be served, and *which* agent's feedback should be trusted? Agentic-network methods let a population of LLMs jointly **evaluate, rank, and align** their outputs to a particular user, turning what would otherwise be a fragmented model zoo into a coherent assistant.
 
+<div class="row justify-content-center mt-4">
+    <div class="col-12 col-md-10">
+        <img src="/assets/img/agentic_network_why.svg" alt="Three flagship applications of agentic networks: learning at scale, heterogeneous teams, and aligned LLM agents." class="img-fluid rounded" />
+    </div>
+</div>
+
 ## How do agentic networks work?
 
 The headline obstacle is the **cost of communication**: naive "tell everyone everything every round" scales quadratically in agents and saturates any realistic link. Worse, agents see *partial, noisy* feedback — and even what they observe is often correlated with the messages they receive, breaking the independence assumptions that make single-agent learning tractable.
@@ -44,6 +56,12 @@ The fix is a small set of design primitives that recur across cooperative learni
 - **Robustness to heterogeneity and adversaries** — protocols must survive agents with different reward distributions, asynchronous clocks, or even maliciously corrupted feedback.
 
 Stitching these primitives together yields cooperative algorithms whose **per-agent regret matches single-agent optimal**, while **total communication grows only logarithmically (or better) with the horizon** — the substrate of a scalable agentic network.
+
+<div class="row justify-content-center mt-4">
+    <div class="col-12 col-md-10">
+        <img src="/assets/img/agentic_network_how.svg" alt="How agentic networks work: selective communication, aggregation and consensus, and robustness combine to give near-optimal per-agent regret with low total communication." class="img-fluid rounded" />
+    </div>
+</div>
 
 ## Where my research fits
 
