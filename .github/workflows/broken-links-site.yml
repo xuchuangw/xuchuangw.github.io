@@ -29,6 +29,11 @@ jobs:
               "giscus.repo": "${{ github.repository }}",
               "baseurl": ""
             }
+      - name: Install ImageMagick 🖼️
+        # Needed so the rebuild generates the responsive *.webp variants that
+        # the site's srcset references (al-folio's jekyll-imagemagick calls
+        # `convert`, absent on ubuntu-latest) — otherwise this check 404s them.
+        run: sudo apt-get update && sudo apt-get install -y imagemagick webp
       - name: Install and Build 🔧
         run: |
           pip3 install --upgrade jupyter

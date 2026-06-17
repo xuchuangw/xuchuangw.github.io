@@ -73,6 +73,11 @@ jobs:
           valueFile: "_config.yml"
           propertyPath: "giscus.repo"
           value: ${{ github.repository }}
+      - name: Install ImageMagick 🖼️
+        # al-folio's jekyll-imagemagick shells out to `convert`, which is not
+        # present on ubuntu-latest — without it the responsive *-{w}.webp
+        # variants referenced by every srcset are silently skipped (exit 127).
+        run: sudo apt-get update && sudo apt-get install -y imagemagick webp
       - name: Install and Build 🔧
         run: |
           pip3 install --upgrade jupyter
