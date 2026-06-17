@@ -48,5 +48,7 @@ jobs:
         uses: lycheeverse/lychee-action@v1.9.0
         with:
           fail: true
-          # removed md files that include liquid tags
-          args: --exclude-path README.md --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _posts/2018-12-22-distill.md --verbose --no-progress './**/*.md' './**/*.html'
+          # Exclude template docs + md files containing liquid tags, plus two hosts that
+          # only flake in CI (ojs.aaai.org closes the connection to the checker;
+          # www.comp.hkbu.edu.hk serves an SSL chain the runner can't verify) — both valid in a browser.
+          args: --exclude-path README.md --exclude-path CUSTOMIZE.md --exclude-path docs --exclude-path _pages/404.md --exclude-path _pages/blog.md --exclude-path _pages/selected_publications.md --exclude-path _posts/2018-12-22-distill.md --exclude 'ojs\.aaai\.org' --exclude 'comp\.hkbu\.edu\.hk' --verbose --no-progress './**/*.md' './**/*.html'
