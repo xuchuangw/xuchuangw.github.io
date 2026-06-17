@@ -28,6 +28,14 @@ $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark: #1c1c1d;
 $grey-900: #212529;
 
+// Secondary text — AA-compliant de-emphasis, surfaced via --global-text-color-light.
+$text-secondary-light: #6b6b6b; // on #ffffff ≈ 5.3:1 (WCAG AA)
+$text-secondary-dark: #9aa0a6; //  on #1c1c1d ≈ 6.4:1 (WCAG AA)
+
+// Quiet notice background for the recruiting callout.
+$notice-bg-light: #eef4fd; // pale accent tint on white
+$notice-bg-dark: #1f2733; //  subtle blue-grey just above #1c1c1d
+
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
 
