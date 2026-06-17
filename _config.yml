@@ -202,6 +202,7 @@ kramdown:
 include: ["_pages"]
 exclude:
   - bin
+  - docs # internal superpowers specs/plans — keep out of the published site
   - CONTRIBUTING.md
   - CUSTOMIZE.md
   - docker-compose.yml
