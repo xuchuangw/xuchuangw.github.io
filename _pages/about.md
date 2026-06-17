@@ -22,7 +22,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-<div style="border-left: 3px solid var(--global-theme-color); padding: 0.4rem 0.9rem; margin: 0 0 1.4rem;">
+<div class="recruiting-notice">
 <strong>Prospective students:</strong> I am recruiting Ph.D. students (Fall 2026 / Spring 2027) and short-term Research Assistants (remote or onsite, 3 or 6 months). See <a href="/team/#Openning">openings and how to apply</a>.
 </div>
 

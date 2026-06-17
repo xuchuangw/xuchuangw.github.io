@@ -562,3 +562,20 @@ footer.sticky-bottom .container {
     font-size: 2.25rem;
   }
 }
+
+// ---------------------------------------------------------------------------
+// 16. Recruiting notice — the landing CTA as a quiet, finished component
+//     (replaces the inline-styled div in about.md). Uses --global-notice-bg.
+// ---------------------------------------------------------------------------
+.recruiting-notice {
+  background: var(--global-notice-bg);
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 4px;
+  padding: 0.9rem 1.1rem;
+  margin: 0.4rem 0 1.8rem;
+  font-family: $font-serif-body;
+
+  strong:first-child {
+    color: var(--global-theme-color);
+  }
+}
