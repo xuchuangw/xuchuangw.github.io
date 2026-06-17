@@ -318,6 +318,36 @@ h1.post-title {
 }
 
 // ---------------------------------------------------------------------------
+// 7b. Content section headings (markdown ## inside .clearfix) join the "news"
+//     family: same accent-tick-on-a-hairline-rule device, but a larger serif
+//     title so hierarchy reads (content sections > meta/overline sections).
+// ---------------------------------------------------------------------------
+.post > article > .clearfix > h2 {
+  position: relative;
+  font-family: $font-serif-display;
+  font-weight: 600;
+  font-size: 1.55rem;
+  line-height: 1.22;
+  letter-spacing: -0.005em;
+  color: var(--global-text-color);
+  padding-top: 0.85rem;
+  padding-bottom: 0.55rem;
+  margin-top: 2.8rem;
+  margin-bottom: 1.3rem;
+  border-bottom: 1px solid var(--global-divider-color);
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.25rem;
+    height: 2px;
+    background-color: var(--global-theme-color);
+  }
+}
+
+// ---------------------------------------------------------------------------
 // 8. Links — accent color, restrained underline; keep prose readable.
 // ---------------------------------------------------------------------------
 a {
