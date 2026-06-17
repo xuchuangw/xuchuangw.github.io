@@ -21,11 +21,13 @@ We work on the algorithmic foundations of two networks that will shape the next 
 Research directions include:
 
 - **Quantum Networking** — _algorithms for the future quantum internet_
+
   - Entanglement routing and resource allocation
   - Quantum network tomography, evaluation, and monitoring
   - Quantum-enhanced sequential decision-making and learning
 
 - **Agentic Networking** — _learning algorithms for networked AI agents_
+
   - Multi-agent online and reinforcement learning (communication-efficient, heterogeneous, asynchronous)
   - LLM-agent coordination, alignment, and evaluation from interactive feedback
   - Provable guarantees under adversarial or strategic agents

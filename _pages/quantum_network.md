@@ -13,9 +13,9 @@ The internet you are reading this on moves **bits**. The next one will also move
 
 ## What is a quantum network?
 
-A **quantum network** is communication infrastructure for transmitting *quantum* information — qubits and, crucially, **entanglement** — between distant nodes. Where classical networks shuttle 0s and 1s, quantum networks exploit superposition and entanglement to enable capabilities that are *provably impossible* in a classical world.
+A **quantum network** is communication infrastructure for transmitting _quantum_ information — qubits and, crucially, **entanglement** — between distant nodes. Where classical networks shuttle 0s and 1s, quantum networks exploit superposition and entanglement to enable capabilities that are _provably impossible_ in a classical world.
 
-The basic primitive is not "send a bit" but "**share an entangled pair** between two remote nodes." Once two nodes share entanglement, they can teleport qubits, generate shared secret keys, or coordinate measurements with sub-classical noise. Almost every application of a quantum network reduces to: *how do we deliver high-fidelity entanglement, where it is needed, when it is needed?*
+The basic primitive is not "send a bit" but "**share an entangled pair** between two remote nodes." Once two nodes share entanglement, they can teleport qubits, generate shared secret keys, or coordinate measurements with sub-classical noise. Almost every application of a quantum network reduces to: _how do we deliver high-fidelity entanglement, where it is needed, when it is needed?_
 
 <div class="row justify-content-center">
     <div class="col-12 col-md-10">
@@ -33,11 +33,11 @@ A single quantum processor is bounded by how many qubits it can host coherently.
 
 ### 2. Distributed quantum sensing — precision past the shot-noise limit
 
-Distributing entangled states across an array of sensors lets them measure in concert, achieving precision *beyond* what any classical sensor network can reach. Applications include gravitational-wave detection, dark-matter searches, ultra-precise clock networks, and long-baseline interferometry.
+Distributing entangled states across an array of sensors lets them measure in concert, achieving precision _beyond_ what any classical sensor network can reach. Applications include gravitational-wave detection, dark-matter searches, ultra-precise clock networks, and long-baseline interferometry.
 
 ### 3. Quantum key distribution — security guaranteed by physics
 
-**QKD** lets two parties generate a shared secret key whose security rests on the laws of quantum mechanics: any eavesdropper *must* disturb the channel, and that disturbance is detectable. This is information-theoretic security — it does not break when the adversary buys a bigger computer (or a quantum one).
+**QKD** lets two parties generate a shared secret key whose security rests on the laws of quantum mechanics: any eavesdropper _must_ disturb the channel, and that disturbance is detectable. This is information-theoretic security — it does not break when the adversary buys a bigger computer (or a quantum one).
 
 <div class="row justify-content-center mt-4">
     <div class="col-12 col-md-10">
@@ -47,7 +47,7 @@ Distributing entangled states across an array of sensors lets them measure in co
 
 ## How do quantum networks work?
 
-The headline obstacle is the **no-cloning theorem**: unknown qubits cannot be copied, so classical signal amplification is off the table. Photons sent through optical fiber are lost *exponentially* with distance — a death sentence for any naive long-haul link.
+The headline obstacle is the **no-cloning theorem**: unknown qubits cannot be copied, so classical signal amplification is off the table. Photons sent through optical fiber are lost _exponentially_ with distance — a death sentence for any naive long-haul link.
 
 The fix is the **quantum repeater**. A long link is broken into short segments, and three primitives are chained together:
 
@@ -69,14 +69,14 @@ The hardware story above hides a tower of unsolved **algorithmic** questions. Li
 
 ### Quantum routing — finding good entanglement paths under uncertainty
 
-Even if you have a working repeater network, *which path* should you use to connect Alice and Bob? Path fidelity depends on every link, and link fidelities are unknown and time-varying. We cast this as an **online learning** problem: probe paths, observe noisy outcomes, and converge on a near-optimal path while paying as little regret as possible.
+Even if you have a working repeater network, _which path_ should you use to connect Alice and Bob? Path fidelity depends on every link, and link fidelities are unknown and time-varying. We cast this as an **online learning** problem: probe paths, observe noisy outcomes, and converge on a near-optimal path while paying as little regret as possible.
 
 - **[Learning Best Paths in Quantum Networks](https://www.arxiv.org/pdf/2506.12462)** (INFOCOM 2025) — an online algorithm for entanglement-path selection with provable regret guarantees under unknown, noisy link fidelities.
 - **[LinkSelFiE: Link Selection and Fidelity Estimation in Quantum Networks](https://ieeexplore.ieee.org/document/10621263)** (INFOCOM 2024) — joint link selection and fidelity estimation as a building block for routing.
 
 ### Quantum network tomography — measuring the network you cannot observe classically
 
-Before you can route well, you need to *know the network* — link fidelities, decoherence rates, error parameters. But every probe consumes entanglement, probes interact in non-trivial ways across shared links, and the measurements themselves are noisy. **Quantum network tomography** asks: *what* can we identify from probe data, and *how* should we allocate a limited probe budget to learn it as fast as possible?
+Before you can route well, you need to _know the network_ — link fidelities, decoherence rates, error parameters. But every probe consumes entanglement, probes interact in non-trivial ways across shared links, and the measurements themselves are noisy. **Quantum network tomography** asks: _what_ can we identify from probe data, and _how_ should we allocate a limited probe budget to learn it as fast as possible?
 
 - **[Quantum Network Tomography for General Topology with SPAM Errors](https://arxiv.org/abs/2511.01074)** (preprint, 2025) — identifies and estimates per-link channel parameters on arbitrary network topologies while accounting for state-preparation and measurement (SPAM) errors.
 - **[Online Optimal Probe Allocation for Quantum Network Tomography](https://arxiv.org/abs/2504.21549)** (QCNC 2026) — an online probe-allocation algorithm that matches the offline optimum up to vanishing terms.

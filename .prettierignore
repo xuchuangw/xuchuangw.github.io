@@ -1,5 +1,9 @@
 **/*.min.css
 **/*.min.js
 assets/css/main.scss
+# hand-maintained "Quiet Scholar" stylesheet (deliberate line-wrapping)
+_sass/_custom.scss
+# internal superpowers specs/plans (exact code blocks must not be reformatted)
+docs/
 assets/plotly/demo.html
 lighthouse_results/**
