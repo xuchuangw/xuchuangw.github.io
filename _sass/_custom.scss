@@ -579,3 +579,24 @@ footer.sticky-bottom .container {
     color: var(--global-theme-color);
   }
 }
+
+// ---------------------------------------------------------------------------
+// 17. Research highlights — quiet the dense venue-link list so the theme
+//     lead-ins read first. Scoped deeper than the global content-link rule
+//     (.post > article > .clearfix a:not(.btn):not(.navbar-brand) is (0,4,2));
+//     this selector is (0,5,2) and therefore wins.
+// ---------------------------------------------------------------------------
+.post > article > .clearfix > .research-highlights {
+  a:not(.btn):not(.navbar-brand) {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+      text-decoration-color: var(--global-theme-color);
+    }
+  }
+
+  ::marker {
+    color: var(--global-text-color-light);
+  }
+}

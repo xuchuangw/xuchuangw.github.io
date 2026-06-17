@@ -55,6 +55,8 @@ Ideal background: strong fundamentals in probability, optimization, or theoretic
 
 ## research highlights
 
+<div class="research-highlights" markdown="1">
+
 - **quantum networking — algorithms for the quantum internet:**
   - entanglement routing and resource optimization ([INFOCOM'25](https://www.arxiv.org/pdf/2506.12462), [INFOCOM'24](https://ieeexplore.ieee.org/document/10621263)),
   - quantum network tomography and evaluation ([Mergecast Preprint](https://arxiv.org/abs/2511.01074), [QCNC'26](https://arxiv.org/abs/2504.21549)),
@@ -68,3 +70,5 @@ Ideal background: strong fundamentals in probability, optimization, or theoretic
   - robustness to strong-adversary manipulated feedback ([ICLR'25](https://openreview.net/pdf?id=vOFx8HDcvF), [L4DC'25](https://arxiv.org/abs/2411.08167)),
   - fusing absolute and relative human feedback ([ICML'25](https://arxiv.org/pdf/2504.15812)),
   - multi-fidelity feedback for sample-efficient learning ([NeurIPS'23](https://proceedings.neurips.cc/paper_files/paper/2023/hash/64602b87c31db70a3ef060f6c5d5b01d-Abstract-Conference.html)).
+
+</div>
