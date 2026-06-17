@@ -28,7 +28,7 @@ $font-mono: "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono",
 
 // ---------------------------------------------------------------------------
 // 2. Global base type — override the framework's Roboto on <body>.
-//    16px base preserved; serif body with comfortable journal leading.
+//    html is scaled to 120% root (section below); serif body, journal leading.
 // ---------------------------------------------------------------------------
 html {
   font-size: 120%; // scale all rem-based typography up 20% site-wide
@@ -54,10 +54,17 @@ li,
   line-height: 1.7;
 }
 
-// Comfortable measure for long-form prose inside the 800px column.
-.post > article > .clearfix p,
+// One consistent measure inside the 1000px column at 120% root — applied to
+// prose, lists, and the two content wrappers so the right edge lines up
+// (lists previously ran wider than paragraphs). Wrappers bound their inner
+// lists even though those lists aren't direct children of .clearfix.
+.post > article > .clearfix > p,
+.post > article > .clearfix > ul,
+.post > article > .clearfix > ol,
+.post > article > .clearfix > .recruiting-notice,
+.post > article > .clearfix > .research-highlights,
 .post-content p {
-  max-width: 80ch;
+  max-width: 72ch;
 }
 
 strong,
