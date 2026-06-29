@@ -607,3 +607,135 @@ footer.sticky-bottom .container {
     color: var(--global-text-color-light);
   }
 }
+
+// ---------------------------------------------------------------------------
+// 18. Openings — a responsive card grid of current vacancies on /openings/.
+//     Quiet bordered cards that lift on hover; role badge + tag chips read
+//     at a glance, with a per-card mailto "Apply" link.
+// ---------------------------------------------------------------------------
+.openings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1.1rem;
+  margin: 1.6rem 0 2.6rem;
+}
+
+.opening-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.05rem 1.15rem 1.15rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 8px;
+  background: var(--global-card-bg-color);
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    border-color 0.15s ease;
+
+  &:hover {
+    transform: translateY(-3px);
+    border-color: var(--global-theme-color);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  }
+}
+
+.opening-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.6rem;
+}
+
+.opening-badge {
+  display: inline-block;
+  padding: 0.12rem 0.55rem;
+  border-radius: 999px;
+  font-family: $font-serif-body;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #fff;
+  background: var(--global-theme-color);
+
+  &--ra {
+    color: var(--global-theme-color);
+    background: transparent;
+    border: 1px solid var(--global-theme-color);
+  }
+}
+
+.opening-qty {
+  font-family: $font-serif-body;
+  font-size: 0.78rem;
+  color: var(--global-text-color-light);
+}
+
+.opening-title {
+  margin: 0 0 0.7rem;
+  font-family: $font-serif-display;
+  font-size: 1.18rem;
+  font-weight: 500;
+  line-height: 1.25;
+  color: var(--global-text-color);
+}
+
+.opening-tags {
+  list-style: none;
+  margin: 0 0 1rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+
+  li {
+    padding: 0.16rem 0.55rem;
+    border-radius: 5px;
+    background: var(--global-notice-bg);
+    font-family: $font-serif-body;
+    font-size: 0.82rem;
+    color: var(--global-text-color);
+
+    i {
+      margin-right: 0.4rem;
+      color: var(--global-theme-color);
+      font-size: 0.78rem;
+    }
+  }
+}
+
+.opening-apply {
+  margin-top: auto;
+  align-self: flex-start;
+  font-family: $font-serif-body;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--global-theme-color);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.opening-card--soon {
+  justify-content: center;
+  border-style: dashed;
+  background: transparent;
+
+  &:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: var(--global-divider-color);
+  }
+
+  .opening-title {
+    color: var(--global-text-color-light);
+  }
+
+  .opening-soon-note {
+    margin: 0;
+    font-family: $font-serif-body;
+    font-size: 0.86rem;
+    color: var(--global-text-color-light);
+  }
+}

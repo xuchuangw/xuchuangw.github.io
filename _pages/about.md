@@ -23,7 +23,7 @@ social: true # includes social icons at the bottom of the page
 ---
 
 <div class="recruiting-notice">
-<strong>Prospective students:</strong> I am recruiting Ph.D. students (Fall 2026 / Spring 2027) and short-term Research Assistants (remote or onsite, 3 or 6 months). See <a href="/team/#Openning">openings and how to apply</a>.
+<strong>Prospective students:</strong> I am recruiting fully-funded Ph.D. students (Spring / Fall 2027) and Research Assistants (Hong Kong, Guangzhou, or remote). See <a href="/openings/">openings and how to apply</a>.
 </div>
 
 My research builds the **algorithmic foundations of two emerging networks**:
@@ -51,7 +51,7 @@ Students in my group publish at leading venues (NeurIPS, ICML, ICLR, AAAI, SIGME
 
 Beyond Ph.D. positions, I host **Research Assistants** (remote or onsite at HKBU) on **3- or 6-month terms** — suitable for senior undergraduates, master's students, or recent graduates who wish to gain research experience before applying to a Ph.D. program, or to develop a concrete project toward publication.
 
-Ideal background: strong fundamentals in probability, optimization, or theoretical computer science. Prospective applicants should consult the [openings](/team/#Openning) page for research directions and application instructions.
+Ideal background: strong fundamentals in probability, optimization, or theoretical computer science. Prospective applicants should consult the [openings](/openings/) page for research directions and application instructions.
 
 ## research highlights
 
