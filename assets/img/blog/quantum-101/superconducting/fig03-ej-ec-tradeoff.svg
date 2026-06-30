@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-label="Two schematic curves versus the ratio E_J over E_C on a logarithmic axis from 1 to 100. A red charge-sensitivity curve starts high at small ratio and crashes exponentially toward zero by a ratio of about ten. A teal anharmonicity curve starts high and declines only gently, polynomially, across the whole range. A shaded blue band near 50 to 100 marks the transmon sweet spot; the small-ratio end is labelled the Cooper-pair box, very anharmonic but charge-noisy." style="width:100%; height:auto; font-family:sans-serif;">
   <!-- sweet-spot operating window -->
-  <rect x="574" y="48" width="86" height="252" fill="#4f7cff" opacity="0.12"/>
+  <rect x="574" y="48" width="86" height="252" fill="#4f7cff" fill-opacity="0.18" stroke="#4f7cff" stroke-width="1" stroke-dasharray="3 3"/>
   <text x="617" y="38" fill="#4f7cff" font-size="12" text-anchor="middle">transmon</text>
   <text x="617" y="52" fill="#4f7cff" font-size="12" text-anchor="middle">sweet spot</text>
   <!-- axes -->
@@ -20,14 +20,14 @@
   <text x="660" y="318" fill="currentColor" font-size="11" text-anchor="middle">100</text>
   <text x="382" y="346" fill="currentColor" font-size="13" text-anchor="middle">E<tspan font-size="9.5" dy="3">J</tspan><tspan dy="-3"> / E</tspan><tspan font-size="9.5" dy="3">C</tspan><tspan dy="-3">&#160; (log scale)</tspan></text>
   <!-- charge sensitivity: crashes exponentially -->
-  <polyline points="90,55 118,104 140,162 176,222 226,266 289,291 375,299 480,300 660,300" fill="none" stroke="#ef4444" stroke-width="2.6"/>
+  <polyline points="90,70 118,104 140,162 176,222 226,266 289,291 375,299 480,300 660,300" fill="none" stroke="#ef4444" stroke-width="2.6"/>
   <!-- anharmonicity: declines only polynomially -->
-  <polyline points="90,90 150,134 226,166 300,196 375,213 450,227 511,237 574,245 660,252" fill="none" stroke="#14b8a6" stroke-width="2.6"/>
+  <polyline points="90,70 150,112 226,150 300,182 375,202 450,219 511,231 574,243 660,252" fill="none" stroke="#14b8a6" stroke-width="2.6"/>
   <!-- legend -->
   <line x1="220" y1="66" x2="248" y2="66" stroke="#ef4444" stroke-width="2.6"/>
   <text x="254" y="70" fill="currentColor" font-size="12.5">charge sensitivity &#8212; crashes exponentially</text>
   <line x1="220" y1="90" x2="248" y2="90" stroke="#14b8a6" stroke-width="2.6"/>
   <text x="254" y="94" fill="currentColor" font-size="12.5">anharmonicity &#124;&#x03B1;&#124;/&#x03C9;&#8320;&#8321; &#8212; falls only polynomially</text>
   <!-- Cooper-pair-box callout -->
-  <text x="150" y="334" fill="currentColor" font-size="11.5" text-anchor="middle">&#8592; Cooper-pair box (charge-noisy)</text>
+  <text x="175" y="290" fill="currentColor" font-size="11.5" text-anchor="middle">&#8592; Cooper-pair box (charge-noisy)</text>
 </svg>
