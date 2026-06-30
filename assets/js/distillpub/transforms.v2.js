@@ -845,6 +845,13 @@
     if (ent.author == null) {
       return "";
     }
+    // Corporate/organization authors are written {{Name}} in BibTeX and arrive here
+    // as "{Name}" — render them verbatim instead of mangling them into first/last
+    // initials (e.g. {{Google Quantum AI}} -> "Google Quantum AI", not "AI, G.Q.").
+    var authorField = ent.author.trim();
+    if (authorField.charAt(0) === "{" && authorField.charAt(authorField.length - 1) === "}") {
+      return authorField.slice(1, -1);
+    }
     var names = ent.author.split(" and ");
     let name_strings = names.map((name) => {
       name = name.trim();
