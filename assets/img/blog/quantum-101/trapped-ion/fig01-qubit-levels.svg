@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-label="Two ways to pick the qubit's two levels. Left: a hyperfine clock qubit in ytterbium-171, two ground-state sublevels split by 12.6 gigahertz and driven with microwaves, both stable so there is no decay floor. Right: an optical qubit in calcium-40, a ground state and a metastable state about one second long joined by a narrow 729-nanometre transition that caps its coherence." style="width:100%; height:auto; font-family:sans-serif;">
+  <defs>
+    <marker id="f1mw" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#4f7cff"/></marker>
+    <marker id="f1op" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#ef4444"/></marker>
+  </defs>
+  <line x1="360" y1="44" x2="360" y2="272" stroke="currentColor" stroke-width="1" stroke-dasharray="3 6" opacity="0.35"/>
+  <!-- LEFT: hyperfine clock qubit -->
+  <text x="180" y="30" fill="currentColor" font-size="15" text-anchor="middle" font-weight="600">hyperfine &#8220;clock&#8221; qubit</text>
+  <text x="180" y="50" fill="#4f7cff" font-size="12.5" text-anchor="middle"><tspan baseline-shift="super" font-size="9">171</tspan>Yb<tspan baseline-shift="super" font-size="9">+</tspan> &#183; microwave</text>
+  <line x1="96" y1="150" x2="264" y2="150" stroke="#14b8a6" stroke-width="3"/>
+  <line x1="96" y1="214" x2="264" y2="214" stroke="#14b8a6" stroke-width="3"/>
+  <text x="88" y="146" fill="#14b8a6" font-size="13" text-anchor="end">&#124;1&#10217;</text>
+  <text x="88" y="218" fill="#14b8a6" font-size="13" text-anchor="end">&#124;0&#10217;</text>
+  <text x="272" y="146" fill="currentColor" font-size="11.5" text-anchor="start">F=1, m=0</text>
+  <text x="272" y="218" fill="currentColor" font-size="11.5" text-anchor="start">F=0, m=0</text>
+  <line x1="180" y1="150" x2="180" y2="214" stroke="#4f7cff" stroke-width="1.8" marker-start="url(#f1mw)" marker-end="url(#f1mw)"/>
+  <text x="172" y="186" fill="#4f7cff" font-size="11.5" text-anchor="end">12.6 GHz</text>
+  <text x="180" y="252" fill="currentColor" font-size="11" text-anchor="middle" opacity="0.85">both states are ground sublevels &#8212; no decay floor</text>
+  <!-- RIGHT: optical qubit -->
+  <text x="540" y="30" fill="currentColor" font-size="15" text-anchor="middle" font-weight="600">optical qubit</text>
+  <text x="540" y="50" fill="#ef4444" font-size="12.5" text-anchor="middle"><tspan baseline-shift="super" font-size="9">40</tspan>Ca<tspan baseline-shift="super" font-size="9">+</tspan> &#183; 729 nm laser</text>
+  <line x1="456" y1="214" x2="624" y2="214" stroke="#14b8a6" stroke-width="3"/>
+  <line x1="456" y1="96" x2="624" y2="96" stroke="#14b8a6" stroke-width="3"/>
+  <text x="448" y="218" fill="#14b8a6" font-size="13" text-anchor="end">&#124;0&#10217;</text>
+  <text x="448" y="100" fill="#14b8a6" font-size="13" text-anchor="end">&#124;1&#10217;</text>
+  <text x="632" y="218" fill="currentColor" font-size="11.5" text-anchor="start">S<tspan baseline-shift="sub" font-size="8">1/2</tspan></text>
+  <text x="632" y="100" fill="currentColor" font-size="11.5" text-anchor="start">D<tspan baseline-shift="sub" font-size="8">5/2</tspan> &#183; ~1 s</text>
+  <line x1="540" y1="96" x2="540" y2="214" stroke="#ef4444" stroke-width="1.8" marker-start="url(#f1op)" marker-end="url(#f1op)"/>
+  <text x="532" y="158" fill="#ef4444" font-size="11.5" text-anchor="end">729 nm</text>
+  <text x="540" y="252" fill="currentColor" font-size="11" text-anchor="middle" opacity="0.85">metastable upper state ~1 s &#8212; caps coherence</text>
+</svg>

@@ -24,7 +24,9 @@ toc:
 
 *Part of the [How to Build a Quantum Computer](/blog/2026/how-to-build-a-quantum-computer/) series.*
 
-The previous three posts were all, secretly, about the same struggle: how to hold a piece of matter still. A superconducting qubit is a circuit faking an atom, cooled to a whisker above absolute zero so it stops twitching. A trapped ion is a real atom you grab by its charge and levitate in vacuum. A neutral atom is a real atom you pinch in a knot of light. Each platform spends most of its engineering budget on the same verb — *holding* — because a qubit that drifts away forgets. This post is about the platform that gives up on holding entirely, and picks a qubit that refuses to sit still by its very nature: a single particle of light. A photonic qubit cannot be trapped, cooled, or pinned; it is always moving at, well, the speed of light. That sounds like a fatal flaw, and for one job — computing — it nearly is. But for the *other* job this series keeps watching, networking, it is the closest thing to a cheat code anyone has found. The photon's whole character fits on one line: it flies beautifully, it networks natively, and it absolutely hates sitting down to do arithmetic. Let us take that joke seriously, because the physics of computing with non-interacting light is one of the strangest and most ingenious corners of the whole field.
+The previous three posts were all, secretly, about the same struggle: how to hold a piece of matter still. A superconducting qubit is a circuit faking an atom, cooled to a whisker above absolute zero so it stops twitching. A trapped ion is a real atom you grab by its charge and levitate in vacuum. A neutral atom is a real atom you pinch in a knot of light. Each platform spends most of its engineering budget on the same verb — *holding* — because a qubit that drifts away forgets. This post is about the platform that gives up on holding entirely, and picks a qubit that refuses to sit still by its very nature: a single particle of light. A photonic qubit cannot be trapped, cooled, or pinned; it is always moving at, well, the speed of light. That sounds like a fatal flaw, and for one job — computing — it nearly is. But for the *other* job this series keeps watching, networking, it is the closest thing to a cheat code anyone has found.
+
+The photon's whole character fits on one line: it flies beautifully, it networks natively, and it absolutely hates sitting down to do arithmetic. Let us take that joke seriously, because the physics of computing with non-interacting light is one of the strangest and most ingenious corners of the whole field.
 
 ## What a photonic qubit is
 
@@ -40,7 +42,7 @@ Start, as always, with the two-level system. For a transmon it was a fabricated 
   a single photon in a superposition of *which path* it took. This is the encoding most on-chip photonic processors actually use, and the one the figures below assume.
 - **Time-bin.** The photon arrives "early" or "late" — two time slots split by an interferometer. Robust in long fibers, where polarization gets scrambled.
 
-Beyond these single-photon encodings sits a whole second philosophy — the **continuous-variable** route, which writes information into the quadratures of squeezed light and protects it with the Gottesman–Kitaev–Preskill (GKP) bosonic code. That is Xanadu's lane, and it is where the boson-sampling machines and the cluster-state hardware below come from. For the story of *how light computes*, though, the dual-rail picture is the cleanest, so we will lean on it.
+Beyond these single-photon encodings sits a whole second philosophy — the **continuous-variable** route, which writes information into the *quadratures* of **squeezed light** (laser light whose quantum noise has been reshaped so that one property is quieter than the usual quantum limit, at the price of another being noisier). It splits into two machines that are easy to confuse and worth keeping apart. Its non-universal *sampling* cousin, **Gaussian boson sampling**, is what the Jiuzhang and Borealis record-setters below run — spectacular, fast, and with no error correction at all. Its fault-tolerant, *universal* version is different: it builds cluster states out of squeezed light and protects logical qubits with the Gottesman–Kitaev–Preskill (GKP) bosonic code — that is Xanadu's Aurora lane. For the story of *how light computes*, though, the single-photon dual-rail picture is the cleanest lens, so we will lean on it (and meet squeezed light again in the State-of-the-art section).
 
 Two things make the photonic qubit feel different from everything before it the moment you meet it. The first is a temperature joke. Because a photon flying through glass or a waveguide barely couples to anything, the **optics run at room temperature** — no dilution fridge, no vacuum cathedral. And yet the machine is not fridge-free, because the two hardest components are cold: the **single-photon detectors** (superconducting nanowires, SNSPDs) need cooling to a few kelvin, and many **single-photon sources** (semiconductor quantum dots) want roughly 4 K. So a "room-temperature quantum computer" still runs a cryostat — just for the bouncers at the door who count photons in and out. The light is warm; the things watching the light are frozen.
 
@@ -57,9 +59,9 @@ $$
 \hat b^\dagger \;\to\; -e^{-i\varphi}\sin\theta\,\hat a^\dagger + \cos\theta\,\hat b^\dagger ,
 $$
 
-and for a *single* photon that is precisely an arbitrary rotation on the Bloch sphere of $\{\vert 10\rangle,\vert 01\rangle\}$. A beam splitter plus two phase shifters — a **Mach–Zehnder interferometer** — gives you any single-qubit gate you like, deterministically, and the "gate time" is essentially how long light takes to cross the chip: picoseconds. Single-qubit operations are where photons are happiest. On PsiQuantum's silicon-photonic chips, dual-rail state preparation and measurement reach a fidelity of $99.98\%$ <d-cite key="psiquantum2025omega"></d-cite>.
+and for a *single* photon that is a rotation on the Bloch sphere of $\{\vert 10\rangle,\vert 01\rangle\}$. One beam splitter alone is not quite enough for *every* gate, though: with only two knobs $(\theta,\varphi)$ it reaches a restricted family — note that both diagonal entries are the same $\cos\theta$, so a pure relative-phase (a $Z$ rotation) is off the menu. Add two phase shifters — making a **Mach–Zehnder interferometer** — and now you can reach *any* single-qubit gate you like, deterministically, with a "gate time" set by how long light takes to cross a single beam splitter or phase shifter: picoseconds. Single-qubit operations are where photons are happiest. On PsiQuantum's silicon-photonic chips, dual-rail state preparation and measurement reach a fidelity of $99.98\%$ <d-cite key="psiquantum2025omega"></d-cite>.
 
-**Two-qubit gates are where the trouble lives** — and the trouble is fundamental physics, not bad engineering. To entangle two qubits you need them to *interact*: one qubit's state has to change something about the other. But in **linear optics, photons essentially do not interact.** Two beams of light pass straight through each other and emerge unchanged; that is why you can see across a crowded room without the light rays scattering off one another. Mathematically, a passive linear-optical network only ever transforms creation operators linearly into other creation operators — the transformation on the many-photon Hilbert space is *fixed* by what it does to one photon at a time. No amount of beam-splitting gives two separate photons a way to push on each other. And a deterministic entangling gate, a controlled-$Z$ say, demands exactly the kind of *nonlinear* coupling — a phase that depends on whether *both* qubits are excited — that single optical photons stubbornly refuse to provide. You cannot build a CZ out of mirrors and beam splitters. Full stop.
+**Two-qubit gates are where the trouble lives** — and the trouble is fundamental physics, not bad engineering. To entangle two qubits you need them to *interact*: one qubit's state has to change something about the other. But in **linear optics, photons essentially do not interact.** Two beams of light pass straight through each other and emerge unchanged; that is why you can see across a crowded room without the light rays scattering off one another. And here is the deep reason it cannot be patched: what a beam-splitter network does to a million photons is completely fixed by what it does to *one* — there is no extra knob, anywhere in the optics, that lets two photons feel each other. No amount of beam-splitting gives two separate photons a way to push on one another. And a deterministic entangling gate, a controlled-$Z$ say, demands exactly the kind of *nonlinear* coupling — a phase that depends on whether *both* qubits are excited — that single optical photons stubbornly refuse to provide. You cannot build a CZ out of mirrors and beam splitters. Full stop.
 
 So how does anyone entangle light at all? Two great ideas, and they are the intellectual heart of this post.
 
@@ -69,55 +71,82 @@ $$
 \vert 1,1\rangle \;\xrightarrow{\;\text{50:50 BS}\;}\; \tfrac{1}{\sqrt 2}\big(\vert 2,0\rangle - \vert 0,2\rangle\big) .
 $$
 
-That cancellation is a genuinely *nonlinear* feature of photon number — and it only shows up because we will eventually count photons. In 2001, Knill, Laflamme, and Milburn turned this into a recipe: combine linear optics with ancillary "helper" photons, photon-number-resolving detectors, and **feed-forward** (using a detector's click to choose what you do to the surviving photons), and you can implement a true entangling gate <d-cite key="knill2001klm"></d-cite>. The price is that the gate is **probabilistic**: it only works when the ancilla detectors fire in a particular pattern, which *heralds* success. A bare two-photon Bell measurement — the basic entangling measurement — succeeds at most $50\%$ of the time with linear optics and ordinary detectors, a hard ceiling proven by Calsamiglia and Lütkenhaus <d-cite key="calsamiglia2001bellanalyzer"></d-cite>; ancillary resources can push past it, but never trivially. KLM's deep result was that, by spending more and more ancillas and wrapping the gates in teleportation and error-correction, you can drive the success probability *toward* one and make universal photonic computing **efficient** — polynomial overhead, not exponential. A landmark of theory. Also, in practice, a lot of slot machines.
+The beam splitter that produces this bunching is perfectly *linear* — nothing nonlinear has happened yet. The *effective* nonlinearity appears only once we count photons: the act of detecting a particular number in a particular port is what reaches back and reshapes the surviving state. In 2001, Knill, Laflamme, and Milburn turned this into a recipe: combine linear optics with ancillary "helper" photons, photon-number-resolving detectors, and **feed-forward** (using a detector's click to choose what you do to the surviving photons), and you can implement a true entangling gate <d-cite key="knill2001klm"></d-cite>. The price is that the gate is **probabilistic**: it only works when the ancilla detectors fire in a particular pattern, which *heralds* success. A bare two-photon Bell measurement — the basic entangling measurement — succeeds at most $50\%$ of the time with linear optics and ordinary detectors, a hard ceiling proven by Calsamiglia and Lütkenhaus <d-cite key="calsamiglia2001bellanalyzer"></d-cite>; ancillary resources can push past it, but never trivially. KLM's deep result was that, by spending more and more ancillas and wrapping the gates in teleportation and error-correction, you can drive the success probability *toward* one and make universal photonic computing **efficient** — polynomial overhead, not exponential. A landmark of theory. Also, in practice, a lot of slot machines.
 
 <figure class="l-body" style="text-align:center; margin:1.5rem auto; max-width:720px;">
-  <svg viewBox="0 0 720 400" role="img" aria-label="A measurement-induced two-qubit gate on dual-rail photonic qubits. A data qubit on two rails and a pair of ancilla photons enter a linear-optics network of beam splitters and phase shifters. Two ancilla output modes go to photon-number detectors; their clicks feed forward classically to a phase-shift correction on the data output rails. The gate is heralded and succeeds only with probability less than one." style="width:100%; height:auto; font-family:sans-serif;">
+  <svg viewBox="0 0 720 420" role="img" aria-label="A measurement-induced two-qubit entangling gate on dual-rail photonic qubits. Two data qubits, each a single photon in superposition over its pair of rails, enter a linear-optics network together with two ancilla helper photons. Inside the network, beam splitters mix the rails, including a coupling between a data rail and an ancilla rail. The two ancilla modes leave the network into photon-number detectors; their clicks feed forward classically to a phase correction on the data rails. The two data qubits emerge entangled, but only when the detectors herald success, with probability less than one." style="width:100%; height:auto; font-family:sans-serif;">
     <defs>
-      <marker id="p1a" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="currentColor"/></marker>
+      <marker id="p1a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="currentColor"/></marker>
     </defs>
-    <!-- data qubit rails in -->
-    <line x1="60" y1="110" x2="250" y2="110" stroke="currentColor" stroke-width="1.6"/>
+    <!-- qubit 1 rails in -->
+    <line x1="60" y1="68" x2="250" y2="68" stroke="currentColor" stroke-width="1.6"/>
+    <line x1="60" y1="100" x2="250" y2="100" stroke="currentColor" stroke-width="1.6"/>
+    <circle cx="98" cy="68" r="7" fill="#14b8a6" fill-opacity="0.16" stroke="#14b8a6" stroke-width="1.7"/>
+    <circle cx="98" cy="100" r="7" fill="#14b8a6" fill-opacity="0.16" stroke="#14b8a6" stroke-width="1.7"/>
+    <path d="M84 68 Q76 84 84 100" fill="none" stroke="#14b8a6" stroke-width="1.2" opacity="0.75"/>
+    <text x="60" y="54" fill="#14b8a6" font-size="12">qubit 1 &#160; &#x3B1;|10&#x27E9;+&#x3B2;|01&#x27E9;</text>
+    <text x="52" y="72" fill="currentColor" font-size="10" text-anchor="end">a&#8321;</text>
+    <text x="52" y="104" fill="currentColor" font-size="10" text-anchor="end">b&#8321;</text>
+    <!-- qubit 2 rails in -->
     <line x1="60" y1="150" x2="250" y2="150" stroke="currentColor" stroke-width="1.6"/>
-    <circle cx="92" cy="110" r="7" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
-    <text x="58" y="96" fill="#14b8a6" font-size="12.5">data qubit &#160; &#x3B1;|10&#x27E9; + &#x3B2;|01&#x27E9;</text>
-    <text x="48" y="114" fill="currentColor" font-size="11" text-anchor="end">a</text>
-    <text x="48" y="154" fill="currentColor" font-size="11" text-anchor="end">b</text>
+    <line x1="60" y1="182" x2="250" y2="182" stroke="currentColor" stroke-width="1.6"/>
+    <circle cx="98" cy="150" r="7" fill="#14b8a6" fill-opacity="0.16" stroke="#14b8a6" stroke-width="1.7"/>
+    <circle cx="98" cy="182" r="7" fill="#14b8a6" fill-opacity="0.16" stroke="#14b8a6" stroke-width="1.7"/>
+    <path d="M84 150 Q76 166 84 182" fill="none" stroke="#14b8a6" stroke-width="1.2" opacity="0.75"/>
+    <text x="60" y="136" fill="#14b8a6" font-size="12">qubit 2 &#160; &#x3B3;|10&#x27E9;+&#x3B4;|01&#x27E9;</text>
+    <text x="52" y="154" fill="currentColor" font-size="10" text-anchor="end">a&#8322;</text>
+    <text x="52" y="186" fill="currentColor" font-size="10" text-anchor="end">b&#8322;</text>
     <!-- ancilla rails in -->
-    <line x1="60" y1="250" x2="250" y2="250" stroke="currentColor" stroke-width="1.6"/>
-    <line x1="60" y1="290" x2="250" y2="290" stroke="currentColor" stroke-width="1.6"/>
-    <circle cx="92" cy="250" r="7" fill="#e0a106" fill-opacity="0.30" stroke="#e0a106" stroke-width="2"/>
-    <circle cx="92" cy="290" r="7" fill="#e0a106" fill-opacity="0.30" stroke="#e0a106" stroke-width="2"/>
-    <text x="58" y="320" fill="#e0a106" font-size="12.5">ancilla photons</text>
+    <line x1="60" y1="235" x2="250" y2="235" stroke="currentColor" stroke-width="1.6"/>
+    <line x1="60" y1="270" x2="250" y2="270" stroke="currentColor" stroke-width="1.6"/>
+    <circle cx="98" cy="235" r="7" fill="#e0a106" fill-opacity="0.32" stroke="#e0a106" stroke-width="2"/>
+    <circle cx="98" cy="270" r="7" fill="#e0a106" fill-opacity="0.32" stroke="#e0a106" stroke-width="2"/>
+    <text x="60" y="300" fill="#e0a106" font-size="12">ancilla photons (helpers)</text>
     <!-- network box -->
-    <rect x="250" y="86" width="130" height="228" rx="6" fill="none" stroke="#4f7cff" stroke-width="1.8"/>
-    <text x="315" y="190" fill="#4f7cff" font-size="12.5" text-anchor="middle">linear-optics</text>
-    <text x="315" y="208" fill="#4f7cff" font-size="12.5" text-anchor="middle">network</text>
-    <text x="315" y="228" fill="#4f7cff" font-size="10.5" text-anchor="middle">beam splitters +</text>
-    <text x="315" y="242" fill="#4f7cff" font-size="10.5" text-anchor="middle">phase shifters</text>
+    <rect x="250" y="50" width="150" height="246" rx="6" fill="none" stroke="#4f7cff" stroke-width="1.8"/>
+    <line x1="250" y1="68" x2="400" y2="68" stroke="currentColor" stroke-width="1.6" opacity="0.5"/>
+    <line x1="250" y1="100" x2="400" y2="100" stroke="currentColor" stroke-width="1.6" opacity="0.5"/>
+    <line x1="250" y1="150" x2="400" y2="150" stroke="currentColor" stroke-width="1.6" opacity="0.5"/>
+    <line x1="250" y1="182" x2="400" y2="182" stroke="currentColor" stroke-width="1.6" opacity="0.5"/>
+    <line x1="250" y1="235" x2="400" y2="235" stroke="currentColor" stroke-width="1.6" opacity="0.5"/>
+    <line x1="250" y1="270" x2="400" y2="270" stroke="currentColor" stroke-width="1.6" opacity="0.5"/>
+    <!-- beam-splitter glyphs inside the network -->
+    <line x1="284" y1="76" x2="300" y2="92" stroke="currentColor" stroke-width="1.8"/>
+    <line x1="318" y1="118" x2="334" y2="132" stroke="currentColor" stroke-width="1.8"/>
+    <line x1="292" y1="158" x2="308" y2="174" stroke="currentColor" stroke-width="1.8"/>
+    <line x1="306" y1="244" x2="322" y2="261" stroke="currentColor" stroke-width="1.8"/>
+    <!-- the crucial data<->ancilla coupling -->
+    <line x1="340" y1="201" x2="358" y2="217" stroke="currentColor" stroke-width="2.4"/>
+    <circle cx="349" cy="209" r="3.4" fill="none" stroke="currentColor" stroke-width="1.4"/>
+    <text x="312" y="62" fill="#4f7cff" font-size="11" text-anchor="middle">linear-optics network</text>
+    <text x="312" y="312" fill="#4f7cff" font-size="9.5" text-anchor="middle">beam splitters + phase shifters</text>
     <!-- data outputs -->
-    <line x1="380" y1="110" x2="648" y2="110" stroke="currentColor" stroke-width="1.6"/>
-    <line x1="380" y1="150" x2="648" y2="150" stroke="currentColor" stroke-width="1.6"/>
-    <!-- correction box on data rails -->
-    <rect x="486" y="96" width="34" height="68" rx="4" fill="none" stroke="currentColor" stroke-width="1.6"/>
-    <text x="503" y="136" fill="currentColor" font-size="15" text-anchor="middle">&#x3C6;</text>
+    <line x1="400" y1="68" x2="638" y2="68" stroke="currentColor" stroke-width="1.6"/>
+    <line x1="400" y1="100" x2="638" y2="100" stroke="currentColor" stroke-width="1.6"/>
+    <line x1="400" y1="150" x2="638" y2="150" stroke="currentColor" stroke-width="1.6"/>
+    <line x1="400" y1="182" x2="638" y2="182" stroke="currentColor" stroke-width="1.6"/>
+    <!-- correction box across data rails -->
+    <rect x="470" y="58" width="34" height="134" rx="4" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <text x="487" y="130" fill="currentColor" font-size="15" text-anchor="middle">&#x3C6;</text>
+    <text x="487" y="50" fill="currentColor" font-size="9.5" text-anchor="middle">correction</text>
+    <!-- entanglement bracket on the right -->
+    <path d="M636 68 Q652 68 652 125 Q652 182 636 182" fill="none" stroke="#14b8a6" stroke-width="1.8"/>
+    <text x="658" y="121" fill="#14b8a6" font-size="11.5">entangled</text>
+    <text x="658" y="136" fill="#14b8a6" font-size="11.5">pair</text>
     <!-- ancilla outputs to detectors -->
-    <line x1="380" y1="250" x2="436" y2="250" stroke="currentColor" stroke-width="1.6"/>
-    <line x1="380" y1="290" x2="436" y2="290" stroke="currentColor" stroke-width="1.6"/>
-    <path d="M436 239 L436 261 L460 250 Z" fill="#e0a106" fill-opacity="0.25" stroke="#e0a106" stroke-width="1.8"/>
-    <path d="M436 279 L436 301 L460 290 Z" fill="#e0a106" fill-opacity="0.25" stroke="#e0a106" stroke-width="1.8"/>
-    <text x="470" y="254" fill="#e0a106" font-size="12">D</text>
-    <text x="470" y="294" fill="#e0a106" font-size="12">D</text>
-    <text x="500" y="276" fill="#e0a106" font-size="11.5">photon-number detection</text>
-    <!-- feed-forward: from detector up into the correction box -->
-    <polyline points="460,250 468,250 468,164 486,164" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#p1a)" opacity="0.9"/>
-    <text x="474" y="206" fill="currentColor" font-size="11" text-anchor="start">feed-forward</text>
-    <!-- output label -->
-    <text x="654" y="116" fill="#14b8a6" font-size="11" text-anchor="start">gated</text>
-    <text x="654" y="152" fill="#14b8a6" font-size="11" text-anchor="start">qubit</text>
-    <text x="360" y="376" fill="currentColor" font-size="13" text-anchor="middle">photons barely interact &#8212; the measurement supplies the nonlinearity; the gate is heralded, succeeding with probability p &lt; 1</text>
+    <line x1="400" y1="235" x2="452" y2="235" stroke="currentColor" stroke-width="1.6"/>
+    <line x1="400" y1="270" x2="452" y2="270" stroke="currentColor" stroke-width="1.6"/>
+    <path d="M452 224 L452 246 L476 235 Z" fill="#e0a106" fill-opacity="0.25" stroke="#e0a106" stroke-width="1.8"/>
+    <path d="M452 259 L452 281 L476 270 Z" fill="#e0a106" fill-opacity="0.25" stroke="#e0a106" stroke-width="1.8"/>
+    <text x="486" y="239" fill="#e0a106" font-size="12">D</text>
+    <text x="486" y="274" fill="#e0a106" font-size="12">D</text>
+    <text x="452" y="302" fill="#e0a106" font-size="11">photon-number detection</text>
+    <!-- feed-forward from detector up into the correction box -->
+    <polyline points="476,235 510,235 510,192" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="5 4" marker-end="url(#p1a)" opacity="0.9"/>
+    <text x="516" y="220" fill="currentColor" font-size="11" text-anchor="start">feed-forward</text>
+    <text x="360" y="402" fill="currentColor" font-size="13" text-anchor="middle">photons barely interact &#8212; the ancilla measurement supplies the nonlinearity; the gate is heralded, firing only with probability p &lt; 1</text>
   </svg>
-  <figcaption style="margin-top:.5rem;"><b>Figure 1.</b> A measurement-induced (KLM-style) two-qubit gate. A dual-rail data qubit and a pair of ancilla photons pass through a passive linear-optics network (blue). Two ancilla modes are measured by photon-number detectors (amber); their outcome is <em>fed forward</em> as a phase correction $\varphi$ on the data output. Because beam splitters cannot make photons interact, the entanglement comes from the <em>measurement</em> — and the gate is <em>probabilistic</em>: it works only when the detectors herald success, otherwise the run is discarded and retried.</figcaption>
+  <figcaption style="margin-top:.5rem;"><b>Figure 1.</b> A measurement-induced (KLM-style) two-qubit entangling gate. Two dual-rail data qubits (teal — each one photon spread over both of its rails) and two ancilla helper photons (amber) enter a passive linear-optics network (blue). Inside, beam splitters mix the rails — including a coupling between a data rail and an ancilla rail (the bold mark), which is how a later detector click can reach back to the data. The two ancilla modes are measured by photon-number detectors; their outcome is <em>fed forward</em> as a correction $\varphi$ on the data rails, and the two qubits leave <em>entangled</em>. Because beam splitters cannot make photons interact, the entanglement comes entirely from the <em>measurement</em> — so the gate is <em>probabilistic</em>: it works only when the detectors herald success, otherwise the run is discarded and retried.</figcaption>
 </figure>
 
 **Idea two: stop running a circuit at all — compute by measuring (cluster states and fusion).** If gates are probabilistic and photons hate being stored, the whole "apply gate 1, then gate 2, then gate 3" picture is a bad fit. So photonics largely abandons it for a different model of computation entirely. In **measurement-based quantum computing**, due to Raussendorf and Briegel, you first build one big, highly entangled state — a **cluster state**, a lattice of qubits all linked together — and then you *compute by measuring its qubits one at a time*, choosing each measurement's basis based (by feed-forward) on earlier outcomes <d-cite key="raussendorf2001oneway"></d-cite>. The entanglement is the "program"; the measurements run it; the cluster is consumed as you go. This is a spectacular match for light, because all the hard, probabilistic entangling can be done *offline and in advance* — you keep firing your probabilistic gates until, by luck and multiplexing, a cluster state assembles — and then the actual computation is nothing but single-photon measurements, which photons are wonderful at.
@@ -125,7 +154,7 @@ That cancellation is a genuinely *nonlinear* feature of photon number — and it
 The modern, hardware-minded refinement is **fusion-based quantum computing** (FBQC), introduced by Bartolucci and colleagues at PsiQuantum <d-cite key="bartolucci2023fusion"></d-cite>. Instead of building one enormous cluster, you mass-produce many tiny, identical, constant-sized **resource states** — small bundles of a few entangled photons each — and stitch them together with **fusion measurements**: destructive two-photon entangling measurements (essentially Bell measurements) that, when they succeed, weld two resource states into a larger entangled fabric. Each individual fusion is probabilistic and lossy, but the architecture is *designed around that*: with enough redundancy and multiplexing, and as long as photon loss stays below a hardware threshold, the surviving fusions knit together a fault-tolerant cluster. It is the assembly line that finally makes "compute by measurement" look like a manufacturable machine rather than a thought experiment. Figure 2 shows the core move.
 
 <figure class="l-body" style="text-align:center; margin:1.5rem auto; max-width:700px;">
-  <svg viewBox="0 0 720 380" role="img" aria-label="Fusion of two small entangled resource states into a larger cluster state. On the left, resource state A is a small graph of teal nodes joined by edges; on the right, resource state B is a mirror-image small graph. One qubit from each is sent into a central fusion measurement, drawn as a dashed amber box labelled fusion, approximately a Bell measurement. A downward arrow leads to a single larger cluster state at the bottom, where A's graph and B's graph are now joined by one new amber edge created by the fusion." style="width:100%; height:auto; font-family:sans-serif;">
+  <svg viewBox="0 0 720 388" role="img" aria-label="Fusion of two small entangled resource states into a larger cluster state. On the left, resource state A is a small graph of teal nodes joined by edges; on the right, resource state B is a mirror-image small graph. The innermost qubit of each, drawn as a hollow node with an amber cross, is sent into a central fusion measurement, a dashed amber box labelled fusion, approximately a Bell measurement, which consumes both of those photons. A downward arrow leads to a single larger cluster state at the bottom. The two fused photons are gone; their former neighbours are now joined by one new amber edge, leaving six nodes." style="width:100%; height:auto; font-family:sans-serif;">
     <defs>
       <marker id="p2a" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="currentColor"/></marker>
     </defs>
@@ -137,7 +166,10 @@ The modern, hardware-minded refinement is **fusion-based quantum computing** (FB
     <circle cx="120" cy="85" r="8" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
     <circle cx="120" cy="135" r="8" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
     <circle cx="195" cy="110" r="8" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
-    <circle cx="300" cy="110" r="9" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2.4"/>
+    <!-- A's fused qubit: consumed (hollow + amber cross) -->
+    <circle cx="300" cy="110" r="9" fill="none" stroke="#14b8a6" stroke-width="1.6" opacity="0.7"/>
+    <line x1="294" y1="104" x2="306" y2="116" stroke="#e0a106" stroke-width="1.8"/>
+    <line x1="294" y1="116" x2="306" y2="104" stroke="#e0a106" stroke-width="1.8"/>
     <!-- resource state B (mirror) -->
     <text x="560" y="48" fill="#14b8a6" font-size="13" text-anchor="middle">resource state B</text>
     <line x1="600" y1="85" x2="525" y2="110" stroke="currentColor" stroke-width="1.6"/>
@@ -146,36 +178,36 @@ The modern, hardware-minded refinement is **fusion-based quantum computing** (FB
     <circle cx="600" cy="85" r="8" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
     <circle cx="600" cy="135" r="8" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
     <circle cx="525" cy="110" r="8" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
-    <circle cx="420" cy="110" r="9" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2.4"/>
+    <!-- B's fused qubit: consumed (hollow + amber cross) -->
+    <circle cx="420" cy="110" r="9" fill="none" stroke="#14b8a6" stroke-width="1.6" opacity="0.7"/>
+    <line x1="414" y1="104" x2="426" y2="116" stroke="#e0a106" stroke-width="1.8"/>
+    <line x1="414" y1="116" x2="426" y2="104" stroke="#e0a106" stroke-width="1.8"/>
     <!-- fusion measurement box -->
     <line x1="309" y1="110" x2="330" y2="110" stroke="#e0a106" stroke-width="1.8" stroke-dasharray="4 3"/>
     <line x1="390" y1="110" x2="411" y2="110" stroke="#e0a106" stroke-width="1.8" stroke-dasharray="4 3"/>
     <rect x="330" y="86" width="60" height="48" rx="5" fill="#e0a106" fill-opacity="0.08" stroke="#e0a106" stroke-width="1.8" stroke-dasharray="5 4"/>
     <text x="360" y="108" fill="#e0a106" font-size="12.5" text-anchor="middle">fusion</text>
     <text x="360" y="124" fill="#e0a106" font-size="9.5" text-anchor="middle">&#8776; Bell meas.</text>
+    <text x="360" y="156" fill="#e0a106" font-size="10.5" text-anchor="middle">both photons consumed</text>
     <!-- arrow down -->
-    <line x1="360" y1="150" x2="360" y2="208" stroke="currentColor" stroke-width="1.6" marker-end="url(#p2a)"/>
-    <text x="360" y="234" fill="currentColor" font-size="13" text-anchor="middle" font-weight="600">one larger cluster state</text>
-    <!-- merged cluster bottom -->
-    <line x1="150" y1="285" x2="220" y2="305" stroke="currentColor" stroke-width="1.6"/>
-    <line x1="150" y1="325" x2="220" y2="305" stroke="currentColor" stroke-width="1.6"/>
-    <line x1="220" y1="305" x2="290" y2="305" stroke="currentColor" stroke-width="1.6"/>
-    <line x1="290" y1="305" x2="430" y2="305" stroke="#e0a106" stroke-width="2.8"/>
-    <line x1="430" y1="305" x2="500" y2="305" stroke="currentColor" stroke-width="1.6"/>
-    <line x1="500" y1="305" x2="570" y2="285" stroke="currentColor" stroke-width="1.6"/>
-    <line x1="500" y1="305" x2="570" y2="325" stroke="currentColor" stroke-width="1.6"/>
-    <circle cx="150" cy="285" r="8" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
-    <circle cx="150" cy="325" r="8" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
-    <circle cx="220" cy="305" r="8" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
-    <circle cx="290" cy="305" r="8" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
-    <circle cx="430" cy="305" r="8" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
-    <circle cx="500" cy="305" r="8" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
-    <circle cx="570" cy="285" r="8" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
-    <circle cx="570" cy="325" r="8" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
-    <text x="360" y="296" fill="#e0a106" font-size="10.5" text-anchor="middle">new link</text>
-    <text x="360" y="364" fill="currentColor" font-size="12.5" text-anchor="middle">each fusion is probabilistic (&#8804; ~50%) &#8212; redundancy and multiplexing repair the failures</text>
+    <line x1="360" y1="166" x2="360" y2="214" stroke="currentColor" stroke-width="1.6" marker-end="url(#p2a)"/>
+    <text x="360" y="240" fill="currentColor" font-size="13" text-anchor="middle" font-weight="600">one larger cluster state</text>
+    <!-- merged cluster bottom: 6 surviving nodes, neighbours welded -->
+    <line x1="150" y1="290" x2="220" y2="310" stroke="currentColor" stroke-width="1.6"/>
+    <line x1="150" y1="330" x2="220" y2="310" stroke="currentColor" stroke-width="1.6"/>
+    <line x1="220" y1="310" x2="500" y2="310" stroke="#e0a106" stroke-width="2.8"/>
+    <line x1="500" y1="310" x2="570" y2="290" stroke="currentColor" stroke-width="1.6"/>
+    <line x1="500" y1="310" x2="570" y2="330" stroke="currentColor" stroke-width="1.6"/>
+    <circle cx="150" cy="290" r="8" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
+    <circle cx="150" cy="330" r="8" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
+    <circle cx="220" cy="310" r="8" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
+    <circle cx="500" cy="310" r="8" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
+    <circle cx="570" cy="290" r="8" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
+    <circle cx="570" cy="330" r="8" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2"/>
+    <text x="360" y="300" fill="#e0a106" font-size="10.5" text-anchor="middle">new link</text>
+    <text x="360" y="372" fill="currentColor" font-size="12.5" text-anchor="middle">the two fused photons are gone &#8212; their former neighbours inherit the new bond</text>
   </svg>
-  <figcaption style="margin-top:.5rem;"><b>Figure 2.</b> Fusion-based quantum computing. Two small, constant-size entangled <em>resource states</em> (teal graphs) each contribute one photon to a <em>fusion</em> measurement (amber, roughly a Bell measurement). A successful fusion welds them into a single larger cluster state, the new link drawn in amber. Each fusion is probabilistic and lossy — capped near $50\%$ for bare linear optics <d-cite key="calsamiglia2001bellanalyzer"></d-cite> — so the machine mass-produces resource states and multiplexes many fusion attempts, knitting a fault-tolerant cluster from the ones that succeed.</figcaption>
+  <figcaption style="margin-top:.5rem;"><b>Figure 2.</b> Fusion-based quantum computing. Two small, constant-size entangled <em>resource states</em> (teal graphs) each send one photon into a <em>fusion</em> measurement (amber, roughly a Bell measurement). The fusion is <em>destructive</em>: it measures away both contributed photons (hollow, crossed-out nodes) and, when it succeeds, welds their surviving <em>neighbours</em> together — the new bond in amber. Eight qubits go in; the two fused ones are consumed; six remain, now joined into one larger cluster. Each fusion is probabilistic and lossy — capped near $50\%$ for bare linear optics <d-cite key="calsamiglia2001bellanalyzer"></d-cite> — so the machine mass-produces resource states and multiplexes many fusion attempts, knitting a fault-tolerant cluster from the ones that succeed.</figcaption>
 </figure>
 
 Notice the through-line of both ideas: photonics buys determinism with *numbers*. Rather than hope one probabilistic gate or one fusion pays off, you build thousands in parallel and use fast optical switches to route the lucky successes onward. That brute-force-and-elegant strategy, **multiplexing**, is the master key of the platform — and, as we are about to see, the source of its heaviest bill.
@@ -184,13 +216,55 @@ Notice the through-line of both ideas: photonics buys determinism with *numbers*
 
 Add up the photon's virtues and a clear identity emerges: it is a so-so computer wrapped around a world-class *network node*. Four strengths, the last of which is the one that matters most for this series.
 
-**Room temperature, and almost no decoherence in flight.** The optical core needs no dilution fridge. And because a flying photon is so weakly coupled to its surroundings, it does not gather phase errors the way a transmon or an atom does sitting in its trap — there is essentially no $T_2$ clock ticking down mid-flight. The qubit that is hardest to *store* is, paradoxically, one of the easiest to *keep faithful while it travels*.
+**Room temperature.** The optical core needs no dilution fridge: a photon barely couples to anything, so the light itself runs warm. (Its sources and detectors are the cold exception, an asterisk the next section settles.)
+
+**Almost no decoherence in flight.** Because a flying photon is so weakly coupled to its surroundings, it does not gather phase errors the way a transmon or an atom does sitting in its trap — there is essentially no $T_2$ clock ticking down mid-flight. The qubit that is hardest to *store* is, paradoxically, one of the easiest to *keep faithful while it travels*.
 
 **Speed and manufacturability.** Single-qubit gates happen at the speed of light crossing a chip, and the chips themselves can be made in a commercial silicon-photonics foundry. PsiQuantum fabricated its Omega chipset on a standard semiconductor line at GlobalFoundries and reported component fidelities — $99.98\%$ state preparation and measurement, $99.50\%$ two-photon interference visibility between *independent* sources, $99.22\%$ two-qubit fusion — that read like a mature platform, not a lab curiosity <d-cite key="psiquantum2025omega"></d-cite>. (The crucial asterisk on all of those, which we honor in the next section: they are *conditional on the photon being detected* — they do not include loss.)
 
-**It is born to network — the trump card.** This is where the photon stops being a runner-up and becomes the obvious choice. Every other platform, to send quantum information across a room or a city, must first *convert* its qubit into a photon that can enter an optical fiber. For trapped ions and neutral atoms that conversion is at least natural — an atom can emit a photon entangled with its internal state — but it still has to be coaxed and collected. For superconducting qubits it is a near-disaster: their information lives in ~5 GHz microwave photons that cannot travel down an optical fiber at all, so they need a microwave-to-optical **transducer**, a translation box that today is lossy and immature. The photonic qubit skips the entire problem, because **the qubit already *is* an optical photon.** No conversion, no transducer — write your state on a telecom-band photon and drop it straight into off-the-shelf fiber. Consequently the core operations of a quantum network — quantum key distribution, teleportation, entanglement distribution, the quantum repeaters that would tie distant nodes together — are all *native* to photons rather than bolt-on tricks. PsiQuantum demonstrated this directly with a chip-to-chip entangling link that distributed qubits across $42$ m of standard telecom fiber at $99.72\%$ fidelity <d-cite key="psiquantum2025omega"></d-cite>. Room-temperature optics, near-zero in-flight decoherence, foundry manufacturing, and telecom fiber that the entire internet already runs on: it is genuinely hard to imagine a qubit better suited to be the *wire* of a future quantum internet.
+**It is born to network — the trump card.** This is where the photon stops being a runner-up and becomes the obvious choice. Every other platform, to send quantum information across a room or a city, must first *convert* its qubit into a photon that can enter an optical fiber. For trapped ions and neutral atoms that conversion is at least natural — an atom can emit a photon entangled with its internal state — but it still has to be coaxed and collected. For superconducting qubits it is a near-disaster: their information lives in ~5 GHz microwave photons that cannot travel down an optical fiber at all, so they need a microwave-to-optical **transducer**, a translation box that today is lossy and immature. The photonic qubit skips the entire problem, because **the qubit already *is* an optical photon.** No conversion, no transducer — write your state on a telecom-band photon and drop it straight into off-the-shelf fiber. Consequently the core operations of a quantum network — quantum key distribution, teleportation, entanglement distribution, the quantum repeaters that would tie distant nodes together — are all *native* to photons rather than bolt-on tricks.
 
-This is exactly the lens this series keeps returning to. Of the five platforms, the photon may be the weakest stand-alone computer — but it is the consensus best **network node**, for the simple reason that it does not have to *become* a photon to travel. It already is one. The intellectual debt is old and deep: the 2022 Nobel Prize in Physics went to Alain Aspect, John Clauser, and Anton Zeilinger precisely for the experiments with entangled photons that turned Bell's inequality from philosophy into measurable physics and founded quantum information science <d-cite key="nobel2022entanglement"></d-cite>. Photons were the original quantum-information carriers, and they remain the only ones that move.
+<figure class="l-body" style="text-align:center; margin:1.5rem auto; max-width:700px;">
+  <svg viewBox="0 0 720 360" role="img" aria-label="How each platform gets a qubit into an optical fiber. Top row: a superconducting qubit, carrying about 5 gigahertz microwave information, must pass through a microwave-to-optical transducer box, marked lossy and immature in amber and red, before it can enter the telecom fiber drawn in blue. Middle row: a trapped ion or neutral atom must emit and collect a photon, a natural but coaxed step, before the fiber. Bottom row: a photonic qubit, drawn in teal, runs straight into the telecom fiber with no intermediate box, because the qubit already is the photon." style="width:100%; height:auto; font-family:sans-serif;">
+    <defs>
+      <marker id="p3a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="currentColor"/></marker>
+      <marker id="p3b" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#4f7cff"/></marker>
+    </defs>
+    <text x="360" y="26" fill="currentColor" font-size="14" text-anchor="middle" font-weight="600">Getting a qubit into an optical fiber</text>
+    <!-- row 1: superconducting -->
+    <rect x="24" y="58" width="150" height="48" rx="6" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <text x="99" y="79" fill="currentColor" font-size="12" text-anchor="middle">Superconducting</text>
+    <text x="99" y="95" fill="currentColor" font-size="10" text-anchor="middle">~5 GHz microwave</text>
+    <line x1="174" y1="82" x2="214" y2="82" stroke="currentColor" stroke-width="1.6" marker-end="url(#p3a)"/>
+    <rect x="220" y="56" width="168" height="52" rx="6" fill="#e0a106" fill-opacity="0.08" stroke="#e0a106" stroke-width="1.8"/>
+    <text x="304" y="77" fill="#e0a106" font-size="11.5" text-anchor="middle">microwave&#8594;optical transducer</text>
+    <text x="304" y="95" fill="#ef4444" font-size="10.5" text-anchor="middle">lossy &amp; immature</text>
+    <line x1="388" y1="82" x2="430" y2="82" stroke="currentColor" stroke-width="1.6" marker-end="url(#p3a)"/>
+    <path d="M432 82 H684" fill="none" stroke="#4f7cff" stroke-width="2.4" marker-end="url(#p3b)"/>
+    <text x="556" y="74" fill="#4f7cff" font-size="10.5" text-anchor="middle">telecom fiber</text>
+    <!-- row 2: ion / atom -->
+    <rect x="24" y="160" width="150" height="48" rx="6" fill="none" stroke="currentColor" stroke-width="1.7"/>
+    <text x="99" y="181" fill="currentColor" font-size="12" text-anchor="middle">Trapped ion /</text>
+    <text x="99" y="197" fill="currentColor" font-size="12" text-anchor="middle">neutral atom</text>
+    <line x1="174" y1="184" x2="214" y2="184" stroke="currentColor" stroke-width="1.6" marker-end="url(#p3a)"/>
+    <rect x="220" y="158" width="168" height="52" rx="6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+    <text x="304" y="179" fill="currentColor" font-size="11.5" text-anchor="middle">emit + collect a photon</text>
+    <text x="304" y="197" fill="currentColor" font-size="10" text-anchor="middle" opacity="0.8">natural, but must be coaxed</text>
+    <line x1="388" y1="184" x2="430" y2="184" stroke="currentColor" stroke-width="1.6" marker-end="url(#p3a)"/>
+    <path d="M432 184 H684" fill="none" stroke="#4f7cff" stroke-width="2.4" marker-end="url(#p3b)"/>
+    <!-- row 3: photonic -->
+    <rect x="24" y="262" width="150" height="48" rx="6" fill="none" stroke="#14b8a6" stroke-width="2"/>
+    <text x="99" y="283" fill="#14b8a6" font-size="12" text-anchor="middle">Photonic</text>
+    <text x="99" y="299" fill="#14b8a6" font-size="10" text-anchor="middle">the qubit is the photon</text>
+    <path d="M174 286 H684" fill="none" stroke="#4f7cff" stroke-width="2.4" marker-end="url(#p3b)"/>
+    <text x="430" y="277" fill="#14b8a6" font-size="11.5" text-anchor="middle">no transducer &#8212; straight into the fiber</text>
+  </svg>
+  <figcaption style="margin-top:.5rem;"><b>Figure 3.</b> Why the photon is the field's best network wire. To send a qubit down an optical fiber, every other platform must first turn it into light. A superconducting qubit needs a microwave→optical <em>transducer</em> (today lossy and immature); a trapped ion or neutral atom must emit and collect a photon (natural, but coaxed). The photonic qubit skips all of it — it is <em>already</em> a telecom-band photon, so it drops straight into the same fiber the internet runs on. No transducer, no conversion: here the qubit and the wire are one and the same.</figcaption>
+</figure>
+
+PsiQuantum demonstrated this directly with a chip-to-chip entangling link that distributed qubits across $42$ m of standard telecom fiber at $99.72\%$ fidelity <d-cite key="psiquantum2025omega"></d-cite>. Room-temperature optics, near-zero in-flight decoherence, foundry manufacturing, and telecom fiber that the entire internet already runs on: it is genuinely hard to imagine a qubit better suited to be the *wire* of a future quantum internet.
+
+This is the lens the series keeps returning to. Of the five platforms, the photon may be the weakest stand-alone computer, yet it is the consensus best **network node** — because it never has to *become* a photon to travel. The debt is old and deep: the 2022 Nobel Prize in Physics went to Alain Aspect, John Clauser, and Anton Zeilinger for the experiments with entangled photons that turned Bell's inequality from philosophy into measurable physics and founded quantum information science <d-cite key="nobel2022entanglement"></d-cite>. Photons were the original quantum-information carriers, and they remain the only ones that move.
 
 ## The honest costs
 
@@ -202,7 +276,7 @@ Now settle the bill, because the same non-interaction that makes the photon a pe
 
 **No good memory, and a synchronization headache.** A photon will not hold still, so "store this qubit for a moment while I wait for its partner" is genuinely hard. Today's stopgap is almost comic: to delay a photon you send it on a longer trip — literally a loop of optical fiber as a **delay line**. Xanadu's Aurora prototype carries about $13$ km of fiber for exactly this kind of timing and buffering <d-cite key="aghaeerad2025aurora"></d-cite>. It works, but it is the quantum-computing equivalent of "keep moving so you don't fall over," and it does not replace a true quantum memory; long-distance networking will still need dedicated memories and repeaters in the relay. On top of that, getting thousands of independently produced photons to arrive at the same beam splitter at the same instant, indistinguishable, is a hard synchronization problem in its own right.
 
-**The components have to be nearly perfect — and some of them are cold.** The whole scheme assumes **near-deterministic single-photon sources** (you want exactly one photon, on demand, every time) and **high-efficiency detectors** (you cannot afford to miss the photons you do have). Reality is closing the gap but is not there: the best quantum-dot sources reach roughly $57\%$ end-to-end efficiency with $\sim97.5\%$ indistinguishability <d-cite key="tomm2021singlephoton"></d-cite>, and the best superconducting-nanowire detectors hit $98\%$ system efficiency at telecom wavelength <d-cite key="reddy2020snspd"></d-cite> — both excellent, both still short of the ruthless requirements that loss imposes, and both needing cryogenic cooling. So the "room-temperature computer" quietly runs a fridge for its sources and detectors after all. The photons are warm; their bouncers are frozen.
+**The components have to be nearly perfect — and some of them are cold.** The whole scheme assumes **near-deterministic single-photon sources** (you want exactly one photon, on demand, every time) and **high-efficiency detectors** (you cannot afford to miss the photons you do have). Reality is closing the gap but is not there: the best quantum-dot sources reach roughly $57\%$ end-to-end efficiency with $\sim97.5\%$ indistinguishability <d-cite key="tomm2021singlephoton"></d-cite>, and the best superconducting-nanowire detectors hit $98\%$ system efficiency at telecom wavelength <d-cite key="reddy2020snspd"></d-cite> — both excellent, both still short of the ruthless requirements that loss imposes, and both needing cryogenic cooling. So the "room-temperature computer" quietly runs a fridge for its sources and detectors after all — the one cold corner it cannot design away.
 
 ## State of the art
 
@@ -228,7 +302,7 @@ So the answer to this series' recurring question is, for once, lopsided. *Can it
 | **Gate speed** | very fast (~10–70 ns) | slow (~µs) | slow (~µs) | n/a (measurement) |
 | **Coherence** | short (~0.1–1.7 ms) | very long (s–min) | long (s) | loss-limited |
 | **Connectivity** | mostly nearest-neighbor | all-to-all | reconfigurable | hard (no interaction) |
-| **Operating temp** | ~10 mK (dilution fridge) | room-temp vacuum | room-temp vacuum | room temperature |
+| **Operating temp** | ~10 mK (dilution fridge) | room-temp vacuum | room-temp vacuum | room-temp optics (cold sources/detectors) |
 | **As a network node** | needs transduction | natural (emits photons) | promising | it *is* the photon |
 
 No platform wins every row — the whole reason five of them are still racing. Superconducting out-sprints decoherence; the trapped ion out-lasts and out-connects everyone; the neutral atom out-scales them; and the photon, last in this lineup for raw computing, is first and nearly uncontested for the one job none of the others can do without help — being the link that carries a qubit from one machine to the next. If your wish list is a general-purpose quantum computer today, the photon is not your pick. If your wish list is a *wire to connect every quantum computer together*, almost nothing else comes close. There is one route in this series still unbuilt — the platform that leaves light behind and returns to the solid state, to electron and nuclear spins in silicon and diamond, and to a quasiparticle that may not even exist. The sixth and final build: **solid-state spins and the rest**.
