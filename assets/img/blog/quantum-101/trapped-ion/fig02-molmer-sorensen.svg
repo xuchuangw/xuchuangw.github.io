@@ -9,20 +9,20 @@
   <line x1="420" y1="20" x2="375" y2="120" stroke="#4f7cff" stroke-width="2" stroke-linecap="round"/>
   <text x="285" y="30" fill="#ef4444" font-size="12" text-anchor="end">&#x3C9;&#8320;&#8722;&#x3B4;</text>
   <text x="435" y="30" fill="#4f7cff" font-size="12" text-anchor="start">&#x3C9;&#8320;+&#x3B4;</text>
-  <text x="360" y="52" fill="#3b3f4a" font-size="12.5" text-anchor="middle">bichromatic beams &#8212; a spin-dependent force</text>
+  <text x="360" y="52" fill="currentColor" font-size="12.5" text-anchor="middle">bichromatic beams &#8212; a spin-dependent force</text>
   <!-- two ions -->
   <circle cx="200" cy="150" r="16" fill="#14b8a6" fill-opacity="0.22" stroke="#14b8a6" stroke-width="2.6"/>
   <circle cx="520" cy="150" r="16" fill="#14b8a6" fill-opacity="0.22" stroke="#14b8a6" stroke-width="2.6"/>
   <text x="200" y="120" fill="#14b8a6" font-size="13" text-anchor="middle">ion 1</text>
   <text x="520" y="120" fill="#14b8a6" font-size="13" text-anchor="middle">ion 2</text>
   <!-- shared motional mode between them -->
-  <path d="M222 150 q 13 -14 26 0 q 13 14 26 0 q 13 -14 26 0 q 13 14 26 0 q 13 -14 26 0 q 13 14 26 0 q 13 -14 26 0 q 13 14 26 0 q 13 -14 26 0 q 13 14 26 0 q 13 -14 26 0" fill="none" stroke="#3b3f4a" stroke-width="2" opacity="0.7"/>
-  <text x="360" y="128" fill="#3b3f4a" font-size="12.5" text-anchor="middle">shared motional mode (the bus)</text>
+  <path d="M222 150 q 13 -14 26 0 q 13 14 26 0 q 13 -14 26 0 q 13 14 26 0 q 13 -14 26 0 q 13 14 26 0 q 13 -14 26 0 q 13 14 26 0 q 13 -14 26 0 q 13 14 26 0 q 13 -14 26 0" fill="none" stroke="currentColor" stroke-width="2" opacity="0.7"/>
+  <text x="360" y="128" fill="currentColor" font-size="12.5" text-anchor="middle">shared motional mode (the bus)</text>
   <!-- phase-space loop -->
   <ellipse cx="360" cy="232" rx="34" ry="22" fill="none" stroke="#e0a106" stroke-width="2"/>
   <path d="M392 226 a 34 22 0 0 1 -8 16" fill="none" stroke="#e0a106" stroke-width="2" marker-end="url(#t2a)"/>
   <text x="360" y="237" fill="#e0a106" font-size="11" text-anchor="middle">motion</text>
-  <text x="360" y="296" fill="#3b3f4a" font-size="12.5" text-anchor="middle">the loop closes &#8594; motion left cold, spins entangled (Bell state)</text>
+  <text x="360" y="296" fill="currentColor" font-size="12.5" text-anchor="middle">the loop closes &#8594; motion left cold, spins entangled (Bell state)</text>
   <!-- entanglement link -->
   <path d="M216 168 q 144 56 288 0" fill="none" stroke="#14b8a6" stroke-width="2" stroke-dasharray="5 4"/>
 </svg>
