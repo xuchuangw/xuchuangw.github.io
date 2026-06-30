@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 560" role="img" aria-label="A scatter plot of quantum-computing platforms positioned by gate speed on the horizontal axis (faster to the right) and coherence time on the vertical axis (longer toward the top), both logarithmic. Superconducting qubits sit at the bottom right: very fast gates, about thirty nanoseconds, but short coherence near a third of a millisecond. Silicon spin qubits sit just above and left of superconducting: fast gates, millisecond-to-second coherence. Neutral atoms sit upper-middle-left: slow gates around a few hundred nanoseconds, coherence near ten seconds. Trapped ions sit top left: the slowest gates, about a microsecond, but the longest coherence, minutes. A faint diagonal band runs from the fast-short corner to the slow-long corner, labelled the central trade-off. The top-right corner, fast and long-lived, is marked as the empty ideal that no platform reaches. A separate note at the bottom explains that photonic qubits sit off this map entirely, because they have no gate clock and are limited by photon loss rather than coherence." style="width:100%; height:auto; font-family:sans-serif;">
+  <defs>
+    <marker id="hubAx" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="currentColor"/></marker>
+    <marker id="hubTr" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="currentColor" fill-opacity="0.55"/></marker>
+  </defs>
+  <!-- gridlines -->
+  <line x1="187" y1="70" x2="187" y2="410" stroke="currentColor" stroke-width="1" stroke-dasharray="3 5" opacity="0.16"/>
+  <line x1="443" y1="70" x2="443" y2="410" stroke="currentColor" stroke-width="1" stroke-dasharray="3 5" opacity="0.16"/>
+  <line x1="700" y1="70" x2="700" y2="410" stroke="currentColor" stroke-width="1" stroke-dasharray="3 5" opacity="0.16"/>
+  <line x1="110" y1="363" x2="700" y2="363" stroke="currentColor" stroke-width="1" stroke-dasharray="3 5" opacity="0.16"/>
+  <line x1="110" y1="224" x2="700" y2="224" stroke="currentColor" stroke-width="1" stroke-dasharray="3 5" opacity="0.16"/>
+  <line x1="110" y1="141" x2="700" y2="141" stroke="currentColor" stroke-width="1" stroke-dasharray="3 5" opacity="0.16"/>
+  <!-- axes -->
+  <line x1="110" y1="410" x2="110" y2="58" stroke="currentColor" stroke-width="1.6" marker-end="url(#hubAx)"/>
+  <line x1="110" y1="410" x2="714" y2="410" stroke="currentColor" stroke-width="1.6" marker-end="url(#hubAx)"/>
+  <!-- axis titles -->
+  <text x="34" y="240" fill="currentColor" font-size="14.5" transform="rotate(-90 34 240)" text-anchor="middle" font-weight="600">Coherence time  (longer &#8593;)</text>
+  <text x="405" y="447" fill="currentColor" font-size="14.5" text-anchor="middle" font-weight="600">Gate speed  (faster &#8594;)</text>
+  <!-- y tick labels -->
+  <text x="101" y="414" fill="currentColor" font-size="11.5" text-anchor="end" opacity="0.8">0.1 ms</text>
+  <text x="101" y="367" fill="currentColor" font-size="11.5" text-anchor="end" opacity="0.8">1 ms</text>
+  <text x="101" y="228" fill="currentColor" font-size="11.5" text-anchor="end" opacity="0.8">1 s</text>
+  <text x="101" y="145" fill="currentColor" font-size="11.5" text-anchor="end" opacity="0.8">1 min</text>
+  <!-- x tick labels -->
+  <text x="187" y="426" fill="currentColor" font-size="11.5" text-anchor="middle" opacity="0.8">~1 &#181;s</text>
+  <text x="443" y="426" fill="currentColor" font-size="11.5" text-anchor="middle" opacity="0.8">~100 ns</text>
+  <text x="690" y="426" fill="currentColor" font-size="11.5" text-anchor="middle" opacity="0.8">~10 ns</text>
+  <!-- central trade-off band -->
+  <line x1="560" y1="378" x2="214" y2="110" stroke="currentColor" stroke-width="15" opacity="0.07" stroke-linecap="round"/>
+  <line x1="556" y1="375" x2="222" y2="116" stroke="currentColor" stroke-width="1.4" stroke-dasharray="6 5" opacity="0.5" marker-end="url(#hubTr)"/>
+  <text x="388" y="232" fill="currentColor" font-size="13" text-anchor="middle" transform="rotate(37.7 388 232)" opacity="0.75" font-style="italic">the central trade-off: speed &#8596; coherence</text>
+  <!-- ideal corner -->
+  <text x="660" y="92" fill="currentColor" font-size="11.5" text-anchor="end" opacity="0.5" font-style="italic">ideal: fast AND long-lived</text>
+  <text x="660" y="108" fill="currentColor" font-size="11.5" text-anchor="end" opacity="0.5" font-style="italic">(nobody here yet)</text>
+  <!-- platform: trapped ion -->
+  <circle cx="187" cy="94" r="10" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2.4"/>
+  <text x="204" y="90" fill="#14b8a6" font-size="13.5" text-anchor="start" font-weight="600">Trapped ion</text>
+  <text x="204" y="106" fill="currentColor" font-size="11" text-anchor="start" opacity="0.8">&#8776;1 &#181;s gate &#183; minutes</text>
+  <!-- platform: neutral atom -->
+  <circle cx="321" cy="173" r="10" fill="#e0a106" fill-opacity="0.30" stroke="#e0a106" stroke-width="2.4"/>
+  <text x="338" y="169" fill="#e0a106" font-size="13.5" text-anchor="start" font-weight="600">Neutral atom</text>
+  <text x="338" y="185" fill="currentColor" font-size="11" text-anchor="start" opacity="0.8">hundreds of ns &#183; ~10 s</text>
+  <!-- platform: silicon spin -->
+  <circle cx="521" cy="363" r="10" fill="#ef4444" fill-opacity="0.30" stroke="#ef4444" stroke-width="2.4"/>
+  <text x="533" y="349" fill="#ef4444" font-size="13.5" text-anchor="start" font-weight="600">Spin qubits</text>
+  <text x="533" y="365" fill="currentColor" font-size="11" text-anchor="start" opacity="0.8">tens of ns &#183; ms&#8211;s</text>
+  <!-- platform: superconducting -->
+  <circle cx="578" cy="388" r="10" fill="#4f7cff" fill-opacity="0.30" stroke="#4f7cff" stroke-width="2.4"/>
+  <text x="566" y="383" fill="#4f7cff" font-size="13.5" text-anchor="end" font-weight="600">Superconducting</text>
+  <text x="566" y="399" fill="currentColor" font-size="11" text-anchor="end" opacity="0.8">~30 ns gate &#183; ~0.3 ms</text>
+  <!-- photonic off-map callout -->
+  <rect x="110" y="474" width="590" height="62" rx="8" fill="currentColor" fill-opacity="0.04" stroke="currentColor" stroke-width="1.4" stroke-dasharray="6 4" opacity="0.85"/>
+  <path d="M132 505 q 9 -11 18 0 q 9 11 18 0 q 9 -11 18 0" fill="none" stroke="currentColor" stroke-width="2"/>
+  <text x="196" y="497" fill="currentColor" font-size="12.5" text-anchor="start" font-weight="600">Photonic sits off this map.</text>
+  <text x="196" y="514" fill="currentColor" font-size="11.5" text-anchor="start" opacity="0.85">There is no gate "clock" (it computes by measurement) and the limiting</text>
+  <text x="196" y="529" fill="currentColor" font-size="11.5" text-anchor="start" opacity="0.85">resource is photon loss, not coherence &#8212; the field's best wire, not a point on this trade-off.</text>
+</svg>
