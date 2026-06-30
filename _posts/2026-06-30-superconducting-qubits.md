@@ -152,11 +152,11 @@ To **operate** the qubit you send microwave pulses — typically near 5 GHz, res
 
 Superconducting qubits lead the field for three reasons that all trace back to that fabrication-and-control story: they are **fast, manufacturable, and crowded**.
 
-**Fast.** Gate times are tens of nanoseconds. Google's surface-code processors, for instance, run single-qubit gates in about **25 ns** and two-qubit (CZ) gates in about **34 ns** <d-cite key="google2023surface"></d-cite>; across the field single-qubit gates land in the ~10–50 ns range and two-qubit gates around ~25–70 ns. That is roughly **100 to 1000 times faster than trapped-ion gates**, which take microseconds. In quantum computing, speed is hard currency: coherence is finite, so the faster each gate, the more operations you can complete before the qubit forgets. Superconducting's bet is to out-sprint decoherence rather than out-last it.
+**Fast.** Gate times are tens of nanoseconds. Google's surface-code processors, for instance, run single-qubit gates in about **25 ns** and two-qubit (CZ) gates in about **34 ns** <d-cite key="google2023surface"></d-cite>; across the field single-qubit gates land in the ~10–50 ns range and two-qubit gates around ~25–70 ns. That is roughly **100 to 1000 times faster than trapped-ion gates**, which take microseconds <d-cite key="ballance2016highfidelity"></d-cite>. In quantum computing, speed is hard currency: coherence is finite, so the faster each gate, the more operations you can complete before the qubit forgets. Superconducting's bet is to out-sprint decoherence rather than out-last it.
 
 **Manufacturable.** Because qubits are *printed*, the whole apparatus of semiconductor manufacturing — lithography, integration, on-chip wiring, foundry processes — is available. Scaling up means making a bigger chip, not building a bigger laser-and-vacuum cathedral. This is why the raw qubit-count records belong to this platform, and why IBM, Google, and a crowd of startups can iterate on hardware every year.
 
-**Crowded.** Nearly every quantum-computing headline of the past decade debuted on superconducting hardware, which means a deep, fast-moving ecosystem of tools, talent, and money. Fidelities reflect the maturity: Google's Willow processor reports single-qubit gate fidelity around **99.97%** and two-qubit (CZ) fidelity around **99.88%** <d-cite key="google2024willow"></d-cite>, and the best demonstrated single-qubit gates — on fluxonium, a transmon cousin — reach about **99.991%** <d-cite key="somoroff2023fluxonium"></d-cite>. Those are genuinely excellent numbers. The asterisks attached to them are the subject of the next section, because reading fidelity specs correctly is most of the battle.
+**Crowded.** Nearly every quantum-computing headline of the past decade debuted on superconducting hardware, which means a deep, fast-moving ecosystem of tools, talent, and money. Fidelities reflect the maturity: Google's Willow processor reports single-qubit gate fidelity around **99.97%** and two-qubit (CZ) fidelity around **99.88%** <d-cite key="google2024willow"></d-cite>, and the best demonstrated single-qubit gates — on fluxonium, a transmon cousin — reach about **~99.99%+** <d-cite key="somoroff2023fluxonium"></d-cite>. Those are genuinely excellent numbers. The asterisks attached to them are the subject of the next section, because reading fidelity specs correctly is most of the battle.
 
 ## The honest costs
 
@@ -172,9 +172,9 @@ Put those together and the in-machine numbers are soberer than the lab records. 
 
 1. **Single-qubit is not two-qubit.** The best single-qubit gates exceed 99.99% <d-cite key="somoroff2023fluxonium"></d-cite>; two-qubit gates are the hard part and run a notch or two lower. When someone quotes "four nines," check which gate they mean.
 2. **A lab record is not an in-machine median.** Those headline fidelities are achieved on a handful of qubits under ideal tune-up; the *median* across a hundred-qubit chip is meaningfully worse, and the median is what runs your circuit.
-3. **A physical qubit is not a logical qubit.** After error correction, 1121 physical qubits buy you only a small handful of *usable* logical qubits — error correction is an overhead, not a discount.
+3. **A physical qubit is not a logical qubit.** At current QEC overhead, 1121 physical qubits would yield only a small handful of *usable* logical qubits in principle — error correction is an overhead, not a discount.
 
-And the gap that frames the whole endeavor: running large algorithms requires logical error rates near $10^{-6}$, several orders of magnitude below today's ~$10^{-3}$ physical gate errors. Closing that gap is the entire point of quantum error correction, and it is the field's hardest current problem.
+And the gap that frames the whole endeavor: running large algorithms requires logical error rates near $10^{-6}$, several orders of magnitude below today's ~$10^{-3}$ physical gate errors <d-cite key="fowler2012surface"></d-cite>. Closing that gap is the entire point of quantum error correction, and it is the field's hardest current problem.
 
 ## State of the art
 

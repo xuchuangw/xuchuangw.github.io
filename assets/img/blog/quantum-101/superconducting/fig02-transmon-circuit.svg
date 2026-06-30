@@ -1,26 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" role="img" aria-label="Transmon circuit schematic: a Josephson junction, drawn as a box with a cross, in parallel with a large shunt capacitor, forming a closed loop." style="width:100%; height:auto; font-family:sans-serif;">
   <!-- loop wires -->
-  <line x1="250" y1="80" x2="470" y2="80" stroke="#3b3f4a" stroke-width="2"/>
-  <line x1="250" y1="240" x2="470" y2="240" stroke="#3b3f4a" stroke-width="2"/>
+  <line x1="250" y1="80" x2="470" y2="80" stroke="currentColor" stroke-width="2"/>
+  <line x1="250" y1="240" x2="470" y2="240" stroke="currentColor" stroke-width="2"/>
   <!-- left branch: capacitor -->
-  <line x1="250" y1="80" x2="250" y2="146" stroke="#3b3f4a" stroke-width="2"/>
-  <line x1="250" y1="174" x2="250" y2="240" stroke="#3b3f4a" stroke-width="2"/>
-  <line x1="214" y1="146" x2="286" y2="146" stroke="#3b3f4a" stroke-width="2.4"/>
-  <line x1="214" y1="174" x2="286" y2="174" stroke="#3b3f4a" stroke-width="2.4"/>
-  <text x="150" y="166" fill="#3b3f4a" font-size="15">C<tspan font-size="11" dy="4">&#x3A3;</tspan></text>
-  <text x="120" y="186" fill="#3b3f4a" font-size="11.5">shunt cap</text>
+  <line x1="250" y1="80" x2="250" y2="146" stroke="currentColor" stroke-width="2"/>
+  <line x1="250" y1="174" x2="250" y2="240" stroke="currentColor" stroke-width="2"/>
+  <line x1="214" y1="146" x2="286" y2="146" stroke="currentColor" stroke-width="2.4"/>
+  <line x1="214" y1="174" x2="286" y2="174" stroke="currentColor" stroke-width="2.4"/>
+  <text x="150" y="166" fill="currentColor" font-size="15">C<tspan font-size="11" dy="4">&#x3A3;</tspan></text>
+  <text x="120" y="186" fill="currentColor" font-size="11.5">shunt cap</text>
   <!-- right branch: Josephson junction (box with X) -->
-  <line x1="470" y1="80" x2="470" y2="132" stroke="#3b3f4a" stroke-width="2"/>
-  <line x1="470" y1="188" x2="470" y2="240" stroke="#3b3f4a" stroke-width="2"/>
+  <line x1="470" y1="80" x2="470" y2="132" stroke="currentColor" stroke-width="2"/>
+  <line x1="470" y1="188" x2="470" y2="240" stroke="currentColor" stroke-width="2"/>
   <rect x="442" y="132" width="56" height="56" rx="4" fill="none" stroke="#14b8a6" stroke-width="2.2"/>
   <line x1="442" y1="132" x2="498" y2="188" stroke="#14b8a6" stroke-width="2.2"/>
   <line x1="498" y1="132" x2="442" y2="188" stroke="#14b8a6" stroke-width="2.2"/>
   <text x="512" y="153" fill="#14b8a6" font-size="15">Josephson</text>
   <text x="512" y="172" fill="#14b8a6" font-size="15">junction</text>
-  <text x="512" y="191" fill="#3b3f4a" font-size="12.5">E<tspan font-size="10" dy="3">J</tspan><tspan dy="-3">, C</tspan><tspan font-size="10" dy="3">J</tspan></text>
+  <text x="512" y="191" fill="currentColor" font-size="12.5">E<tspan font-size="10" dy="3">J</tspan><tspan dy="-3">, C</tspan><tspan font-size="10" dy="3">J</tspan></text>
   <!-- island node dots -->
-  <circle cx="250" cy="80" r="3" fill="#3b3f4a"/>
-  <circle cx="470" cy="80" r="3" fill="#3b3f4a"/>
+  <circle cx="250" cy="80" r="3" fill="currentColor"/>
+  <circle cx="470" cy="80" r="3" fill="currentColor"/>
   <!-- regime label -->
-  <text x="360" y="290" fill="#3b3f4a" font-size="14" text-anchor="middle">transmon regime: &#160; E<tspan font-size="10.5" dy="3">J</tspan><tspan dy="-3"> / E</tspan><tspan font-size="10.5" dy="3">C</tspan><tspan dy="-3" font-size="14"> &#8811; 1</tspan></text>
+  <text x="360" y="290" fill="currentColor" font-size="14" text-anchor="middle">transmon regime: &#160; E<tspan font-size="10.5" dy="3">J</tspan><tspan dy="-3"> / E</tspan><tspan font-size="10.5" dy="3">C</tspan><tspan dy="-3" font-size="14"> &#8811; 1</tspan></text>
 </svg>
