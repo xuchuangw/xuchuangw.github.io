@@ -1,0 +1,73 @@
+{% comment %}
+  Collapsible per-post revision history.
+  Renders only if the post defines a `changelog:` list in its front matter, e.g.
+
+    version: "1.1"
+    last_updated: 2026-07-01
+    changelog:
+      - version: "1.1"
+        date: 2026-07-01
+        note: "What changed in this revision."
+      - version: "1.0"
+        date: 2026-06-30
+        note: "Initial publication."
+
+  To update a post over time: bump `version` + `last_updated`, and prepend a new
+  changelog entry (newest first).
+{% endcomment %}
+{% if page.changelog %}
+  <style>
+    .revision-history {
+      margin: 2.75rem 0 0.5rem;
+      border-top: 1px solid var(--global-divider-color);
+      padding-top: 1rem;
+      font-size: 0.85rem;
+      color: var(--global-text-color-light);
+    }
+    .revision-history > summary {
+      cursor: pointer;
+      list-style: none;
+      font-weight: 600;
+      color: var(--global-text-color);
+      user-select: none;
+    }
+    .revision-history > summary::-webkit-details-marker { display: none; }
+    .revision-history > summary::before {
+      content: "\25B8"; /* ▸ */
+      display: inline-block;
+      margin-right: 0.5rem;
+      color: var(--global-theme-color);
+      transition: transform 0.15s ease;
+    }
+    .revision-history[open] > summary::before { transform: rotate(90deg); }
+    .revision-history ul { list-style: none; margin: 0.85rem 0 0; padding: 0; }
+    .revision-history li {
+      display: grid;
+      grid-template-columns: 3rem 6.5rem 1fr;
+      gap: 0.35rem 0.9rem;
+      padding: 0.4rem 0;
+      align-items: baseline;
+      border-top: 1px solid var(--global-divider-color);
+    }
+    .revision-history li:first-child { border-top: none; }
+    .revision-history .rev-version { font-weight: 600; color: var(--global-theme-color); }
+    .revision-history .rev-date { white-space: nowrap; }
+    .revision-history .rev-note { color: var(--global-text-color); }
+    @media (max-width: 600px) {
+      .revision-history li { grid-template-columns: 3rem 1fr; }
+      .revision-history .rev-note { grid-column: 1 / -1; }
+    }
+  </style>
+  <details class="revision-history">
+    <summary>Revision history ({{ page.changelog | size }})</summary>
+    <ul>
+      {% for entry in page.changelog %}
+        <li>
+          <span class="rev-version">v{{ entry.version }}</span>
+          <span class="rev-date">{{ entry.date | date: "%-d %b %Y" }}</span>
+          <span class="rev-note">{{ entry.note }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </details>
+{% endif %}

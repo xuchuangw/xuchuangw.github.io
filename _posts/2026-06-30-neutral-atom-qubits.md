@@ -11,8 +11,15 @@ bibliography: quantum_computing_101.bib
 authors:
   - name: Xuchuang Wang
     url: "/"
-    affiliations:
-      name: HKBU
+version: "1.1"
+last_updated: 2026-07-01
+changelog:
+  - version: "1.1"
+    date: 2026-07-01
+    note: "Three-round editorial and fact-check revision: deeper mechanisms and figures, tightened prose, and primary-source verification of every quantitative claim."
+  - version: "1.0"
+    date: 2026-06-30
+    note: "Initial publication."
 toc:
   - name: What a neutral-atom qubit is
   - name: How it is built and controlled
