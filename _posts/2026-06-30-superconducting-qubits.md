@@ -208,3 +208,7 @@ That last point deserves a sentence, because this series keeps one eye on whethe
 | **As a network node** | needs transduction | natural (emits photons) | promising | it *is* the photon |
 
 No platform wins every row, which is the whole reason five of them are still in the race. If you want a cloud-accessible, general-purpose, engineering-leading quantum computer *today*, superconducting is the most realistic pick — a math genius who happens to live in a refrigerator and cannot use a phone. But if your wish list includes long memory and a photon you can fire at a distant node, the next routes in this series are about to look very attractive. Up next: what happens when you stop *faking* the atom and trap a real one — **trapped ions**.
+
+---
+
+**More in this series — [How to Build a Quantum Computer](/blog/2026/how-to-build-a-quantum-computer/):** [Superconducting](/blog/2026/superconducting-qubits/) · [Trapped ion](/blog/2026/trapped-ion-qubits/) · [Neutral atom](/blog/2026/neutral-atom-qubits/) · [Photonic](/blog/2026/photonic-qubits/) · [Other platforms](/blog/2026/other-qubit-platforms/)

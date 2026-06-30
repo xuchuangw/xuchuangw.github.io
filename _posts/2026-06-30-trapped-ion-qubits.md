@@ -187,3 +187,7 @@ That networking role is not a footnote here — it is a genuine strength, and th
 | **As a network node** | needs transduction | natural (emits photons) | promising | it *is* the photon |
 
 No platform wins every row, which is exactly why five of them are still racing. Superconducting out-sprints decoherence; the trapped ion out-lasts and out-connects it, and pays in microseconds per gate and in the difficulty of herding more than a hundred atoms into one trap. If your wish list is a cloud-accessible engineering juggernaut today, superconducting still leads; if it is record fidelity, long memory, all-to-all wiring, and a photon you can fire at a distant node, the ion is the one to beat. Either way, there is a different question hiding in the table's fourth column: if catching one real atom is this good but herding many is this hard, what if you did not strip the electron at all — and held a *neutral* atom in a tweezer of pure light, with thousands of traps conjured from a single laser? That is the next route in this series: **neutral atoms**.
+
+---
+
+**More in this series — [How to Build a Quantum Computer](/blog/2026/how-to-build-a-quantum-computer/):** [Superconducting](/blog/2026/superconducting-qubits/) · [Trapped ion](/blog/2026/trapped-ion-qubits/) · [Neutral atom](/blog/2026/neutral-atom-qubits/) · [Photonic](/blog/2026/photonic-qubits/) · [Other platforms](/blog/2026/other-qubit-platforms/)

@@ -232,3 +232,7 @@ So the answer to this series' recurring question is, for once, lopsided. *Can it
 | **As a network node** | needs transduction | natural (emits photons) | promising | it *is* the photon |
 
 No platform wins every row — the whole reason five of them are still racing. Superconducting out-sprints decoherence; the trapped ion out-lasts and out-connects everyone; the neutral atom out-scales them; and the photon, last in this lineup for raw computing, is first and nearly uncontested for the one job none of the others can do without help — being the link that carries a qubit from one machine to the next. If your wish list is a general-purpose quantum computer today, the photon is not your pick. If your wish list is a *wire to connect every quantum computer together*, almost nothing else comes close. There is one route in this series still unbuilt — the platform that leaves light behind and returns to the solid state, to electron and nuclear spins in silicon and diamond, and to a quasiparticle that may not even exist. The sixth and final build: **solid-state spins and the rest**.
+
+---
+
+**More in this series — [How to Build a Quantum Computer](/blog/2026/how-to-build-a-quantum-computer/):** [Superconducting](/blog/2026/superconducting-qubits/) · [Trapped ion](/blog/2026/trapped-ion-qubits/) · [Neutral atom](/blog/2026/neutral-atom-qubits/) · [Photonic](/blog/2026/photonic-qubits/) · [Other platforms](/blog/2026/other-qubit-platforms/)
