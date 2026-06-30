@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-label="Energy-level ladders: a harmonic LC oscillator with evenly spaced levels versus an anharmonic transmon whose level spacings shrink with energy, isolating the lowest two levels as a qubit." style="width:100%; height:auto; font-family:sans-serif;">
   <defs>
     <marker id="ah" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="currentColor"/></marker>
-    <marker id="ah2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="currentColor"/></marker>
+    <marker id="ah2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 Z" fill="currentColor"/></marker>
   </defs>
   <!-- energy axis -->
   <line x1="40" y1="322" x2="40" y2="118" stroke="currentColor" stroke-width="1.5" marker-end="url(#ah)"/>

@@ -37,5 +37,5 @@
     <line x1="401" y1="234" x2="427" y2="234" stroke="currentColor" stroke-width="1.7" marker-end="url(#t1a)"/>
     <line x1="477" y1="234" x2="503" y2="234" stroke="currentColor" stroke-width="1.7" marker-end="url(#t1a)"/>
   </g>
-  <text x="350" y="262" fill="currentColor" font-size="13" text-anchor="middle">center-of-mass mode (a phonon) &#8212; the whole chain sways in lockstep: the quantum bus</text>
+  <text x="350" y="262" fill="currentColor" font-size="13" text-anchor="middle">center-of-mass mode &#8212; the whole chain sways in lockstep: the quantum bus</text>
 </svg>

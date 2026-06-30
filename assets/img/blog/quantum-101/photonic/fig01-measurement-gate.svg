@@ -42,6 +42,7 @@
   <!-- the crucial data<->ancilla coupling: the gate's one real interaction -->
   <rect x="340" y="200" width="18" height="18" rx="3" fill="#4f7cff" fill-opacity="0.16" stroke="#4f7cff" stroke-width="2.2"/>
   <line x1="343" y1="203" x2="355" y2="215" stroke="currentColor" stroke-width="2"/>
+  <line x1="349" y1="200" x2="349" y2="182" stroke="currentColor" stroke-width="1.6"/>
   <line x1="349" y1="218" x2="349" y2="300" stroke="#4f7cff" stroke-width="1.1" stroke-dasharray="4 3"/>
   <text x="349" y="318" fill="#4f7cff" font-size="11" text-anchor="middle">data&#8211;ancilla coupling</text>
   <text x="312" y="62" fill="#4f7cff" font-size="11" text-anchor="middle">linear-optics network</text>

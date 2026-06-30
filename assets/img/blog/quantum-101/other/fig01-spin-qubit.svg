@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" role="img" aria-label="A gate-defined silicon quantum-dot spin qubit. A layered Si/SiGe heterostructure is drawn in cross-section, with a buried isotopically purified silicon-28 quantum well. Two metal plunger gates and a barrier gate sit on top; the plunger voltages pinch out two adjacent single-electron dots, one with an up spin labelled the zero state and one with a down spin labelled the one state. Lowering the central barrier gate turns on a short-range Heisenberg exchange J between the two neighbouring dots, the two-qubit gate." style="width:100%; height:auto; font-family:sans-serif;">
   <defs>
-    <marker id="sqSpin" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto-start-reverse"><path d="M0 0 L9 4.5 L0 9 Z" fill="#14b8a6"/></marker>
+    <marker id="sqSpin" markerUnits="userSpaceOnUse" markerWidth="7" markerHeight="7" refX="3.5" refY="3.5" orient="auto-start-reverse"><path d="M0 0 L7 3.5 L0 7 Z" fill="#14b8a6"/></marker>
     <marker id="sqJ" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto-start-reverse"><path d="M0 0 L9 4.5 L0 9 Z" fill="#4f7cff"/></marker>
   </defs>
   <text x="360" y="32" fill="currentColor" font-size="12.5" text-anchor="middle">plunger voltages pinch out two single-electron dots; the barrier gate between them tunes J</text>
@@ -23,11 +23,11 @@
   <!-- dot 1 electron, spin up -->
   <circle cx="330" cy="163" r="14" fill="none" stroke="currentColor" stroke-width="0.9" opacity="0.4"/>
   <circle cx="330" cy="163" r="12" fill="#14b8a6" fill-opacity="0.5" stroke="#14b8a6" stroke-width="2.4"/>
-  <line x1="330" y1="178" x2="330" y2="144" stroke="#14b8a6" stroke-width="2.6" marker-end="url(#sqSpin)"/>
+  <line x1="330" y1="175" x2="330" y2="151" stroke="#14b8a6" stroke-width="1.6" marker-end="url(#sqSpin)"/>
   <!-- dot 2 electron, spin down -->
   <circle cx="410" cy="163" r="14" fill="none" stroke="currentColor" stroke-width="0.9" opacity="0.4"/>
   <circle cx="410" cy="163" r="12" fill="#14b8a6" fill-opacity="0.5" stroke="#14b8a6" stroke-width="2.4"/>
-  <line x1="410" y1="148" x2="410" y2="182" stroke="#14b8a6" stroke-width="2.6" marker-end="url(#sqSpin)"/>
+  <line x1="410" y1="151" x2="410" y2="175" stroke="#14b8a6" stroke-width="1.6" marker-end="url(#sqSpin)"/>
   <!-- short-range exchange J through the barrier -->
   <line x1="346" y1="163" x2="394" y2="163" stroke="#4f7cff" stroke-width="2" stroke-dasharray="4 3" marker-start="url(#sqJ)" marker-end="url(#sqJ)"/>
   <text x="360" y="232" fill="#4f7cff" font-size="12.5" text-anchor="middle">tunable exchange J  &#8594;  &#8730;SWAP (two-qubit gate)</text>

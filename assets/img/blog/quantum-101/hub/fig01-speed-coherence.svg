@@ -30,7 +30,7 @@
   <text x="620" y="426" fill="currentColor" font-size="11.5" text-anchor="middle" opacity="0.8">~10 ns</text>
   <!-- central trade-off band -->
   <line x1="528" y1="378" x2="170" y2="120" stroke="currentColor" stroke-width="15" opacity="0.07" stroke-linecap="round"/>
-  <line x1="524" y1="375" x2="178" y2="126" stroke="currentColor" stroke-width="1.4" stroke-dasharray="6 5" opacity="0.5" marker-end="url(#hubTr)"/>
+  <line x1="524" y1="375" x2="178" y2="126" stroke="currentColor" stroke-width="1.4" stroke-dasharray="6 5" opacity="0.5"/>
   <text x="351" y="258" fill="currentColor" font-size="13" text-anchor="middle" transform="rotate(35.8 351 258)" opacity="0.75" font-style="italic">the central trade-off: speed &#8596; coherence</text>
   <!-- ideal corner -->
   <circle cx="648" cy="104" r="11" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.45"/>
