@@ -39,10 +39,10 @@ So the qubit itself is, once again, nature's free gift. The entire art of this p
 **Gripping an atom with light.** A neutral atom carries no charge, so you cannot push it around with electrodes the way you herd an ion. What you *can* do is exploit the fact that light is an oscillating electric field, and that field induces a tiny dipole in the atom. Focus a laser beam tuned *below* the atom's resonance (red-detuned) to a micron-scale waist, and the induced dipole is pulled toward the region of highest intensity — the focal point. The atom sits in a potential well shaped like the light itself,
 
 $$
-U(\mathbf r) \;\approx\; -\frac{3\pi c^2}{2\,\omega_0^3}\,\frac{\Gamma}{\Delta}\,I(\mathbf r),
+U(\mathbf r) \;\approx\; \frac{3\pi c^2}{2\,\omega_0^3}\,\frac{\Gamma}{\Delta}\,I(\mathbf r),
 $$
 
-where $I(\mathbf r)$ is the intensity, $\Gamma$ the natural linewidth, and $\Delta<0$ the red detuning. The minus sign with $\Delta<0$ is the whole trick: $U$ is lowest where $I$ is highest, so the atom is trapped at the bright focus of the beam. This is an **optical tweezer** — a single tightly focused laser acting as a bowl of light a fraction of a millikelvin deep. The technique earned Arthur Ashkin a share of the 2018 Nobel Prize in Physics <d-cite key="ashkin2018nobel"></d-cite>, and the laser cooling that makes atoms slow enough to catch earned the 1997 prize before it <d-cite key="chu1997nobel"></d-cite>. (Worth saying plainly, because the press loves to muddle the family tree: *neither* of those is the 2025 prize, which went to the superconducting-circuit side.)
+where $I(\mathbf r)$ is the intensity, $\Gamma$ the natural linewidth, and $\Delta=\omega-\omega_0<0$ the red detuning. That sign is the whole trick: with $\Delta<0$, $U\propto\Gamma/\Delta$ is negative, so $U$ is lowest where $I$ is highest, and the atom is trapped at the bright focus of the beam. This is an **optical tweezer** — a single tightly focused laser acting as a bowl of light a fraction of a millikelvin deep. The technique earned Arthur Ashkin a share of the 2018 Nobel Prize in Physics <d-cite key="ashkin2018nobel"></d-cite>, and the laser cooling that makes atoms slow enough to catch earned the 1997 prize before it <d-cite key="chu1997nobel"></d-cite>. (Worth saying plainly, because the press loves to muddle the family tree: *neither* of those is the 2025 prize, which went to the superconducting-circuit side.)
 
 The leap from one tweezer to a quantum computer is an exercise in optics. Send the trapping beam through a **spatial light modulator** or a pair of crossed **acousto-optic deflectors**, and you split it into hundreds or thousands of independent foci — a whole grid of tweezers conjured from a single laser. The build then goes in three steps. First, a **magneto-optical trap** laser-cools a dilute cloud of atoms to the microkelvin range. Second, the tweezer grid dips into that cold cloud and each focus grabs an atom. Third — the clever part — the array is *rearranged* into the shape you actually want.
 
@@ -123,7 +123,7 @@ then the laser simply *cannot* excite both atoms at once: the pair is locked int
       <marker id="na2b" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#4f7cff"/></marker>
     </defs>
     <!-- blockade radius -->
-    <circle cx="200" cy="190" r="180" fill="#e0a106" fill-opacity="0.05" stroke="#e0a106" stroke-width="1.4" stroke-dasharray="6 5"/>
+    <circle cx="200" cy="190" r="168" fill="#e0a106" fill-opacity="0.05" stroke="#e0a106" stroke-width="1.4" stroke-dasharray="6 5"/>
     <text x="200" y="28" fill="#e0a106" font-size="12.5" text-anchor="middle">blockade radius R_b</text>
     <!-- atom A: driven to Rydberg, puffed -->
     <circle cx="200" cy="190" r="30" fill="#e0a106" fill-opacity="0.12" stroke="#e0a106" stroke-width="1.2" stroke-dasharray="3 3"/>
