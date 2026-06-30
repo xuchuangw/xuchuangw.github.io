@@ -202,7 +202,7 @@ That last point deserves a sentence, because this series keeps one eye on whethe
 |---|---|---|---|---|
 | **Qubit** | printed circuit (transmon) | a real atom (ion) | a real atom | a photon |
 | **Gate speed** | very fast (~10–70 ns) | slow (~µs) | slow (~µs) | n/a (measurement) |
-| **Coherence** | short (~0.1–1.7 ms) | long (s–min) | long (s) | loss-limited |
+| **Coherence** | short (~0.1–1.7 ms) | very long (s–min) | long (s) | loss-limited |
 | **Connectivity** | mostly nearest-neighbor | all-to-all | reconfigurable | hard (no interaction) |
 | **Operating temp** | ~10 mK (dilution fridge) | room-temp vacuum | room-temp vacuum | room temperature |
 | **As a network node** | needs transduction | natural (emits photons) | promising | it *is* the photon |

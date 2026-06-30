@@ -38,7 +38,7 @@ The five computing criteria:
 And the two **networking** criteria, which the same paper lists and which matter enormously to anyone building a quantum *internet* rather than a single isolated machine:
 
 6. **Flying qubits.** The ability to convert a stationary, computing qubit into a *moving* one — almost always a photon — that can carry the quantum state somewhere else.
-7. **Faithful interconversion.** The ability to transmit those flying qubits between distant nodes and convert them back, reliably, so two separated machines can share entanglement.
+7. **Faithful transmission.** The ability to send those flying qubits between distant nodes reliably, so two separated machines can share entanglement.
 
 Those last two are the backbone of the quantum-internet vision <d-cite key="wehner2018internet"></d-cite>, and they are exactly where the five platforms diverge most sharply. A qubit can be a superb *computer* and a hopeless *node*, or the reverse. So the scorecard has seven boxes, and — this is the punchline of the entire series — **no platform ticks all seven.** The criteria pull against each other: the very design choice that buys you long coherence often costs you gate speed, and the thing that makes a qubit easy to mass-produce often makes it impossible to network. Hold that tension; it is the reason there are five posts after this one and not a single coronation. Let us meet the contenders.
 
