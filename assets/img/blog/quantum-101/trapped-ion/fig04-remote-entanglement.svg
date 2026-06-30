@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" role="img" aria-label="Why an ion is a natural network node. Two ions, each in its own trap in a separate lab, each emit an optical photon entangled with their internal state. The two photons travel down optical fibers to a central beam-splitter and detectors that perform a Bell-state measurement. A coincidence click heralds entanglement between the two distant ions, which never interacted, shown as a dashed link arcing over the top. Annotations note 520 metres of fiber, ions 230 metres apart, and about 88 percent fidelity from Innsbruck in 2023." style="width:100%; height:auto; font-family:sans-serif;">
+  <defs>
+    <marker id="f4ph" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#e0a106"/></marker>
+  </defs>
+  <!-- heralded-entanglement arc over the top -->
+  <path d="M110 150 Q 360 96 610 150" fill="none" stroke="#14b8a6" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="360" y="92" fill="#14b8a6" font-size="12.5" text-anchor="middle">a coincidence click heralds: ions A and B entangled &#8212; without ever meeting</text>
+  <!-- node A -->
+  <line x1="92" y1="162" x2="92" y2="198" stroke="currentColor" stroke-width="2.4"/>
+  <line x1="128" y1="162" x2="128" y2="198" stroke="currentColor" stroke-width="2.4"/>
+  <circle cx="110" cy="180" r="15" fill="#14b8a6" fill-opacity="0.22" stroke="#14b8a6" stroke-width="2.4"/>
+  <text x="110" y="226" fill="#14b8a6" font-size="12" text-anchor="middle">node A</text>
+  <text x="110" y="242" fill="currentColor" font-size="10.5" text-anchor="middle" opacity="0.8">(ion in a trap, lab A)</text>
+  <!-- node B -->
+  <line x1="592" y1="162" x2="592" y2="198" stroke="currentColor" stroke-width="2.4"/>
+  <line x1="628" y1="162" x2="628" y2="198" stroke="currentColor" stroke-width="2.4"/>
+  <circle cx="610" cy="180" r="15" fill="#14b8a6" fill-opacity="0.22" stroke="#14b8a6" stroke-width="2.4"/>
+  <text x="610" y="226" fill="#14b8a6" font-size="12" text-anchor="middle">node B</text>
+  <text x="610" y="242" fill="currentColor" font-size="10.5" text-anchor="middle" opacity="0.8">(ion in a trap, lab B)</text>
+  <!-- fibers -->
+  <line x1="128" y1="180" x2="338" y2="180" stroke="currentColor" stroke-width="3" opacity="0.25"/>
+  <line x1="592" y1="180" x2="382" y2="180" stroke="currentColor" stroke-width="3" opacity="0.25"/>
+  <!-- photons (wavy, travelling inward) -->
+  <path d="M150 180 q 11 -7 22 0 q 11 7 22 0 q 11 -7 22 0 q 11 7 22 0 q 11 -7 22 0 q 11 7 22 0 q 11 -7 22 0" fill="none" stroke="#e0a106" stroke-width="2" marker-end="url(#f4ph)"/>
+  <path d="M570 180 q -11 -7 -22 0 q -11 7 -22 0 q -11 -7 -22 0 q -11 7 -22 0 q -11 -7 -22 0 q -11 7 -22 0 q -11 -7 -22 0" fill="none" stroke="#e0a106" stroke-width="2" marker-end="url(#f4ph)"/>
+  <text x="232" y="162" fill="#e0a106" font-size="10.5" text-anchor="middle">photon (carries A's state)</text>
+  <text x="488" y="162" fill="#e0a106" font-size="10.5" text-anchor="middle">photon (carries B's state)</text>
+  <!-- central beam-splitter + detectors -->
+  <polygon points="360,166 374,180 360,194 346,180" fill="none" stroke="currentColor" stroke-width="2"/>
+  <text x="360" y="214" fill="currentColor" font-size="11" text-anchor="middle">Bell-state measurement</text>
+  <!-- bottom annotations -->
+  <text x="360" y="266" fill="currentColor" font-size="12" text-anchor="middle">Innsbruck 2023: ions 230 m apart, 520 m of fiber, ~88% fidelity</text>
+  <text x="360" y="285" fill="currentColor" font-size="11" text-anchor="middle" opacity="0.85">remembers for minutes AND emits a photon = a quantum-repeater node</text>
+</svg>

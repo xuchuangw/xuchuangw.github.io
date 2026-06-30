@@ -1,0 +1,1048 @@
+% Bibliography for the "How to Build a Quantum Computer" blog series.
+% One entry per verified source. Keys: lastnameYYYYkeyword. Prefer DOI.
+
+% ---- Foundations ----
+@article{josephson1962possible,
+  title   = {Possible new effects in superconductive tunnelling},
+  author  = {Josephson, B. D.},
+  journal = {Physics Letters},
+  volume  = {1}, number = {7}, pages = {251--253}, year = {1962},
+  doi     = {10.1016/0031-9163(62)91369-0}
+}
+
+@article{nakamura1999coherent,
+  title   = {Coherent control of macroscopic quantum states in a single-Cooper-pair box},
+  author  = {Nakamura, Y. and Pashkin, Yu. A. and Tsai, J. S.},
+  journal = {Nature},
+  volume  = {398}, number = {6730}, pages = {786--788}, year = {1999},
+  doi     = {10.1038/19718}
+}
+
+@article{koch2007transmon,
+  title   = {Charge-insensitive qubit design derived from the Cooper pair box},
+  author  = {Koch, Jens and Yu, Terri M. and Gambetta, Jay and Houck, A. A. and Schuster, D. I. and Majer, J. and Blais, Alexandre and Devoret, M. H. and Girvin, S. M. and Schoelkopf, R. J.},
+  journal = {Physical Review A},
+  volume  = {76}, number = {4}, pages = {042319}, year = {2007},
+  doi     = {10.1103/PhysRevA.76.042319}
+}
+
+% ---- Honors ----
+@misc{clarke2025nobel,
+  title        = {The Nobel Prize in Physics 2025},
+  author       = {{The Royal Swedish Academy of Sciences}},
+  howpublished = {Awarded to John Clarke, Michel H. Devoret and John M. Martinis ``for the discovery of macroscopic quantum mechanical tunnelling and energy quantisation in an electric circuit''},
+  year         = {2025},
+  note         = {NobelPrize.org, Nobel Prize Outreach},
+  url          = {https://www.nobelprize.org/prizes/physics/2025/summary/}
+}
+
+% ---- Google milestones ----
+@article{arute2019supremacy,
+  title   = {Quantum supremacy using a programmable superconducting processor},
+  author  = {Arute, Frank and Arya, Kunal and Babbush, Ryan and others},
+  journal = {Nature},
+  volume  = {574}, number = {7779}, pages = {505--510}, year = {2019},
+  doi     = {10.1038/s41586-019-1666-5}
+}
+
+@article{pan2022solving,
+  title   = {Solving the Sampling Problem of the Sycamore Quantum Circuits},
+  author  = {Pan, Feng and Chen, Keyang and Zhang, Pan},
+  journal = {Physical Review Letters},
+  volume  = {129}, number = {9}, pages = {090502}, year = {2022},
+  doi     = {10.1103/PhysRevLett.129.090502}
+}
+
+@article{google2024willow,
+  title   = {Quantum error correction below the surface code threshold},
+  author  = {{Google Quantum AI and Collaborators}},
+  journal = {Nature},
+  volume  = {638}, number = {8052}, pages = {920--926}, year = {2025},
+  doi     = {10.1038/s41586-024-08449-y}
+}
+
+@article{google2025echoes,
+  title   = {Observation of constructive interference at the edge of quantum ergodicity},
+  author  = {{Google Quantum AI and Collaborators}},
+  journal = {Nature},
+  year    = {2025},
+  doi     = {10.1038/s41586-025-09526-6},
+  note    = {``Quantum Echoes'' out-of-time-order-correlator experiment; published 22 October 2025}
+}
+
+@article{google2023surface,
+  title   = {Suppressing quantum errors by scaling a surface code logical qubit},
+  author  = {{Google Quantum AI}},
+  journal = {Nature},
+  volume  = {614}, number = {7949}, pages = {676--681}, year = {2023},
+  doi     = {10.1038/s41586-022-05434-1}
+}
+
+% ---- Hardware: qubit counts, fidelities, error correction ----
+@misc{ibm2023condor,
+  title        = {IBM Quantum heralds the era of quantum utility with Condor and Heron processors},
+  author       = {{IBM Quantum}},
+  howpublished = {IBM Quantum Computing Blog, IBM Quantum Summit 2023},
+  year         = {2023}, month = dec,
+  note         = {Condor: 1{,}121-qubit superconducting processor with ``over a mile of high-density cryogenic flex IO wiring''; Heron r1: 133 qubits. Unveiled 4 December 2023.},
+  url          = {https://www.ibm.com/quantum/blog/quantum-roadmap-2033}
+}
+
+@misc{ibm2024heron,
+  title        = {IBM Quantum processor types},
+  author       = {{IBM Quantum}},
+  howpublished = {IBM Quantum Documentation},
+  year         = {2024},
+  note         = {Heron r2: 156 qubits in a heavy-hexagonal lattice; Heron r1: 133 qubits},
+  url          = {https://quantum.cloud.ibm.com/docs/en/guides/processor-types}
+}
+
+@misc{ibm2025nighthawk,
+  title        = {IBM delivers new quantum processors, software, and algorithm breakthroughs on the path to advantage and fault tolerance},
+  author       = {{IBM}},
+  howpublished = {IBM Newsroom},
+  year         = {2025}, month = nov,
+  note         = {Nighthawk: 120-qubit processor with 218 tunable couplers in a square lattice. Announced 12 November 2025.},
+  url          = {https://newsroom.ibm.com/2025-11-12-ibm-delivers-new-quantum-processors,-software,-and-algorithm-breakthroughs-on-path-to-advantage-and-fault-tolerance}
+}
+
+@misc{rigetti2024ankaa,
+  title        = {Rigetti Computing launches 84-qubit Ankaa-3 system; achieves 99.5\% median two-qubit gate fidelity milestone},
+  author       = {{Rigetti Computing}},
+  howpublished = {Rigetti Computing press release},
+  year         = {2024}, month = dec,
+  note         = {84 qubits; 99.5\% median two-qubit (fSim) gate fidelity; launched 23 December 2024.},
+  url          = {https://investors.rigetti.com/news-releases/news-release-details/rigetti-computing-launches-84-qubit-ankaatm-3-system-achieves}
+}
+
+@article{ustc2025zuchongzhi,
+  title   = {Establishing a new benchmark in quantum computational advantage with 105-qubit Zuchongzhi 3.0 processor},
+  author  = {Gao, Dongxin and others},
+  journal = {Physical Review Letters},
+  volume  = {134}, number = {9}, pages = {090601}, year = {2025},
+  doi     = {10.1103/PhysRevLett.134.090601},
+  note    = {arXiv:2412.11924; Jian-Wei Pan group, USTC}
+}
+
+@article{putterman2025ocelot,
+  title   = {Hardware-efficient quantum error correction via concatenated bosonic qubits},
+  author  = {Putterman, Harald and Noh, Kyungjoo and Hann, Connor T. and others},
+  journal = {Nature},
+  volume  = {638}, number = {8052}, pages = {927--934}, year = {2025},
+  doi     = {10.1038/s41586-025-08642-7},
+  note    = {AWS Center for Quantum Computing; ``Ocelot'' cat-qubit chip}
+}
+
+@article{bravyi2024ldpc,
+  title   = {High-threshold and low-overhead fault-tolerant quantum memory},
+  author  = {Bravyi, Sergey and Cross, Andrew W. and Gambetta, Jay M. and Maslov, Dmitri and Rall, Patrick and Yoder, Theodore J.},
+  journal = {Nature},
+  volume  = {627}, number = {8005}, pages = {778--782}, year = {2024},
+  doi     = {10.1038/s41586-024-07107-7}
+}
+
+% ---- Coherence ----
+@article{kjaergaard2020superconducting,
+  title   = {Superconducting Qubits: Current State of Play},
+  author  = {Kjaergaard, Morten and Schwartz, Mollie E. and Braum\"uller, Jochen and Krantz, Philip and Wang, Joel I.-J. and Gustavsson, Simon and Oliver, William D.},
+  journal = {Annual Review of Condensed Matter Physics},
+  volume  = {11}, pages = {369--395}, year = {2020},
+  doi     = {10.1146/annurev-conmatphys-031119-050605}
+}
+
+@article{place2021tantalum,
+  title   = {New material platform for superconducting transmon qubits with coherence times exceeding 0.3 milliseconds},
+  author  = {Place, Alexander P. M. and Rodgers, Lila V. H. and Mundada, Pranav and Smitham, Basil M. and Fitzpatrick, Mattias and Leng, Zhaoqi and Premkumar, Anjali and Bryon, Jacob and Vrajitoarea, Andrei and Sussman, Sara and Cheng, Guangming and Madhavan, Trisha and Babla, Harshvardhan K. and Le, Xuan Hoang and Gang, Youqi and J\"ack, Berthold and Gyenis, Andr\'as and Yao, Nan and Cava, Robert J. and de Leon, Nathalie P. and Houck, Andrew A.},
+  journal = {Nature Communications},
+  volume  = {12}, number = {1}, pages = {1779}, year = {2021},
+  doi     = {10.1038/s41467-021-22030-5}
+}
+
+@article{bland2025tantalum,
+  title   = {Millisecond lifetimes and coherence times in 2D transmon qubits},
+  author  = {Bland, Matthew P. and Bahrami, Faranak and Martinez, Jeronimo G. C. and Prestegaard, Paal H. and Smitham, Basil M. and Joshi, Atharv and Hedrick, Elizabeth and Kumar, Shashwat and Yang, Ambrose and Pakpour-Tabrizi, Alexander C. and Jindal, Apoorv and Chang, Ray D. and Cheng, Guangming and Yao, Nan and Cava, Robert J. and de Leon, Nathalie P. and Houck, Andrew A.},
+  journal = {Nature},
+  volume  = {647}, number = {8089}, pages = {343--348}, year = {2025},
+  doi     = {10.1038/s41586-025-09687-4},
+  note    = {Tantalum-on-silicon transmons; peak T1 = 1.68 ms}
+}
+
+@article{somoroff2023fluxonium,
+  title   = {Millisecond Coherence in a Superconducting Qubit},
+  author  = {Somoroff, Aaron and Ficheux, Quentin and Mencia, Raymond A. and Xiong, Haonan and Kuzmin, Roman V. and Manucharyan, Vladimir E.},
+  journal = {Physical Review Letters},
+  volume  = {130}, number = {26}, pages = {267001}, year = {2023},
+  doi     = {10.1103/PhysRevLett.130.267001}
+}
+
+% ---- Trapped ion (comparison) ----
+@article{ballance2016highfidelity,
+  title   = {High-Fidelity Quantum Logic Gates Using Trapped-Ion Hyperfine Qubits},
+  author  = {Ballance, C. J. and Harty, T. P. and Linke, N. M. and Sepiol, M. A. and Lucas, D. M.},
+  journal = {Physical Review Letters},
+  volume  = {117}, number = {6}, pages = {060504}, year = {2016},
+  doi     = {10.1103/PhysRevLett.117.060504},
+  note    = {Two-qubit gate times range from 3.8--520\,\textmu s; 99.9(1)\% two-qubit fidelity at the 100\,\textmu s record gate time}
+}
+
+% ---- Fault tolerance / error correction ----
+@article{fowler2012surface,
+  title   = {Surface codes: {Towards} practical large-scale quantum computation},
+  author  = {Fowler, Austin G. and Mariantoni, Matteo and Martinis, John M. and Cleland, Andrew N.},
+  journal = {Physical Review A},
+  volume  = {86}, number = {3}, pages = {032324}, year = {2012},
+  doi     = {10.1103/PhysRevA.86.032324}
+}
+
+% ---- Microwave-to-optical transduction (networking) ----
+@article{lauk2020transduction,
+  title   = {Perspectives on quantum transduction},
+  author  = {Lauk, Nikolai and Sinclair, Neil and Barzanjeh, Shabir and Covey, Jacob P. and Saffman, Mark and Spiropulu, Maria and Simon, Christoph},
+  journal = {Quantum Science and Technology},
+  volume  = {5}, number = {2}, pages = {020501}, year = {2020},
+  doi     = {10.1088/2058-9565/ab788a}
+}
+
+@article{han2021microwaveoptical,
+  title   = {Microwave-optical quantum frequency conversion},
+  author  = {Han, Xu and Fu, Wei and Zou, Chang-Ling and Jiang, Liang and Tang, Hong X.},
+  journal = {Optica},
+  volume  = {8}, number = {8}, pages = {1050--1064}, year = {2021},
+  doi     = {10.1364/OPTICA.425414}
+}
+
+% ==================================================================
+% ====  Trapped-ion qubits (post 3 of the series)  =================
+% ==================================================================
+
+% ---- Gate proposals & mechanisms ----
+@article{ciraczoller1995,
+  title   = {Quantum Computations with Cold Trapped Ions},
+  author  = {Cirac, J. I. and Zoller, P.},
+  journal = {Physical Review Letters},
+  volume  = {74}, number = {20}, pages = {4091--4094}, year = {1995},
+  doi     = {10.1103/PhysRevLett.74.4091},
+  note    = {First scalable trapped-ion quantum-computing proposal; the Cirac--Zoller controlled-NOT via a shared motional mode}
+}
+
+@article{molmer1999multiparticle,
+  title   = {Multiparticle Entanglement of Hot Trapped Ions},
+  author  = {M{\o}lmer, Klaus and S{\o}rensen, Anders},
+  journal = {Physical Review Letters},
+  volume  = {82}, number = {9}, pages = {1835--1838}, year = {1999},
+  doi     = {10.1103/PhysRevLett.82.1835},
+  note    = {The M{\o}lmer--S{\o}rensen gate: a bichromatic spin-dependent force entangling ions through a shared mode, insensitive to its thermal occupation. Companion: S{\o}rensen \& M{\o}lmer, Phys. Rev. A 62, 022311 (2000).}
+}
+
+@article{monroe1995logicgate,
+  title   = {Demonstration of a Fundamental Quantum Logic Gate},
+  author  = {Monroe, C. and Meekhof, D. M. and King, B. E. and Itano, W. M. and Wineland, D. J.},
+  journal = {Physical Review Letters},
+  volume  = {75}, number = {25}, pages = {4714--4717}, year = {1995},
+  doi     = {10.1103/PhysRevLett.75.4714},
+  note    = {First quantum logic gate, between the internal and motional states of a single trapped 9Be+ ion; NIST Boulder}
+}
+
+% ---- Fidelity records ----
+@article{harty2014highfidelity,
+  title   = {High-Fidelity Preparation, Gates, Memory, and Readout of a Trapped-Ion Quantum Bit},
+  author  = {Harty, T. P. and Allcock, D. T. C. and Ballance, C. J. and Guidoni, L. and Janacek, H. A. and Linke, N. M. and Stacey, D. N. and Lucas, D. M.},
+  journal = {Physical Review Letters},
+  volume  = {113}, number = {22}, pages = {220501}, year = {2014},
+  doi     = {10.1103/PhysRevLett.113.220501},
+  note    = {Single-qubit gate error 1e-6 (``six nines'') in 43Ca+ hyperfine clock states with microwave control}
+}
+
+@article{smith2025singlequbit,
+  title   = {Single-qubit gates with errors at the $10^{-7}$ level},
+  author  = {Smith, M. C. and Leu, A. D. and Gely, M. and Miyanishi, K. and Lucas, D. M.},
+  journal = {Physical Review Letters},
+  year    = {2025},
+  doi     = {10.1103/42w2-6ccy},
+  note    = {Single-qubit gate error 1.5e-7 (about 1 error in 6.7 million) in microwave-controlled 43Ca+; Lucas group, Oxford. Announced 10 June 2025.}
+}
+
+@article{ionq2025twoqubit,
+  title   = {Trapped-ion two-qubit gates with $>99.99\%$ fidelity without ground-state cooling},
+  author  = {{Oxford Ionics / IonQ}},
+  journal = {arXiv preprint},
+  year    = {2025},
+  eprint  = {2510.17286},
+  archivePrefix = {arXiv},
+  primaryClass  = {quant-ph},
+  url     = {https://arxiv.org/abs/2510.17286},
+  note    = {Two-qubit gate fidelity above 99.99\% ($>$``four nines'') using all-electronic (microwave) control}
+}
+
+% ---- Coherence / memory ----
+@article{wang2017tenminute,
+  title   = {Single-qubit quantum memory exceeding ten-minute coherence time},
+  author  = {Wang, Ye and Um, Mark and Zhang, Junhua and An, Shuoming and Lyu, Ming and Zhang, Jing-Ning and Duan, L.-M. and Yum, Dahyun and Kim, Kihwan},
+  journal = {Nature Photonics},
+  volume  = {11}, number = {10}, pages = {646--650}, year = {2017},
+  doi     = {10.1038/s41566-017-0007-1},
+  note    = {Single 171Yb+ ion, coherence time about 667 s (>10 min) via dynamical decoupling; Tsinghua}
+}
+
+@article{wang2021onehour,
+  title   = {Single ion qubit with estimated coherence time exceeding one hour},
+  author  = {Wang, Pengfei and Luan, Chun-Yang and Qiao, Mu and Um, Mark and Zhang, Junhua and Wang, Ye and Yuan, Xiao and Gu, Mile and Zhang, Jingning and Kim, Kihwan},
+  journal = {Nature Communications},
+  volume  = {12}, number = {1}, pages = {233}, year = {2021},
+  doi     = {10.1038/s41467-020-20330-w},
+  note    = {Single 171Yb+ ion; coherence time estimated/extrapolated to about 5500 s (>1 h), data to ~960 s; same Tsinghua group}
+}
+
+@article{pi2026dfs,
+  title   = {Beyond-Ten-Hour Coherence in a Decoherence-Free Trapped-Ion Clock Qubit},
+  author  = {Pi, Jiahao and Liu, Xiangjia and Cao, Junle and Wang, Pengfei and Ou, Lingfeng and Gao, Erfu and Tu, Hengchao and Zou, Menglin and Zhang, Xiang and Zhang, Junhua and Kim, Kihwan},
+  journal = {arXiv preprint},
+  year    = {2026},
+  eprint  = {2603.19631},
+  archivePrefix = {arXiv},
+  primaryClass  = {quant-ph},
+  url     = {https://arxiv.org/abs/2603.19631},
+  note    = {Two-ion 171Yb+ decoherence-free-subspace clock qubit; coherence (3.77+-1.09)e4 s (~10.5 h) extrapolated from data to ~1600 s; same Tsinghua group. Preprint.}
+}
+
+% ---- Networking: ion-photon entanglement ----
+@article{moehring2007entanglement,
+  title   = {Entanglement of single-atom quantum bits at a distance},
+  author  = {Moehring, D. L. and Maunz, P. and Olmschenk, S. and Younge, K. C. and Matsukevich, D. N. and Duan, L.-M. and Monroe, C.},
+  journal = {Nature},
+  volume  = {449}, number = {7158}, pages = {68--71}, year = {2007},
+  doi     = {10.1038/nature06118},
+  note    = {Heralded entanglement of two trapped 171Yb+ ions ~1 m apart via interfering emitted photons; Monroe group}
+}
+
+@article{krutyanskiy2023entanglement,
+  title   = {Entanglement of Trapped-Ion Qubits Separated by 230 Meters},
+  author  = {Krutyanskiy, V. and Galli, M. and Krcmarsky, V. and Baier, S. and Fioretto, D. A. and Pu, Y. and Mazloom, A. and Sekatski, P. and Canteri, M. and Teller, M. and Schupp, J. and Bate, J. and Meraner, M. and Sangouard, N. and Lanyon, B. P. and Northup, T. E.},
+  journal = {Physical Review Letters},
+  volume  = {130}, number = {5}, pages = {050803}, year = {2023},
+  doi     = {10.1103/PhysRevLett.130.050803},
+  note    = {Two 40Ca+ ions in separate buildings entangled across 520 m of fiber (230 m apart), fidelity ~88\%; Innsbruck}
+}
+
+% ---- Industry: Quantinuum / IonQ / logical qubits ----
+@misc{quantinuum2025helios,
+  title        = {Introducing Helios: The Most Accurate Quantum Computer in the World},
+  author       = {{Quantinuum}},
+  howpublished = {Quantinuum blog},
+  year         = {2025}, month = nov,
+  note         = {98 physical qubits of 137Ba+ in a QCCD architecture with all-to-all connectivity; single-qubit fidelity 99.9975\%, two-qubit 99.921\%; 48 fully error-corrected logical qubits. Launched 5 November 2025. See also arXiv:2511.05465 and Nature (2026), doi:10.1038/s41586-026-10676-4.},
+  url          = {https://www.quantinuum.com/blog/introducing-helios-the-most-accurate-quantum-computer-in-the-world}
+}
+
+@misc{microsoft2024logical,
+  title        = {Quantinuum and Microsoft demonstrate reliable logical qubits},
+  author       = {{Quantinuum and Microsoft}},
+  howpublished = {Quantinuum press release; results validated in Nature (2026), ``Improved quantum processor logical error rates via correction and detection''},
+  year         = {2024}, month = apr,
+  note         = {Logical error-rate improvements 11x--800x over physical baselines using Microsoft's qubit-virtualization stack on Quantinuum H2 (trapped-ion QCCD); up to 12 logical qubits. Announced 3 April 2024; peer-reviewed in Nature, June 2026.},
+  url          = {https://www.quantinuum.com/press-releases/quantinuum-and-microsoft-announce-new-era-in-quantum-computing-with-breakthrough-demonstration-of-reliable-qubits}
+}
+
+@misc{ionq2025barium,
+  title        = {IonQ Achieves Industry-Leading Performance on Next-Generation Barium Qubits},
+  author       = {{IonQ}},
+  howpublished = {IonQ news},
+  year         = {2025},
+  note         = {IonQ's transition from 171Yb+ to barium qubits; the barium ``Tempo'' system reached \#AQ 64 in 2025},
+  url          = {https://ionq.com/news/ionq-achieves-industry-leading-performance-on-next-generation-barium-qubits}
+}
+
+% ---- Honors ----
+@misc{nobel1989iontrap,
+  title        = {The Nobel Prize in Physics 1989},
+  author       = {{The Royal Swedish Academy of Sciences}},
+  howpublished = {One half jointly to Hans G. Dehmelt and Wolfgang Paul ``for the development of the ion trap technique''; one half to Norman F. Ramsey},
+  year         = {1989},
+  note         = {NobelPrize.org, Nobel Prize Outreach},
+  url          = {https://www.nobelprize.org/prizes/physics/1989/summary/}
+}
+
+@misc{nobel2012wineland,
+  title        = {The Nobel Prize in Physics 2012},
+  author       = {{The Royal Swedish Academy of Sciences}},
+  howpublished = {Awarded to Serge Haroche and David J. Wineland ``for ground-breaking experimental methods that enable measuring and manipulation of individual quantum systems''},
+  year         = {2012},
+  note         = {NobelPrize.org, Nobel Prize Outreach},
+  url          = {https://www.nobelprize.org/prizes/physics/2012/summary/}
+}
+
+% ==== Neutral-atom qubits (post 4) ====
+
+@misc{chu1997nobel,
+  title        = {The Nobel Prize in Physics 1997},
+  author       = {{The Royal Swedish Academy of Sciences}},
+  howpublished = {Awarded jointly to Steven Chu, Claude Cohen-Tannoudji and William D. Phillips ``for development of methods to cool and trap atoms with laser light''},
+  year         = {1997},
+  note         = {NobelPrize.org, Nobel Prize Outreach. Laser cooling is the technique that slows atoms enough to be caught in optical tweezers.},
+  url          = {https://www.nobelprize.org/prizes/physics/1997/summary/}
+}
+
+@misc{ashkin2018nobel,
+  title        = {The Nobel Prize in Physics 2018},
+  author       = {{The Royal Swedish Academy of Sciences}},
+  howpublished = {One half to Arthur Ashkin ``for the optical tweezers and their application to biological systems''; other half jointly to Gerard Mourou and Donna Strickland},
+  year         = {2018},
+  note         = {NobelPrize.org, Nobel Prize Outreach. Ashkin developed optical tweezers (focused-laser dipole traps), the basis of neutral-atom arrays.},
+  url          = {https://www.nobelprize.org/prizes/physics/2018/summary/}
+}
+
+@article{schlosser2001subpoissonian,
+  title        = {Sub-poissonian loading of single atoms in a microscopic dipole trap},
+  author       = {Schlosser, Nicolas and Reymond, Georges and Protsenko, Igor and Grangier, Philippe},
+  journal      = {Nature},
+  volume       = {411},
+  number       = {6841},
+  pages        = {1024--1027},
+  year         = {2001},
+  doi          = {10.1038/35082512},
+  note         = {Collisional-blockade mechanism locks the average occupancy of a micron-scale dipole trap at about 0.5 atoms -- the origin of the ~50\% probabilistic single-atom loading.},
+  url          = {https://doi.org/10.1038/35082512}
+}
+
+@article{endres2016assembly,
+  title        = {Atom-by-atom assembly of defect-free one-dimensional cold atom arrays},
+  author       = {Endres, Manuel and Bernien, Hannes and Keesling, Alexander and Levine, Harry and Anschuetz, Eric R. and Krajenbrink, Alexandre and Senko, Crystal and Vuletic, Vladan and Greiner, Markus and Lukin, Mikhail D.},
+  journal      = {Science},
+  volume       = {354},
+  number       = {6315},
+  pages        = {1024--1027},
+  year         = {2016},
+  doi          = {10.1126/science.aah3752},
+  note         = {Atom-by-atom rearrangement of probabilistically loaded tweezers into a defect-free 1D array.},
+  url          = {https://doi.org/10.1126/science.aah3752}
+}
+
+@article{barredo2016assembler,
+  title        = {An atom-by-atom assembler of defect-free arbitrary two-dimensional atomic arrays},
+  author       = {Barredo, Daniel and de L{\'e}s{\'e}leuc, Sylvain and Lienhard, Vincent and Lahaye, Thierry and Browaeys, Antoine},
+  journal      = {Science},
+  volume       = {354},
+  number       = {6315},
+  pages        = {1021--1023},
+  year         = {2016},
+  doi          = {10.1126/science.aah3778},
+  note         = {Assembly of defect-free arbitrary 2D atomic arrays by moving tweezers.},
+  url          = {https://doi.org/10.1126/science.aah3778}
+}
+
+@article{jaksch2000fastgates,
+  title        = {Fast quantum gates for neutral atoms},
+  author       = {Jaksch, D. and Cirac, J. I. and Zoller, P. and Rolston, S. L. and C{\^o}t{\'e}, R. and Lukin, M. D.},
+  journal      = {Physical Review Letters},
+  volume       = {85},
+  number       = {10},
+  pages        = {2208--2211},
+  year         = {2000},
+  doi          = {10.1103/PhysRevLett.85.2208},
+  note         = {Original proposal to use dipolar Rydberg interactions and the Rydberg blockade for fast neutral-atom entangling gates.},
+  url          = {https://doi.org/10.1103/PhysRevLett.85.2208}
+}
+
+@article{lukin2001dipoleblockade,
+  title        = {Dipole blockade and quantum information processing in mesoscopic atomic ensembles},
+  author       = {Lukin, M. D. and Fleischhauer, M. and Cote, R. and Duan, L. M. and Jaksch, D. and Cirac, J. I. and Zoller, P.},
+  journal      = {Physical Review Letters},
+  volume       = {87},
+  number       = {3},
+  pages        = {037901},
+  year         = {2001},
+  doi          = {10.1103/PhysRevLett.87.037901},
+  note         = {Introduced the dipole-blockade concept for deterministic entanglement via Rydberg states.},
+  url          = {https://doi.org/10.1103/PhysRevLett.87.037901}
+}
+
+@article{saffman2010rydberg,
+  title        = {Quantum information with Rydberg atoms},
+  author       = {Saffman, M. and Walker, T. G. and M{\o}lmer, K.},
+  journal      = {Reviews of Modern Physics},
+  volume       = {82},
+  number       = {3},
+  pages        = {2313--2363},
+  year         = {2010},
+  doi          = {10.1103/RevModPhys.82.2313},
+  note         = {Canonical review: Rydberg interaction scalings (van der Waals C6 proportional to n^11), blockade radius, and Rydberg-mediated gates.},
+  url          = {https://doi.org/10.1103/RevModPhys.82.2313}
+}
+
+@article{evered2023highfidelity,
+  title        = {High-fidelity parallel entangling gates on a neutral-atom quantum computer},
+  author       = {Evered, Simon J. and Bluvstein, Dolev and Kalinowski, Marcin and Ebadi, Sepehr and Manovitz, Tom and Zhou, Hengyun and Li, Sophie H. and Geim, Alexandra A. and Wang, Tout T. and Maskara, Nishad and Levine, Harry and Semeghini, Giulia and Greiner, Markus and Vuletic, Vladan and Lukin, Mikhail D.},
+  journal      = {Nature},
+  volume       = {622},
+  number       = {7982},
+  pages        = {268--272},
+  year         = {2023},
+  doi          = {10.1038/s41586-023-06481-y},
+  note         = {Two-qubit Rydberg gates at 99.5\% fidelity on up to 60 atoms in parallel, above the surface-code error-correction threshold.},
+  url          = {https://doi.org/10.1038/s41586-023-06481-y}
+}
+
+@article{bluvstein2024logical,
+  title        = {Logical quantum processor based on reconfigurable atom arrays},
+  author       = {Bluvstein, Dolev and Evered, Simon J. and Geim, Alexandra A. and Li, Sophie H. and Zhou, Hengyun and Manovitz, Tom and Ebadi, Sepehr and Cain, Madelyn and Kalinowski, Marcin and Hangleiter, Dominik and Bonilla Ataides, J. Pablo and Maskara, Nishad and Cong, Iris and Gao, Xun and Sales Rodriguez, Pedro and Karolyshyn, Thomas and Semeghini, Giulia and Gullans, Michael J. and Greiner, Markus and Vuletic, Vladan and Lukin, Mikhail D.},
+  journal      = {Nature},
+  volume       = {626},
+  number       = {7997},
+  pages        = {58--65},
+  year         = {2024},
+  doi          = {10.1038/s41586-023-06927-3},
+  note         = {Logical processor on up to 280 physical atoms producing 48 logical qubits with [[8,3,2]] code blocks; opened the neutral-atom QEC era. Published online December 2023.},
+  url          = {https://doi.org/10.1038/s41586-023-06927-3}
+}
+
+@article{bluvstein2025faulttolerant,
+  title        = {A fault-tolerant neutral-atom architecture for universal quantum computation},
+  author       = {Bluvstein, Dolev and Geim, Alexandra A. and others},
+  journal      = {Nature},
+  year         = {2025},
+  doi          = {10.1038/s41586-025-09848-5},
+  note         = {Integrated fault-tolerant architecture on up to 448 atoms: surface codes pushed below threshold (logical error reduced 2.14x from distance 3 to 5), a high-rate [[16,6,4]] qLDPC code, and universal logic via transversal teleportation with [[15,1,3]] color codes. Published online 10 November 2025; companion arXiv:2506.20661.},
+  url          = {https://doi.org/10.1038/s41586-025-09848-5}
+}
+
+@article{manetsch2025tweezer,
+  title        = {A tweezer array with 6100 highly coherent atomic qubits},
+  author       = {Manetsch, Hannah J. and Nomura, Gyohei and Bataille, Elie and Lv, Xudong and Leung, Kon H. and Endres, Manuel},
+  journal      = {Nature},
+  volume       = {647},
+  number       = {8088},
+  year         = {2025},
+  doi          = {10.1038/s41586-025-09641-4},
+  note         = {Cesium tweezer array of 6,100 atoms in ~12,000 sites; record 12.6(1) s hyperfine coherence, 23 min trapping lifetime, imaging survival 99.98952\% and fidelity >99.99\%. A register/memory demonstration -- entangling gates not run across all atoms. Companion arXiv:2403.12021.},
+  url          = {https://doi.org/10.1038/s41586-025-09641-4}
+}
+
+@article{chiu2025continuous,
+  title        = {Continuous operation of a coherent 3,000-qubit system},
+  author       = {Chiu, Neng-Chun and Trapp, Elias C. and Guo, Jinen and Abobeih, Mohamed H. and Stewart, Luke M. and others},
+  journal      = {Nature},
+  volume       = {646},
+  number       = {8087},
+  pages        = {1075--1080},
+  year         = {2025},
+  doi          = {10.1038/s41586-025-09596-6},
+  note         = {Atom-array architecture reloading ~300,000 atoms/s to keep a 3,000+ qubit system coherent and running for over two hours; ~50 million atoms cycled. Companion arXiv:2506.20660.},
+  url          = {https://doi.org/10.1038/s41586-025-09596-6}
+}
+
+@article{covey2025telecom,
+  title        = {Parallelized telecom quantum networking with a ytterbium-171 atom array},
+  author       = {Li, Wenjun and Covey, Jacob P. and others},
+  journal      = {Nature Physics},
+  volume       = {21},
+  pages        = {1826--1833},
+  year         = {2025},
+  doi          = {10.1038/s41567-025-03022-4},
+  note         = {High-fidelity time-bin entanglement between single 171Yb atoms and telecom-band 1389 nm photons, which couple natively into optical fiber (no microwave-to-optical conversion). Companion arXiv:2502.17406.},
+  url          = {https://doi.org/10.1038/s41567-025-03022-4}
+}
+
+@misc{atomcomputing2023kilo,
+  title        = {Quantum startup Atom Computing first to exceed 1,000 qubits},
+  author       = {{Atom Computing}},
+  howpublished = {Atom Computing press release},
+  year         = {2023}, month = oct,
+  note         = {1,225-site optical tweezer array holding 1,180 atoms encoded in nuclear-spin qubits (~tens of seconds coherence) -- the first gate-model platform past 1,000 qubits. Announced 24 October 2023.},
+  url          = {https://atom-computing.com/atom-computing-sets-record-with-worlds-first-quantum-computer-to-exceed-1000-qubits/}
+}
+
+@misc{reichardt2024logical,
+  title        = {Logical computation demonstrated with a neutral atom quantum processor},
+  author       = {Reichardt, Ben W. and others},
+  howpublished = {arXiv preprint; Microsoft and Atom Computing collaboration},
+  year         = {2024}, month = nov,
+  eprint       = {2411.11822},
+  archivePrefix = {arXiv},
+  primaryClass = {quant-ph},
+  note         = {Entangled 24 logical qubits (GHZ state) on a 171Yb neutral-atom processor using [[4,2,2]] and [[9,1,3]] codes, with logical error rates several times below the physical baseline. Announced 19 November 2024.},
+  url          = {https://arxiv.org/abs/2411.11822}
+}
+
+@article{wurtz2023aquila,
+  title        = {Aquila: QuEra's 256-qubit neutral-atom quantum computer},
+  author       = {Wurtz, Jonathan and Bylinskii, Alexei and Braverman, Boaz and Amato-Grill, Jesse and Cantu, Sergio H. and Huber, Florian and Lukin, Alexander and Liu, Fangli and Weinberg, Phillip and Long, John and Wang, Sheng-Tao and Gemelke, Nathan and Keesling, Alexander},
+  journal      = {arXiv preprint arXiv:2306.11727},
+  year         = {2023},
+  note         = {Aquila: a publicly accessible 256-atom field-programmable qubit array operated as an analog Hamiltonian simulator on the cloud.},
+  url          = {https://arxiv.org/abs/2306.11727}
+}
+
+@misc{pasqal2024kiloatom,
+  title        = {Pasqal exceeds 1000 atoms in quantum processor},
+  author       = {{Pasqal}},
+  howpublished = {Pasqal newsroom},
+  year         = {2024},
+  note         = {Single-shot loading of more than 1,000 neutral atoms (about 1,110 atoms in ~2,000 traps), demonstrating large-scale tweezer-array feasibility.},
+  url          = {https://www.pasqal.com/newsroom/pasqal-exceeds-1000-atoms-in-quantum-processor/}
+}
+
+% ---- Neutral-atom: CZ gate protocol, erasure conversion, enhanced loading (round-1 additions) ----
+@article{levine2019parallel,
+  title        = {Parallel Implementation of High-Fidelity Multiqubit Gates with Neutral Atoms},
+  author       = {Levine, Harry and Keesling, Alexander and Semeghini, Giulia and Omran, Ahmed and Wang, Tout T. and Ebadi, Sepehr and Bernien, Hannes and Greiner, Markus and Vuleti{\'c}, Vladan and Pichler, Hannes and Lukin, Mikhail D.},
+  journal      = {Physical Review Letters},
+  volume       = {123}, number = {17}, pages = {170503}, year = {2019},
+  doi          = {10.1103/PhysRevLett.123.170503},
+  note         = {The Levine--Pichler controlled-Z protocol: a single global pulse drives both atoms toward the Rydberg state and back, so a singly-excited input completes a clean round trip while the blockaded doubly-excited branch is forced down a different path and accrues a different phase -- the native neutral-atom CZ. Bell-state fidelity >= 95.0(2)\%.},
+  url          = {https://doi.org/10.1103/PhysRevLett.123.170503}
+}
+
+@article{wu2022erasure,
+  title        = {Erasure conversion for fault-tolerant quantum computing in alkaline earth Rydberg atom arrays},
+  author       = {Wu, Yue and Kolkowitz, Shimon and Puri, Shruti and Thompson, Jeff D.},
+  journal      = {Nature Communications},
+  volume       = {13}, number = {1}, pages = {4657}, year = {2022},
+  doi          = {10.1038/s41467-022-32094-6},
+  note         = {Proposal to encode 171Yb qubits in a metastable level so that dominant gate errors and Rydberg leakage convert into detectable erasures (errors of known location); estimates ~98\% of errors become erasures, raising the surface-code two-qubit threshold to 4.15\% (from 0.937\%) -- codes tolerate located erasures far better than blind Pauli errors.},
+  url          = {https://doi.org/10.1038/s41467-022-32094-6}
+}
+
+@article{ma2023erasure,
+  title        = {High-fidelity gates and mid-circuit erasure conversion in an atomic qubit},
+  author       = {Ma, Shuo and Liu, Genyue and Peng, Pai and Zhang, Bichen and Jandura, Sven and Claes, Jahan and Burgers, Alex P. and Pupillo, Guido and Puri, Shruti and Thompson, Jeff D.},
+  journal      = {Nature},
+  volume       = {622}, number = {7982}, pages = {279--284}, year = {2023},
+  doi          = {10.1038/s41586-023-06438-1},
+  note         = {Demonstration of mid-circuit erasure conversion in a nuclear-spin 171Yb tweezer qubit: two-qubit gate fidelity 0.980(1), with leakage/loss errors detected and flagged as erasures during the circuit.},
+  url          = {https://doi.org/10.1038/s41586-023-06438-1}
+}
+
+@article{scholl2023erasure,
+  title        = {Erasure conversion in a high-fidelity Rydberg quantum simulator},
+  author       = {Scholl, Pascal and Shaw, Adam L. and Tsai, Richard Bing-Shiun and Finkelstein, Ran and Choi, Joonhee and Endres, Manuel},
+  journal      = {Nature},
+  volume       = {622}, number = {7982}, pages = {273--278}, year = {2023},
+  doi          = {10.1038/s41586-023-06516-4},
+  note         = {Erasure detection in a 87Sr Rydberg array: a large fraction of Rydberg-leakage events are detected and converted to erasures, raising the fidelity of the quantum simulation.},
+  url          = {https://doi.org/10.1038/s41586-023-06516-4}
+}
+
+@article{brown2019graymolasses,
+  title        = {Gray-Molasses Optical-Tweezer Loading: Controlling Collisions for Scaling Atom-Array Assembly},
+  author       = {Brown, M. O. and Thiele, T. and Kiehl, C. and Hsu, T.-W. and Regal, C. A.},
+  journal      = {Physical Review X},
+  volume       = {9}, number = {1}, pages = {011057}, year = {2019},
+  doi          = {10.1103/PhysRevX.9.011057},
+  note         = {Gray-molasses (D1) cooling during loading raises single-atom filling of an optical tweezer to ~89\%, well above the ~50\% collisional-blockade cap, cutting the rearrangement overhead.},
+  url          = {https://doi.org/10.1103/PhysRevX.9.011057}
+}
+
+% ---- Photonic ----
+@article{knill2001klm,
+  title   = {A scheme for efficient quantum computation with linear optics},
+  author  = {Knill, E. and Laflamme, R. and Milburn, G. J.},
+  journal = {Nature},
+  volume  = {409}, number = {6816}, pages = {46--52}, year = {2001},
+  doi     = {10.1038/35051009},
+  note    = {The KLM scheme: efficient, scalable linear-optical quantum computing from single photons, linear optics, ancillas, photodetection and feed-forward -- measurement-induced nonlinearity drives probabilistic gates toward determinism.}
+}
+
+@article{raussendorf2001oneway,
+  title   = {A One-Way Quantum Computer},
+  author  = {Raussendorf, Robert and Briegel, Hans J.},
+  journal = {Physical Review Letters},
+  volume  = {86}, number = {22}, pages = {5188--5191}, year = {2001},
+  doi     = {10.1103/PhysRevLett.86.5188},
+  note    = {Measurement-based (one-way) quantum computation: prepare a highly entangled cluster state, then compute by adaptive single-qubit measurements.}
+}
+
+@article{hong1987interference,
+  title   = {Measurement of subpicosecond time intervals between two photons by interference},
+  author  = {Hong, C. K. and Ou, Z. Y. and Mandel, L.},
+  journal = {Physical Review Letters},
+  volume  = {59}, number = {18}, pages = {2044--2046}, year = {1987},
+  doi     = {10.1103/PhysRevLett.59.2044},
+  note    = {The Hong--Ou--Mandel effect: two indistinguishable photons entering a 50:50 beam splitter from opposite ports always exit together -- the two-photon interference that underlies measurement-induced gates and fusions.}
+}
+
+@article{calsamiglia2001bellanalyzer,
+  title   = {Maximum efficiency of a linear-optical Bell-state analyzer},
+  author  = {Calsamiglia, J. and L{\"u}tkenhaus, N.},
+  journal = {Applied Physics B},
+  volume  = {72}, number = {1}, pages = {67--71}, year = {2001},
+  doi     = {10.1007/s003400000484},
+  note    = {A complete Bell-state measurement using only linear optics and vacuum ancillas cannot succeed with probability above 50\%.}
+}
+
+@article{bartolucci2023fusion,
+  title   = {Fusion-based quantum computation},
+  author  = {Bartolucci, Sara and Birchall, Patrick and Bomb{\'\i}n, Hector and Cable, Hugo and Dawson, Chris and Gimeno-Segovia, Mercedes and Johnston, Eric and Kieling, Konrad and Nickerson, Naomi and Pant, Mihir and Pastawski, Fernando and Rudolph, Terry and Sparrow, Chris},
+  journal = {Nature Communications},
+  volume  = {14}, number = {1}, pages = {912}, year = {2023},
+  doi     = {10.1038/s41467-023-36493-1},
+  note    = {FBQC: universal fault-tolerant photonic computation by performing entangling ``fusion'' measurements on small constant-size resource states; gives explicit hardware loss/error thresholds. PsiQuantum.}
+}
+
+@article{zhong2020jiuzhang,
+  title   = {Quantum computational advantage using photons},
+  author  = {Zhong, Han-Sen and Wang, Hui and Deng, Yu-Hao and Chen, Ming-Cheng and Peng, Li-Chao and Luo, Yi-Han and Qin, Jian and Wu, Dian and others},
+  journal = {Science},
+  volume  = {370}, number = {6523}, pages = {1460--1463}, year = {2020},
+  doi     = {10.1126/science.abe8770},
+  note    = {Jiuzhang 1.0: Gaussian boson sampling with up to 76 detected photons, claimed ~10^14 speedup over classical simulation. USTC. A sampling task, not universal computation.}
+}
+
+@article{madsen2022borealis,
+  title   = {Quantum computational advantage with a programmable photonic processor},
+  author  = {Madsen, Lars S. and Laudenbach, Fabian and Askarani, Mohsen Falamarzi and Rortais, Fabien and Vincent, Trevor and Bulmer, Jacob F. F. and Miatto, Filippo M. and Neuhaus, Leonhard and Helt, Lukas G. and Collins, Matthew J. and others},
+  journal = {Nature},
+  volume  = {606}, number = {7912}, pages = {75--81}, year = {2022},
+  doi     = {10.1038/s41586-022-04725-x},
+  note    = {Borealis: programmable, time-multiplexed Gaussian boson sampling over 216 squeezed modes, claimed quantum advantage. Xanadu/NIST. A sampling task, not universal computation.}
+}
+
+@article{oh2024classicalgbs,
+  title   = {Classical algorithm for simulating experimental Gaussian boson sampling},
+  author  = {Oh, Changhun and Liu, Minzhao and Alexeev, Yuri and Fefferman, Bill and Jiang, Liang},
+  journal = {Nature Physics},
+  volume  = {20}, number = {9}, pages = {1461}, year = {2024},
+  doi     = {10.1038/s41567-024-02535-8},
+  note    = {A matrix-product-state algorithm that exploits photon loss to classically simulate (``spoof'') existing GBS experiments, challenging some quantum-advantage claims.}
+}
+
+@article{liu2026jiuzhang4,
+  title   = {Gaussian boson sampling with 1,024 squeezed states in 8,176 modes},
+  author  = {Liu, Hua-Liang and others},
+  journal = {Nature},
+  year    = {2026},
+  doi     = {10.1038/s41586-026-10523-6},
+  note    = {Jiuzhang 4.0: 1,024 squeezed states in an 8,176-mode circuit, detection events up to 3,050 photons; one sample in 25.6 us vs >10^42 yr by the best classical (matrix-product-state) method, and explicitly benchmarked to withstand loss-based spoofing. Published 13 May 2026; arXiv:2508.09092. USTC.}
+}
+
+@misc{nobel2022entanglement,
+  title        = {The Nobel Prize in Physics 2022},
+  author       = {{The Royal Swedish Academy of Sciences}},
+  howpublished = {Awarded to Alain Aspect, John F. Clauser and Anton Zeilinger ``for experiments with entangled photons, establishing the violation of Bell inequalities and pioneering quantum information science''},
+  year         = {2022},
+  note         = {NobelPrize.org, Nobel Prize Outreach},
+  url          = {https://www.nobelprize.org/prizes/physics/2022/summary/}
+}
+
+@article{psiquantum2025omega,
+  title   = {A manufacturable platform for photonic quantum computing},
+  author  = {{PsiQuantum Team}},
+  journal = {Nature},
+  volume  = {641}, number = {8064}, pages = {876--883}, year = {2025},
+  doi     = {10.1038/s41586-025-08820-7},
+  note    = {PsiQuantum's Omega chipset (silicon photonics, GlobalFoundries): dual-rail SPAM 99.98\%, two-source HOM visibility 99.50\%, two-qubit fusion 99.22\%, chip-to-chip interconnect 99.72\% over 42 m of telecom fibre -- all conditional on photon detection, i.e. not including optical loss.}
+}
+
+@article{tomm2021singlephoton,
+  title   = {A bright and fast source of coherent single photons},
+  author  = {Tomm, Natasha and Javadi, Alisa and Antoniadis, Nadia O. and Najer, Daniel and L{\"o}bl, Matthias C. and Korsch, Alexander R. and Schott, R{\"u}diger and Valentin, Sascha R. and Wieck, Andreas D. and Ludwig, Arne and Warburton, Richard J.},
+  journal = {Nature Nanotechnology},
+  volume  = {16}, number = {4}, pages = {399--403}, year = {2021},
+  doi     = {10.1038/s41565-020-00831-x},
+  note    = {Quantum-dot single-photon source in a tunable open microcavity: about 57\% end-to-end efficiency with ~97.5\% photon indistinguishability.}
+}
+
+@article{reddy2020snspd,
+  title   = {Superconducting nanowire single-photon detectors with 98\% system detection efficiency at 1550 nm},
+  author  = {Reddy, Dileep V. and Nerem, Robert R. and Nam, Sae Woo and Mirin, Richard P. and Verma, Varun B.},
+  journal = {Optica},
+  volume  = {7}, number = {12}, pages = {1649--1653}, year = {2020},
+  doi     = {10.1364/OPTICA.400751},
+  note    = {SNSPDs reaching 98.0 +/- 0.5\% system detection efficiency at 1550 nm; these detectors operate at a few kelvin.}
+}
+
+@article{aghaeerad2025aurora,
+  title   = {Scaling and networking a modular photonic quantum computer},
+  author  = {Aghaee Rad, H. and others},
+  journal = {Nature},
+  volume  = {638}, number = {8052}, pages = {912--919}, year = {2025},
+  doi     = {10.1038/s41586-024-08406-9},
+  note    = {Xanadu Aurora: 35 photonic chips, 84 squeezers and 36 photon-number-resolving detectors across 4 fibre-networked racks at room temperature, ~13 km of fibre, synthesising a cluster state entangled across chips (86.4 billion modes) -- a modular scaling/networking prototype.}
+}
+
+@misc{quandela2025lucy,
+  title        = {Quandela delivers Lucy, the most advanced photonic quantum computer worldwide, to EuroHPC and GENCI at CEA's TGCC},
+  author       = {{Quandela}},
+  howpublished = {Quandela newsroom},
+  year         = {2025},
+  note         = {Quandela builds photonic processors around its own semiconductor quantum-dot single-photon sources; in October 2025 it delivered ``Lucy,'' a 12-qubit universal photonic quantum computer, to EuroHPC and GENCI at CEA's TGCC supercomputing centre, with larger machines on its roadmap.},
+  url          = {https://www.quandela.com/about-us/newsroom/quandela-delivers-lucy-the-most-advanced-photonic-quantum-computer-worldwide-to-eurohpc-and-genci-at-ceas-tgcc/}
+}
+
+% ---- Other platforms: semiconductor spin qubits ----
+@article{loss1998quantumdots,
+  title   = {Quantum computation with quantum dots},
+  author  = {Loss, Daniel and DiVincenzo, David P.},
+  journal = {Physical Review A},
+  volume  = {57}, number = {1}, pages = {120--126}, year = {1998},
+  doi     = {10.1103/PhysRevA.57.120}
+}
+
+@article{kane1998silicon,
+  title   = {A silicon-based nuclear spin quantum computer},
+  author  = {Kane, B. E.},
+  journal = {Nature},
+  volume  = {393}, number = {6681}, pages = {133--137}, year = {1998},
+  doi     = {10.1038/30156}
+}
+
+@article{noiri2022fast,
+  title   = {Fast universal quantum gate above the fault-tolerance threshold in silicon},
+  author  = {Noiri, Akito and Takeda, Kenta and Nakajima, Takashi and Kobayashi, Takashi and Sammak, Amir and Scappucci, Giordano and Tarucha, Seigo},
+  journal = {Nature},
+  volume  = {601}, number = {7893}, pages = {338--342}, year = {2022},
+  doi     = {10.1038/s41586-021-04182-y},
+  note    = {Silicon spin qubits: two-qubit gate fidelity 99.5\%, single-qubit 99.8\%.}
+}
+
+@article{xue2022surfacecode,
+  title   = {Quantum logic with spin qubits crossing the surface code threshold},
+  author  = {Xue, Xiao and Russ, Maximilian and Samkharadze, Nodar and Undseth, Brennan and Sammak, Amir and Scappucci, Giordano and Vandersypen, Lieven M. K.},
+  journal = {Nature},
+  volume  = {601}, number = {7893}, pages = {343--347}, year = {2022},
+  doi     = {10.1038/s41586-021-04273-w}
+}
+
+@article{mills2022twoqubit,
+  title   = {Two-qubit silicon quantum processor with operation fidelity exceeding 99\%},
+  author  = {Mills, Adam R. and Guinn, Charles R. and Gullans, Michael J. and Sigillito, Anthony J. and Feldman, Mayer M. and Nielsen, Erik and Petta, Jason R.},
+  journal = {Science Advances},
+  volume  = {8}, number = {14}, pages = {eabn5130}, year = {2022},
+  doi     = {10.1126/sciadv.abn5130}
+}
+
+@article{petit2020hot,
+  title   = {Universal quantum logic in hot silicon qubits},
+  author  = {Petit, L. and Eenink, H. G. J. and Russ, M. and Lawrie, W. I. L. and Hendrickx, N. W. and Philips, S. G. J. and Clarke, J. S. and Vandersypen, L. M. K. and Veldhorst, M.},
+  journal = {Nature},
+  volume  = {580}, number = {7803}, pages = {355--359}, year = {2020},
+  doi     = {10.1038/s41586-020-2170-7},
+  note    = {Universal gate set in silicon spin qubits above 1 kelvin.}
+}
+
+@article{huang2024hot,
+  title   = {High-fidelity spin qubit operation and algorithmic initialization above 1 K},
+  author  = {Huang, Jonathan Y. and Su, Rocky Y. and Lim, Wee Han and Feng, MengKe and van Straaten, Barnaby and Severin, Brandon and Gilbert, Will and Stuyck, Nard Dumoulin and Tanttu, Tuomo and Serrano, Santiago and others},
+  journal = {Nature},
+  volume  = {627}, number = {8005}, pages = {772--777}, year = {2024},
+  doi     = {10.1038/s41586-024-07160-2}
+}
+
+@article{camenzind2022hole,
+  title   = {A hole spin qubit in a fin field-effect transistor above 4 kelvin},
+  author  = {Camenzind, Leon C. and Geyer, Simon and Fuhrer, Andreas and Warburton, Richard J. and Zumb{\"u}hl, Dominik M. and Kuhlmann, Andreas V.},
+  journal = {Nature Electronics},
+  volume  = {5}, number = {3}, pages = {178--183}, year = {2022},
+  doi     = {10.1038/s41928-022-00722-0}
+}
+
+@article{sqc2025elevenqubit,
+  title   = {An 11-qubit atom processor in silicon},
+  author  = {{Silicon Quantum Computing}},
+  journal = {Nature},
+  volume  = {648}, pages = {569}, year = {2025},
+  doi     = {10.1038/s41586-025-09827-w},
+  note    = {Precision-placed phosphorus donor qubits in isotopically purified silicon-28; one- and multi-qubit gate fidelities up to 99.99\%; GHZ states of up to eight entangled nuclear spins. Published December 2025.}
+}
+
+@article{thorvaldson2025grover,
+  title   = {Grover's algorithm in a four-qubit silicon processor above the fault-tolerant threshold},
+  author  = {Thorvaldson, Ian and Poulos, Dean and Moehle, Christian M. and Misha, Saiful H. and Edlbauer, Hermann and Reiner, Jonathan and Geng, Helen and Voisin, Benoit and Jones, Michael T. and Donnelly, Matthew B. and Pe{\~n}a, Luis F. and Hill, Charles D. and Myers, Casey R. and Keizer, Joris G. and Chung, Yousun and Gorman, Samuel K. and Kranz, Ludwik and Simmons, Michelle Y.},
+  journal = {Nature Nanotechnology},
+  volume  = {20}, number = {4}, pages = {472--477}, year = {2025},
+  doi     = {10.1038/s41565-024-01853-5},
+  note    = {Four-qubit phosphorus-donor processor in isotopically purified silicon-28 with all control fidelities above the fault-tolerant threshold; ran Grover's search (over three nuclear-spin qubits) without error correction, finding the marked state at 98.87\% of the ideal success probability (93.46\% absolute). Same group as the 11-qubit processor.}
+}
+
+@misc{intel2023tunnelfalls,
+  title        = {Intel's new chip to advance silicon spin qubit research for quantum computing},
+  author       = {{Intel Corporation}},
+  howpublished = {Intel Newsroom},
+  year         = {2023},
+  note         = {``Tunnel Falls,'' a 12-qubit silicon spin qubit research chip fabricated on Intel's 300\,mm CMOS line using EUV lithography, released to the research community 15 June 2023.},
+  url          = {https://newsroom.intel.com/new-technologies/quantum-computing-chip-to-advance-research}
+}
+
+% ---- Other platforms: topological / Majorana ----
+@article{kitaev2001unpaired,
+  title   = {Unpaired Majorana fermions in quantum wires},
+  author  = {Kitaev, A. Yu.},
+  journal = {Physics-Uspekhi},
+  volume  = {44}, number = {10S}, pages = {131--136}, year = {2001},
+  doi     = {10.48550/arXiv.cond-mat/0010440}
+}
+
+@article{zhang2018quantized,
+  title   = {Quantized Majorana conductance},
+  author  = {Zhang, Hao and Liu, Chun-Xiao and Gazibegovic, Sasa and Xu, Di and Logan, John A. and Wang, Guanzhong and van Loo, Nick and Bommer, Jouri D. S. and de Moor, Michiel W. A. and Car, Diana and others},
+  journal = {Nature},
+  volume  = {556}, number = {7699}, pages = {74--79}, year = {2018},
+  doi     = {10.1038/nature26142},
+  note    = {RETRACTED in 2021 (see zhang2021retraction). Claimed a quantized 2e^2/h conductance plateau as a Majorana signature.}
+}
+
+@article{zhang2021retraction,
+  title   = {Retraction Note: Quantized Majorana conductance},
+  author  = {Zhang, Hao and Liu, Chun-Xiao and Gazibegovic, Sasa and Xu, Di and Logan, John A. and Wang, Guanzhong and van Loo, Nick and Bommer, Jouri D. S. and de Moor, Michiel W. A. and Car, Diana and others},
+  journal = {Nature},
+  volume  = {591}, number = {7851}, pages = {E30}, year = {2021},
+  doi     = {10.1038/s41586-021-03373-x},
+  note    = {March 2021 retraction of Zhang et al., Nature 556, 74 (2018), following data manipulation/omission found by re-examination.}
+}
+
+@article{aghaee2023topogap,
+  title   = {{InAs-Al} hybrid devices passing the topological gap protocol},
+  author  = {{Microsoft Quantum}},
+  journal = {Physical Review B},
+  volume  = {107}, number = {24}, pages = {245423}, year = {2023},
+  doi     = {10.1103/PhysRevB.107.245423},
+  note    = {Microsoft's claim that devices ``pass'' the topological gap protocol; subsequently disputed in published comments over the protocol's definition and parameter choices.}
+}
+
+@article{microsoft2025parity,
+  title   = {Interferometric single-shot parity measurement in {InAs--Al} hybrid devices},
+  author  = {{Microsoft Quantum}},
+  journal = {Nature},
+  volume  = {638}, number = {8051}, pages = {651--655}, year = {2025},
+  doi     = {10.1038/s41586-024-08445-2},
+  note    = {Result underlying the ``Majorana 1'' announcement. The paper states its measurements ``do not, by themselves, determine whether the low-energy states detected by interferometry are topological''; Nature appended an editor's note.}
+}
+
+@article{legg2025comment,
+  title   = {On the robustness of topological gap detection via transport},
+  author  = {Legg, Henry F.},
+  journal = {Nature (Matters Arising)},
+  volume  = {654}, pages = {E22--E26}, year = {2026},
+  doi     = {10.1038/s41586-026-10567-8},
+  eprint  = {2503.08944}, archivePrefix = {arXiv},
+  note    = {Matters Arising critique of Microsoft Quantum's 2025 parity-measurement paper (Nature 638, 651-655): argues the measured device regions are highly disordered and gapless and that signals could arise from trivial effects; identifies analysis-software errors and omitted transport data. Microsoft replied (Nature 654, doi:10.1038/s41586-026-10568-7).}
+}
+
+@misc{aps2025majoranaquestions,
+  title        = {Microsoft's claim of a topological qubit faces tough questions},
+  author       = {Garisto, Daniel},
+  howpublished = {Physics (APS), 18, 68},
+  year         = {2025},
+  note         = {Reports community skepticism of Microsoft's topological-qubit claim, including that Nature's editorial team concluded the results ``do not represent evidence for the presence of Majorana zero modes,'' and a physicist's characterization of 2025 topological-qubit claims as a ``fairy tale.''},
+  url          = {https://physics.aps.org/articles/v18/68}
+}
+
+% ---- Other platforms: color centers in diamond ----
+@article{balasubramanian2009ultralong,
+  title   = {Ultralong spin coherence time in isotopically engineered diamond},
+  author  = {Balasubramanian, G. and Neumann, P. and Twitchen, D. and Markham, M. and Kolesov, R. and Mizuochi, N. and Isoya, J. and Achard, J. and Beck, J. and Tissler, J. and others},
+  journal = {Nature Materials},
+  volume  = {8}, number = {5}, pages = {383--387}, year = {2009},
+  doi     = {10.1038/nmat2420},
+  note    = {Room-temperature NV electron-spin dephasing time T2 = 1.8 ms in isotopically purified diamond.}
+}
+
+@article{hensen2015loopholefree,
+  title   = {Loophole-free Bell inequality violation using electron spins separated by 1.3 kilometres},
+  author  = {Hensen, B. and Bernien, H. and Dr{\'e}au, A. E. and Reiserer, A. and Kalb, N. and Blok, M. S. and Ruitenberg, J. and Vermeulen, R. F. L. and Schouten, R. N. and Abell{\'a}n, C. and others},
+  journal = {Nature},
+  volume  = {526}, number = {7575}, pages = {682--686}, year = {2015},
+  doi     = {10.1038/nature15759}
+}
+
+@article{bradley2019tenqubit,
+  title   = {A ten-qubit solid-state spin register with quantum memory up to one minute},
+  author  = {Bradley, C. E. and Randall, J. and Abobeih, M. H. and Berrevoets, R. C. and Degen, M. J. and Bakker, M. A. and Markham, M. and Twitchen, D. J. and Taminiau, T. H.},
+  journal = {Physical Review X},
+  volume  = {9}, number = {3}, pages = {031045}, year = {2019},
+  doi     = {10.1103/PhysRevX.9.031045}
+}
+
+@article{pompili2021multinode,
+  title   = {Realization of a multinode quantum network of remote solid-state qubits},
+  author  = {Pompili, M. and Hermans, S. L. N. and Baier, S. and Beukers, H. K. C. and Humphreys, P. C. and Schouten, R. N. and Vermeulen, R. F. L. and Tiggelman, M. J. and dos Santos Martins, L. and Dirkse, B. and others},
+  journal = {Science},
+  volume  = {372}, number = {6539}, pages = {259--264}, year = {2021},
+  doi     = {10.1126/science.abg1919}
+}
+
+@article{hermans2022teleportation,
+  title   = {Qubit teleportation between non-neighbouring nodes in a quantum network},
+  author  = {Hermans, S. L. N. and Pompili, M. and Beukers, H. K. C. and Baier, S. and Borregaard, J. and Hanson, R.},
+  journal = {Nature},
+  volume  = {605}, number = {7911}, pages = {663--668}, year = {2022},
+  doi     = {10.1038/s41586-022-04697-y}
+}
+
+@article{knaut2024telecom,
+  title   = {Entanglement of nanophotonic quantum memory nodes in a telecom network},
+  author  = {Knaut, C. M. and Suleymanzade, A. and Wei, Y.-C. and Assumpcao, D. R. and Stas, P.-J. and Huan, Y. Q. and Machielse, B. and Knall, E. N. and Sutula, M. and Baranes, G. and others},
+  journal = {Nature},
+  volume  = {629}, number = {8012}, pages = {573--578}, year = {2024},
+  doi     = {10.1038/s41586-024-07252-z},
+  note    = {Two SiV-center nodes entangled over 35 km of deployed telecom fiber in the Boston area.}
+}
+
+% ---- Other platforms: the long tail ----
+@article{zhou2022electronneon,
+  title   = {Single electrons on solid neon as a solid-state qubit platform},
+  author  = {Zhou, Xianjing and Koolstra, Gerwin and Zhang, Xufeng and Yang, Ge and Han, Xu and Dizdar, Brennan and Li, Xinhao and Divan, Ralu and Guo, Wei and Murch, Kater W. and Schuster, David I. and Jin, Dafei},
+  journal = {Nature},
+  volume  = {605}, number = {7908}, pages = {46--50}, year = {2022},
+  doi     = {10.1038/s41586-022-04539-x}
+}
+
+@article{holland2023molecules,
+  title   = {On-demand entanglement of molecules in a reconfigurable optical tweezer array},
+  author  = {Holland, Connor M. and Lu, Yukai and Cheuk, Lawrence W.},
+  journal = {Science},
+  volume  = {382}, number = {6675}, pages = {1143--1147}, year = {2023},
+  doi     = {10.1126/science.adf4272}
+}
+
+% ---- Other platforms: rare-earth ions in crystals ----
+@article{dibos2018erbium,
+  title   = {Atomic Source of Single Photons in the Telecom Band},
+  author  = {Dibos, A. M. and Raha, M. and Phenicie, C. M. and Thompson, J. D.},
+  journal = {Physical Review Letters},
+  volume  = {120}, number = {24}, pages = {243601}, year = {2018},
+  doi     = {10.1103/PhysRevLett.120.243601},
+  note    = {Single Er3+ ions in a silicon nanophotonic cavity isolated and optically detected via >300x Purcell-enhanced emission directly in the ~1.5 um telecom band.}
+}
+
+@article{ourari2023erbium,
+  title   = {Indistinguishable telecom band photons from a single erbium ion in the solid state},
+  author  = {Ourari, Salim and Dusanowski, {\L}ukasz and Horvath, Sebastian P. and Uysal, Mehmet T. and Phenicie, Christopher M. and Stevenson, Paul and Raha, Mouktik and Chen, Songtao and Cava, Robert J. and de Leon, Nathalie P. and Thompson, Jeff D.},
+  journal = {Nature},
+  volume  = {620}, pages = {977--981}, year = {2023},
+  doi     = {10.1038/s41586-023-06281-4},
+  note    = {A single Er3+ ion in YVO4 operated as a coherent telecom-band qubit: spin coherence T2 > 200 us and Hong--Ou--Mandel interference of indistinguishable ~1.5 um photons emitted after a 36 km fiber delay.}
+}
+
+@article{vandersypen2001shor,
+  title   = {Experimental realization of Shor's quantum factoring algorithm using nuclear magnetic resonance},
+  author  = {Vandersypen, Lieven M. K. and Steffen, Matthias and Breyta, Gregory and Yannoni, Costantino S. and Sherwood, Mark H. and Chuang, Isaac L.},
+  journal = {Nature},
+  volume  = {414}, number = {6866}, pages = {883--887}, year = {2001},
+  doi     = {10.1038/414883a}
+}
+
+@misc{dwave2025advantage2,
+  title        = {D-Wave announces general availability of the Advantage2 quantum computer},
+  author       = {{D-Wave Quantum Inc.}},
+  howpublished = {D-Wave Newsroom / press},
+  year         = {2025},
+  note         = {Sixth-generation quantum annealer with 4,400+ superconducting flux qubits and 40,000+ couplers; a special-purpose optimization annealer, not a universal gate-model machine.},
+  url          = {https://www.dwavequantum.com/company/newsroom/press-release/d-wave-achieves-significant-milestone-with-calibration-of-4-400-qubit-advantage2-processor/}
+}
+
+% ---- Overview hub: framing (DiVincenzo criteria) & cross-cutting networking ----
+@article{divincenzo2000criteria,
+  title   = {The Physical Implementation of Quantum Computation},
+  author  = {DiVincenzo, David P.},
+  journal = {Fortschritte der Physik},
+  volume  = {48}, number = {9-11}, pages = {771--783}, year = {2000},
+  doi     = {10.1002/1521-3978(200009)48:9/11%3C771::AID-PROP771%3E3.0.CO;2-E}
+}
+
+@article{wehner2018internet,
+  title   = {Quantum internet: A vision for the road ahead},
+  author  = {Wehner, Stephanie and Elkouss, David and Hanson, Ronald},
+  journal = {Science},
+  volume  = {362}, number = {6412}, pages = {eaam9288}, year = {2018},
+  doi     = {10.1126/science.aam9288}
+}

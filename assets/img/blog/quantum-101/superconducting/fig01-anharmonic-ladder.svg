@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-label="Energy-level ladders: a harmonic LC oscillator with evenly spaced levels versus an anharmonic transmon whose level spacings shrink with energy, isolating the lowest two levels as a qubit." style="width:100%; height:auto; font-family:sans-serif;">
+  <defs>
+    <marker id="ah" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="currentColor"/></marker>
+    <marker id="ah2" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto-start-reverse"><path d="M0 0 L8 4 L0 8 Z" fill="currentColor"/></marker>
+  </defs>
+  <!-- energy axis -->
+  <line x1="40" y1="322" x2="40" y2="118" stroke="currentColor" stroke-width="1.5" marker-end="url(#ah)"/>
+  <text x="26" y="222" fill="currentColor" font-size="14" transform="rotate(-90 26 222)" text-anchor="middle">Energy</text>
+
+  <!-- ===== LEFT: LC oscillator (harmonic) ===== -->
+  <polyline points="110,120 130,223 150,284 170,305 190,284 210,223 230,120" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 4" opacity="0.4"/>
+  <!-- evenly spaced levels -->
+  <line x1="127" y1="295" x2="213" y2="295" stroke="currentColor" stroke-width="2"/>
+  <line x1="127" y1="248" x2="213" y2="248" stroke="currentColor" stroke-width="2"/>
+  <line x1="127" y1="201" x2="213" y2="201" stroke="currentColor" stroke-width="2"/>
+  <line x1="127" y1="154" x2="213" y2="154" stroke="currentColor" stroke-width="2"/>
+  <text x="221" y="299" fill="currentColor" font-size="13">|0&#x27E9;</text>
+  <text x="221" y="252" fill="currentColor" font-size="13">|1&#x27E9;</text>
+  <text x="221" y="205" fill="currentColor" font-size="13">|2&#x27E9;</text>
+  <text x="221" y="158" fill="currentColor" font-size="13">|3&#x27E9;</text>
+  <!-- equal gap arrows -->
+  <line x1="105" y1="295" x2="105" y2="248" stroke="currentColor" stroke-width="1.3" marker-start="url(#ah2)" marker-end="url(#ah2)"/>
+  <line x1="105" y1="248" x2="105" y2="201" stroke="currentColor" stroke-width="1.3" marker-start="url(#ah2)" marker-end="url(#ah2)"/>
+  <text x="70" y="276" fill="currentColor" font-size="13">&#x210F;&#x03C9;</text>
+  <text x="70" y="229" fill="currentColor" font-size="13">&#x210F;&#x03C9;</text>
+  <text x="170" y="345" fill="currentColor" font-size="15" text-anchor="middle" font-weight="600">LC oscillator &#8212; harmonic</text>
+
+  <!-- ===== RIGHT: transmon (anharmonic) ===== -->
+  <polyline points="450,150 473,211 495,261 518,294 540,305 563,294 585,261 608,211 630,150" fill="none" stroke="currentColor" stroke-width="1.4" stroke-dasharray="4 4" opacity="0.4"/>
+  <!-- shrinking gaps: 47, 38, 28 -->
+  <line x1="497" y1="295" x2="583" y2="295" stroke="#14b8a6" stroke-width="2.6"/>
+  <line x1="497" y1="248" x2="583" y2="248" stroke="#14b8a6" stroke-width="2.6"/>
+  <line x1="497" y1="210" x2="583" y2="210" stroke="currentColor" stroke-width="2"/>
+  <line x1="497" y1="182" x2="583" y2="182" stroke="currentColor" stroke-width="2"/>
+  <text x="591" y="299" fill="#14b8a6" font-size="13">|0&#x27E9;</text>
+  <text x="591" y="252" fill="#14b8a6" font-size="13">|1&#x27E9;</text>
+  <text x="591" y="214" fill="currentColor" font-size="13">|2&#x27E9;</text>
+  <text x="591" y="186" fill="currentColor" font-size="13">|3&#x27E9;</text>
+  <!-- qubit subspace bracket -->
+  <path d="M621 247 h6 v50 h-6" fill="none" stroke="#14b8a6" stroke-width="1.5"/>
+  <text x="634" y="276" fill="#14b8a6" font-size="12">qubit</text>
+  <!-- gap arrows: 0->1 full, 1->2 shorter/detuned -->
+  <line x1="475" y1="295" x2="475" y2="248" stroke="currentColor" stroke-width="1.3" marker-start="url(#ah2)" marker-end="url(#ah2)"/>
+  <text x="423" y="276" fill="currentColor" font-size="13">&#x210F;&#x03C9;&#8320;&#8321;</text>
+  <line x1="475" y1="248" x2="475" y2="210" stroke="#e0a106" stroke-width="1.3" marker-start="url(#ah2)" marker-end="url(#ah2)"/>
+  <text x="402" y="232" fill="#e0a106" font-size="12">&#x210F;&#x03C9;&#8320;&#8321;&#8722;|&#x03B1;|</text>
+  <text x="540" y="345" fill="currentColor" font-size="15" text-anchor="middle" font-weight="600">Transmon &#8212; anharmonic</text>
+</svg>

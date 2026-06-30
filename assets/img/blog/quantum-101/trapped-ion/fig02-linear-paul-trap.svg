@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-label="A linear Paul trap holding a chain of five ions. Two horizontal radio-frequency electrode rails run above and below the chain; amber DC endcap electrodes cap the left and right ends. Five teal ions sit along the central axis, slightly crowded toward the middle. Beneath them, equal arrows under every ion show the chain's center-of-mass vibration, the shared phonon bus, with faint ghost positions marking the uniform displacement." style="width:100%; height:auto; font-family:sans-serif;">
+  <defs>
+    <marker id="t1a" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="currentColor"/></marker>
+  </defs>
+  <!-- RF rails -->
+  <rect x="150" y="58" width="430" height="16" rx="8" fill="none" stroke="#4f7cff" stroke-width="2"/>
+  <rect x="150" y="286" width="430" height="16" rx="8" fill="none" stroke="#4f7cff" stroke-width="2"/>
+  <text x="365" y="48" fill="#4f7cff" font-size="13" text-anchor="middle">RF electrode</text>
+  <text x="365" y="324" fill="#4f7cff" font-size="13" text-anchor="middle">RF electrode (drives the spinning saddle, &#x3A9;<tspan baseline-shift="sub" font-size="9">RF</tspan> &#8776; tens of MHz)</text>
+  <!-- DC endcaps -->
+  <rect x="120" y="150" width="16" height="60" rx="5" fill="none" stroke="#e0a106" stroke-width="2"/>
+  <rect x="594" y="150" width="16" height="60" rx="5" fill="none" stroke="#e0a106" stroke-width="2"/>
+  <text x="128" y="232" fill="#e0a106" font-size="12" text-anchor="middle">DC</text>
+  <text x="602" y="232" fill="#e0a106" font-size="12" text-anchor="middle">DC</text>
+  <!-- ion chain -->
+  <line x1="186" y1="180" x2="544" y2="180" stroke="currentColor" stroke-width="1" stroke-dasharray="3 5" opacity="0.45"/>
+  <g opacity="0.3">
+    <circle cx="224" cy="180" r="11" fill="none" stroke="#14b8a6" stroke-width="1.6" stroke-dasharray="3 3"/>
+    <circle cx="300" cy="180" r="11" fill="none" stroke="#14b8a6" stroke-width="1.6" stroke-dasharray="3 3"/>
+    <circle cx="364" cy="180" r="11" fill="none" stroke="#14b8a6" stroke-width="1.6" stroke-dasharray="3 3"/>
+    <circle cx="428" cy="180" r="11" fill="none" stroke="#14b8a6" stroke-width="1.6" stroke-dasharray="3 3"/>
+    <circle cx="504" cy="180" r="11" fill="none" stroke="#14b8a6" stroke-width="1.6" stroke-dasharray="3 3"/>
+  </g>
+  <g>
+    <circle cx="210" cy="180" r="11" fill="#14b8a6" fill-opacity="0.22" stroke="#14b8a6" stroke-width="2.4"/>
+    <circle cx="286" cy="180" r="11" fill="#14b8a6" fill-opacity="0.22" stroke="#14b8a6" stroke-width="2.4"/>
+    <circle cx="350" cy="180" r="11" fill="#14b8a6" fill-opacity="0.22" stroke="#14b8a6" stroke-width="2.4"/>
+    <circle cx="414" cy="180" r="11" fill="#14b8a6" fill-opacity="0.22" stroke="#14b8a6" stroke-width="2.4"/>
+    <circle cx="490" cy="180" r="11" fill="#14b8a6" fill-opacity="0.22" stroke="#14b8a6" stroke-width="2.4"/>
+  </g>
+  <text x="350" y="135" fill="#14b8a6" font-size="13" text-anchor="middle">linear ion chain &#8212; each a single atom, charge +e</text>
+  <!-- shared motional (center-of-mass) mode: uniform displacement -->
+  <g opacity="0.85">
+    <line x1="197" y1="234" x2="223" y2="234" stroke="currentColor" stroke-width="1.7" marker-end="url(#t1a)"/>
+    <line x1="273" y1="234" x2="299" y2="234" stroke="currentColor" stroke-width="1.7" marker-end="url(#t1a)"/>
+    <line x1="337" y1="234" x2="363" y2="234" stroke="currentColor" stroke-width="1.7" marker-end="url(#t1a)"/>
+    <line x1="401" y1="234" x2="427" y2="234" stroke="currentColor" stroke-width="1.7" marker-end="url(#t1a)"/>
+    <line x1="477" y1="234" x2="503" y2="234" stroke="currentColor" stroke-width="1.7" marker-end="url(#t1a)"/>
+  </g>
+  <text x="350" y="262" fill="currentColor" font-size="13" text-anchor="middle">center-of-mass mode &#8212; the whole chain sways in lockstep: the quantum bus</text>
+</svg>
