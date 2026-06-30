@@ -54,15 +54,9 @@ li,
   line-height: 1.7;
 }
 
-// One consistent measure inside the 1000px column at 120% root — applied to
-// prose, lists, and the two content wrappers so the right edge lines up
-// (lists previously ran wider than paragraphs). Wrappers bound their inner
-// lists even though those lists aren't direct children of .clearfix.
-.post > article > .clearfix > p,
-.post > article > .clearfix > ul,
-.post > article > .clearfix > ol,
-.post > article > .clearfix > .recruiting-notice,
-.post > article > .clearfix > .research-highlights,
+// Prose measure for standard content pages. The about/home page is intentionally
+// left full-width (text spans the whole centred column, balanced margins), so it
+// is NOT constrained here — only the other content pages keep the reading measure.
 .post-content p {
   max-width: 72ch;
 }
