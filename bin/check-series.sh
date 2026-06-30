@@ -34,4 +34,15 @@ for post in _posts/*.md; do
   done
 done
 
+echo "== spurious-table audit (kramdown pipe-in-math) =="
+# Our only intended tables are plain-text comparison tables. A rendered table cell
+# that contains math (a '$' delimiter or a bra-ket command like \rangle) means kramdown
+# turned a literal '|' in inline math into a spurious <table>. Fix: write '|' as \vert in
+# math (see plan Shared Reference B).
+for html in _site/blog/2026/*/index.html; do
+  if grep -nE '<t[dh][ >].*(\$|\\(rangle|langle|vert))' "$html" >/dev/null; then
+    echo "SPURIOUS TABLE (math '|' in $html) — escape pipes in math as \\vert"; fail=1
+  fi
+done
+
 [ "$fail" -eq 0 ] && echo "AUDIT PASS" || { echo "AUDIT FAIL"; exit 1; }

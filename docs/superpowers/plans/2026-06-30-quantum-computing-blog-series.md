@@ -100,6 +100,15 @@ Figures are **original, clean, minimalist, and theme-adaptive** (the site has li
 **Math:** inline `$...$`, display `$$...$$` (distill KaTeX delimiters are configured). Use math
 only where it clarifies (e.g. a Hamiltonian, a blockade radius, a fidelity bound).
 
+**CRITICAL — never put a literal `|` inside math.** kramdown parses the pipe as a table-column
+separator and silently shreds the whole paragraph into a spurious `<table>` (this bit the pilot).
+In math, always write bra-ket/abs-value bars as LaTeX commands instead:
+- ket `|0⟩` → `\vert 0\rangle` (or `\lvert 0\rangle`); bra `⟨0|` → `\langle 0\vert`
+- absolute value `|α|` → `\lvert\alpha\rvert`; norm → `\lVert\psi\rVert`; conditional → `\mid`
+All render identically to `|` in MathJax but carry no literal pipe in the source. After building,
+verify the post contains exactly the number of `<table>` elements you intended (the audit/build
+should show only your real comparison table): `grep -c '<table' _site/blog/2026/<slug>/index.html`.
+
 ## Shared Reference C — Build & audit (the "test" for every content task)
 
 Create `bin/check-series.sh` once (Task 1), then run it after every post. It must build the site
