@@ -18,6 +18,48 @@ d-article d-byline a {
   }
 }
 
+/* Custom three-column byline: Authors / Published / Latest Update */
+.qc-byline {
+  border-top: 1px solid var(--global-divider-color);
+  border-bottom: 1px solid var(--global-divider-color);
+  margin: 0 0 2rem;
+  padding: 1.1rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0.75rem 2.75rem;
+  justify-content: start;
+  font-size: 0.8rem;
+  line-height: 1.5;
+
+  h3 {
+    margin: 0 0 0.2rem;
+    font-size: 0.62rem;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--global-text-color-light);
+  }
+
+  p {
+    margin: 0;
+    color: var(--global-text-color);
+  }
+
+  a {
+    color: var(--global-text-color);
+    &:hover {
+      color: var(--global-hover-color);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .qc-byline {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem 1.25rem;
+  }
+}
+
 d-article {
   border-top-color: var(--global-divider-color) !important;
   p,

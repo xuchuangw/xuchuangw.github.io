@@ -68,16 +68,27 @@
         <h1>{{ page.title }}</h1>
         <p>{{ page.description }}</p>
       </d-title>
-      {% if page.authors %}
-        <d-byline></d-byline>
-      {% endif %}
-      {% if page.last_updated %}
-        <div class="distill-updated" style="text-align: center; margin: -0.75rem 0 1.25rem; font-size: 0.8rem; color: var(--global-text-color-light);">
-          Last updated {{ page.last_updated | date: "%-d %b %Y" }}{% if page.version %} &middot; v{{ page.version }}{% endif %}
-        </div>
-      {% endif %}
-
       <d-article>
+        {% if page.authors %}
+          <div class="qc-byline">
+            <div class="qc-byline-section">
+              <h3>Authors</h3>
+              {% for author in page.authors %}
+                <p>{% if author.url %}<a href="{{ author.url | relative_url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}</p>
+              {% endfor %}
+            </div>
+            <div class="qc-byline-section">
+              <h3>Published</h3>
+              <p>{{ page.date | date: "%B %-d, %Y" }}</p>
+            </div>
+            {% if page.last_updated %}
+              <div class="qc-byline-section">
+                <h3>Latest Update</h3>
+                <p>{{ page.last_updated | date: "%B %-d, %Y" }}{% if page.version %} &middot; v{{ page.version }}{% endif %}</p>
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
         {% if page.toc %}
           <d-contents>
             <nav class="l-text figcaption">
