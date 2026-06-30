@@ -1,2 +1,193 @@
 % Bibliography for the "How to Build a Quantum Computer" blog series.
 % One entry per verified source. Keys: lastnameYYYYkeyword. Prefer DOI.
+
+% ---- Foundations ----
+@article{josephson1962possible,
+  title   = {Possible new effects in superconductive tunnelling},
+  author  = {Josephson, B. D.},
+  journal = {Physics Letters},
+  volume  = {1}, number = {7}, pages = {251--253}, year = {1962},
+  doi     = {10.1016/0031-9163(62)91369-0}
+}
+
+@article{nakamura1999coherent,
+  title   = {Coherent control of macroscopic quantum states in a single-Cooper-pair box},
+  author  = {Nakamura, Y. and Pashkin, Yu. A. and Tsai, J. S.},
+  journal = {Nature},
+  volume  = {398}, number = {6730}, pages = {786--788}, year = {1999},
+  doi     = {10.1038/19718}
+}
+
+@article{koch2007transmon,
+  title   = {Charge-insensitive qubit design derived from the Cooper pair box},
+  author  = {Koch, Jens and Yu, Terri M. and Gambetta, Jay and Houck, A. A. and Schuster, D. I. and Majer, J. and Blais, Alexandre and Devoret, M. H. and Girvin, S. M. and Schoelkopf, R. J.},
+  journal = {Physical Review A},
+  volume  = {76}, number = {4}, pages = {042319}, year = {2007},
+  doi     = {10.1103/PhysRevA.76.042319}
+}
+
+% ---- Honors ----
+@misc{clarke2025nobel,
+  title        = {The Nobel Prize in Physics 2025},
+  author       = {{The Royal Swedish Academy of Sciences}},
+  howpublished = {Awarded to John Clarke, Michel H. Devoret and John M. Martinis ``for the discovery of macroscopic quantum mechanical tunnelling and energy quantisation in an electric circuit''},
+  year         = {2025},
+  note         = {NobelPrize.org, Nobel Prize Outreach},
+  url          = {https://www.nobelprize.org/prizes/physics/2025/summary/}
+}
+
+% ---- Google milestones ----
+@article{arute2019supremacy,
+  title   = {Quantum supremacy using a programmable superconducting processor},
+  author  = {Arute, Frank and Arya, Kunal and Babbush, Ryan and others},
+  journal = {Nature},
+  volume  = {574}, number = {7779}, pages = {505--510}, year = {2019},
+  doi     = {10.1038/s41586-019-1666-5}
+}
+
+@article{pan2022solving,
+  title   = {Solving the Sampling Problem of the Sycamore Quantum Circuits},
+  author  = {Pan, Feng and Chen, Keyang and Zhang, Pan},
+  journal = {Physical Review Letters},
+  volume  = {129}, number = {9}, pages = {090502}, year = {2022},
+  doi     = {10.1103/PhysRevLett.129.090502}
+}
+
+@article{google2024willow,
+  title   = {Quantum error correction below the surface code threshold},
+  author  = {{Google Quantum AI and Collaborators}},
+  journal = {Nature},
+  volume  = {638}, number = {8052}, pages = {920--926}, year = {2025},
+  doi     = {10.1038/s41586-024-08449-y}
+}
+
+@article{google2025echoes,
+  title   = {Observation of constructive interference at the edge of quantum ergodicity},
+  author  = {{Google Quantum AI and Collaborators}},
+  journal = {Nature},
+  year    = {2025},
+  doi     = {10.1038/s41586-025-09526-6},
+  note    = {``Quantum Echoes'' out-of-time-order-correlator experiment; published 22 October 2025}
+}
+
+@article{google2023surface,
+  title   = {Suppressing quantum errors by scaling a surface code logical qubit},
+  author  = {{Google Quantum AI}},
+  journal = {Nature},
+  volume  = {614}, number = {7949}, pages = {676--681}, year = {2023},
+  doi     = {10.1038/s41586-022-05434-1}
+}
+
+% ---- Hardware: qubit counts, fidelities, error correction ----
+@misc{ibm2023condor,
+  title        = {IBM Quantum heralds the era of quantum utility with Condor and Heron processors},
+  author       = {{IBM Quantum}},
+  howpublished = {IBM Quantum Computing Blog, IBM Quantum Summit 2023},
+  year         = {2023}, month = dec,
+  note         = {Condor: 1{,}121-qubit superconducting processor with ``over a mile of high-density cryogenic flex IO wiring''; Heron r1: 133 qubits. Unveiled 4 December 2023.},
+  url          = {https://www.ibm.com/quantum/blog/quantum-roadmap-2033}
+}
+
+@misc{ibm2024heron,
+  title        = {IBM Quantum processor types},
+  author       = {{IBM Quantum}},
+  howpublished = {IBM Quantum Documentation},
+  year         = {2024},
+  note         = {Heron r2: 156 qubits in a heavy-hexagonal lattice; Heron r1: 133 qubits},
+  url          = {https://quantum.cloud.ibm.com/docs/en/guides/processor-types}
+}
+
+@misc{ibm2025nighthawk,
+  title        = {IBM delivers new quantum processors, software, and algorithm breakthroughs on the path to advantage and fault tolerance},
+  author       = {{IBM}},
+  howpublished = {IBM Newsroom},
+  year         = {2025}, month = nov,
+  note         = {Nighthawk: 120-qubit processor with 218 tunable couplers in a square lattice. Announced 12 November 2025.},
+  url          = {https://newsroom.ibm.com/2025-11-12-ibm-delivers-new-quantum-processors,-software,-and-algorithm-breakthroughs-on-path-to-advantage-and-fault-tolerance}
+}
+
+@misc{rigetti2024ankaa,
+  title        = {Rigetti Computing launches 84-qubit Ankaa-3 system; achieves 99.5\% median two-qubit gate fidelity milestone},
+  author       = {{Rigetti Computing}},
+  howpublished = {Rigetti Computing press release},
+  year         = {2024}, month = dec,
+  note         = {84 qubits; 99.5\% median two-qubit (fSim) gate fidelity; launched 23 December 2024.},
+  url          = {https://investors.rigetti.com/news-releases/news-release-details/rigetti-computing-launches-84-qubit-ankaatm-3-system-achieves}
+}
+
+@article{ustc2025zuchongzhi,
+  title   = {Establishing a new benchmark in quantum computational advantage with 105-qubit Zuchongzhi 3.0 processor},
+  author  = {Gao, Dongxin and others},
+  journal = {Physical Review Letters},
+  volume  = {134}, number = {9}, pages = {090601}, year = {2025},
+  doi     = {10.1103/PhysRevLett.134.090601},
+  note    = {arXiv:2412.11924; Jian-Wei Pan group, USTC}
+}
+
+@article{putterman2025ocelot,
+  title   = {Hardware-efficient quantum error correction via concatenated bosonic qubits},
+  author  = {Putterman, Harald and Noh, Kyungjoo and Hann, Connor T. and others},
+  journal = {Nature},
+  volume  = {638}, number = {8052}, pages = {927--934}, year = {2025},
+  doi     = {10.1038/s41586-025-08642-7},
+  note    = {AWS Center for Quantum Computing; ``Ocelot'' cat-qubit chip}
+}
+
+@article{bravyi2024ldpc,
+  title   = {High-threshold and low-overhead fault-tolerant quantum memory},
+  author  = {Bravyi, Sergey and Cross, Andrew W. and Gambetta, Jay M. and Maslov, Dmitri and Rall, Patrick and Yoder, Theodore J.},
+  journal = {Nature},
+  volume  = {627}, number = {8005}, pages = {778--782}, year = {2024},
+  doi     = {10.1038/s41586-024-07107-7}
+}
+
+% ---- Coherence ----
+@article{kjaergaard2020superconducting,
+  title   = {Superconducting Qubits: Current State of Play},
+  author  = {Kjaergaard, Morten and Schwartz, Mollie E. and Braum\"uller, Jochen and Krantz, Philip and Wang, Joel I.-J. and Gustavsson, Simon and Oliver, William D.},
+  journal = {Annual Review of Condensed Matter Physics},
+  volume  = {11}, pages = {369--395}, year = {2020},
+  doi     = {10.1146/annurev-conmatphys-031119-050605}
+}
+
+@article{place2021tantalum,
+  title   = {New material platform for superconducting transmon qubits with coherence times exceeding 0.3 milliseconds},
+  author  = {Place, Alexander P. M. and Rodgers, Lila V. H. and Mundada, Pranav and Smitham, Basil M. and Fitzpatrick, Mattias and Leng, Zhaoqi and Premkumar, Anjali and Bryon, Jacob and Vrajitoarea, Andrei and Sussman, Sara and Cheng, Guangming and Madhavan, Trisha and Babla, Harshvardhan K. and Le, Xuan Hoang and Gang, Youqi and J\"ack, Berthold and Gyenis, Andr\'as and Yao, Nan and Cava, Robert J. and de Leon, Nathalie P. and Houck, Andrew A.},
+  journal = {Nature Communications},
+  volume  = {12}, number = {1}, pages = {1779}, year = {2021},
+  doi     = {10.1038/s41467-021-22030-5}
+}
+
+@article{bland2025tantalum,
+  title   = {Millisecond lifetimes and coherence times in 2D transmon qubits},
+  author  = {Bland, Matthew P. and Bahrami, Faranak and Martinez, Jeronimo G. C. and Prestegaard, Paal H. and Smitham, Basil M. and Joshi, Atharv and Hedrick, Elizabeth and Kumar, Shashwat and Yang, Ambrose and Pakpour-Tabrizi, Alexander C. and Jindal, Apoorv and Chang, Ray D. and Cheng, Guangming and Yao, Nan and Cava, Robert J. and de Leon, Nathalie P. and Houck, Andrew A.},
+  journal = {Nature},
+  volume  = {647}, number = {8089}, pages = {343--348}, year = {2025},
+  doi     = {10.1038/s41586-025-09687-4},
+  note    = {Tantalum-on-silicon transmons; peak T1 = 1.68 ms}
+}
+
+@article{somoroff2023fluxonium,
+  title   = {Millisecond Coherence in a Superconducting Qubit},
+  author  = {Somoroff, Aaron and Ficheux, Quentin and Mencia, Raymond A. and Xiong, Haonan and Kuzmin, Roman V. and Manucharyan, Vladimir E.},
+  journal = {Physical Review Letters},
+  volume  = {130}, number = {26}, pages = {267001}, year = {2023},
+  doi     = {10.1103/PhysRevLett.130.267001}
+}
+
+% ---- Microwave-to-optical transduction (networking) ----
+@article{lauk2020transduction,
+  title   = {Perspectives on quantum transduction},
+  author  = {Lauk, Nikolai and Sinclair, Neil and Barzanjeh, Shabir and Covey, Jacob P. and Saffman, Mark and Spiropulu, Maria and Simon, Christoph},
+  journal = {Quantum Science and Technology},
+  volume  = {5}, number = {2}, pages = {020501}, year = {2020},
+  doi     = {10.1088/2058-9565/ab788a}
+}
+
+@article{han2021microwaveoptical,
+  title   = {Microwave-optical quantum frequency conversion},
+  author  = {Han, Xu and Fu, Wei and Zou, Chang-Ling and Jiang, Liang and Tang, Hong X.},
+  journal = {Optica},
+  volume  = {8}, number = {8}, pages = {1050--1064}, year = {2021},
+  doi     = {10.1364/OPTICA.425414}
+}
