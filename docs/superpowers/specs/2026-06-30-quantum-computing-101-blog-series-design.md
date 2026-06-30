@@ -18,7 +18,9 @@ and `PR/xiaohongshu/2026-06-11_quantum-computing-technical-routes/` (the overvie
 
 ## The six posts
 
-Shared tag **`quantum-computing-101`**, category **`physical-layer`**.
+Tag **`quantum`**, category **`physical-layer`**. Series cohesion comes from the overview
+hub + cross-links + the consistent *"How to Build a Quantum Computer"* titling — **not** from
+a series-specific tag.
 
 | # | Role | Slug | Source draft |
 |---|------|------|--------------|
@@ -44,9 +46,14 @@ resolves to `/blog/2026/<slug>/` per the existing `permalink: /blog/:year/:title
   shared `.bib`; numbered reference list auto-rendered by distill. Any claim that fails
   verification is cut or softened — never shipped unsourced.
 - **Structure & nav:** series with an **overview hub** + the five deep-dives cross-linked;
-  **`blog` added to the top navbar.**
+  **`blog` added to the top navbar.** Tag `quantum`.
+- **Depth:** these are **deep technical articles, not the poster intros.** The drafted
+  `post.md` is the *popular-science floor*; the blog goes well beyond it — real mechanisms,
+  Hamiltonians/gate physics, quantitative fidelity/coherence/error numbers, and the actual
+  meaning (and caveats) of SOTA results. MathJax used wherever an equation clarifies. See
+  "Depth target" below.
 - **Voice:** informative AND genuinely funny (warm, self-aware, verified) — the standing
-  poster directive. Preserve the drafts' tone.
+  poster directive. Preserve the drafts' tone *even at depth* (rigorous but still warm/wry).
 - **Build sequencing:** **superconducting first as the full template** → render locally →
   user sign-off on look/feel → then batch the remaining five against the locked template.
 
@@ -79,7 +86,7 @@ layout: distill
 title: <title>
 description: <one-line summary, shows on blog index + meta>
 date: 2026-06-30
-tags: quantum-computing-101 <topic-specific>
+tags: quantum <topic-specific>
 categories: physical-layer
 giscus_comments: true            # match site default if comments enabled elsewhere
 bibliography: quantum_computing_101.bib
@@ -122,22 +129,42 @@ toc:
   five-route comparison, then links to each deep-dive.
 - **Each deep-dive** opens with a short callout: "Part of the *How to Build a Quantum
   Computer* series" linking back to the hub and listing siblings.
-- Shared tag `quantum-computing-101` gives an archive page at `/blog/tag/quantum-computing-101/`.
+- Tag `quantum` gives an archive page at `/blog/tag/quantum/` (shared with any future quantum
+  posts — series grouping is carried by the hub + cross-links, not the tag).
 
 ## Content approach per post
 
-Expand the drafted `post.md` article into a structured distill piece following the poster
-card flow, roughly:
+The drafted `post.md` is the **floor, not the ceiling.** Expand each into a structured,
+genuinely deep distill article — a curious physics-grad-student / fellow-researcher should
+learn something, not just a layperson. Follow the poster card flow as a skeleton, then go
+deeper at every step:
 
-1. Hook / what this qubit *is* (the central metaphor).
-2. How the qubit is physically realized & controlled (gates).
-3. Strengths (why this route is competitive).
-4. Honest weaknesses / costs.
-5. State of the art (latest verified milestones, cited).
-6. Where it sits vs the other routes (comparison; on deep-dives, a short table or callout).
+1. **Hook / what this qubit *is*** — the central metaphor, then the real physics behind it.
+2. **Physical realization & control** — the actual mechanism and gate physics, with the
+   governing Hamiltonian / key equations (MathJax) where they clarify: e.g. transmon
+   anharmonicity & the Josephson cosine potential; Mølmer–Sørensen via shared motional
+   modes; Rydberg blockade radius; KLM / fusion-based linear-optics & cluster states.
+3. **Strengths** — why competitive, with quantitative backing (gate speed, fidelity).
+4. **Honest weaknesses / costs** — the real error budget, scaling walls, with numbers.
+5. **State of the art** — latest verified milestones AND what they actually mean + caveats
+   (not just headlines), each cited.
+6. **Where it sits vs the other routes** — comparison; deep-dives get a short table/callout,
+   the hub gets the full cross-route comparison + a "what makes a good qubit" (DiVincenzo)
+   framing.
 
-Keep the warm, wry, verified voice. Tighten for a reading (not scrolling) medium; add the
-connective tissue and depth the poster cards couldn't hold.
+### Depth target
+
+- **Length:** substantial — aim ~2500–4500 words per deep-dive (vs the ~1500-word poster
+  draft); the hub similar. Length serves depth, never padding.
+- **Technical level:** include the mechanism, the math, and the numbers — fidelities, T1/T2,
+  gate times, error rates, qubit counts — each sourced. Equations via MathJax where they earn
+  their place.
+- **SOTA with nuance:** explain *why* a result matters and its limitations (e.g. "below
+  threshold" = memory, not computation; "quantum advantage" verifiable vs contested).
+- **Still warm and funny.** Depth and the standing humor directive are not in tension —
+  rigorous, surprising, and wry at once. The field, PhD, and advisor stay likeable.
+- Tighten for a reading (not scrolling) medium; add the connective tissue the cards couldn't
+  hold. Cut anything that's filler rather than insight.
 
 ## Build / verification workflow
 
@@ -157,6 +184,8 @@ connective tissue and depth the poster cards couldn't hold.
 - Internal series links (hub ↔ deep-dives, tag archive) all resolve.
 - Voice check: each post is both genuinely informative and genuinely funny, and nothing
   about the field/PhD/advisor reads as cynical.
+- Depth check: each deep-dive delivers real mechanism + math + sourced numbers (not just the
+  poster-level metaphor); SOTA claims carry their caveats; length serves depth, not padding.
 
 ## Open implementation details (resolved during writing-plans / build)
 
