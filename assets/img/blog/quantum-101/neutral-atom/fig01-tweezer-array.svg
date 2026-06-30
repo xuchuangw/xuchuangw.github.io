@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" role="img" aria-label="An optical-tweezer atom array. A focused laser cone at the top, split by an SLM or AOD, feeds a grid of tweezer sites. Most sites hold a teal atom; a few sites are empty dashed rings, showing the roughly 50 percent probabilistic loading. One atom is highlighted amber as a puffed-up Rydberg excitation with a dashed halo. A curved arrow shows a moving tweezer shuttling an atom into an empty site to assemble a defect-free array." style="width:100%; height:auto; font-family:sans-serif;">
+  <defs>
+    <marker id="na1a" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#3b3f4a"/></marker>
+  </defs>
+  <!-- beam cone -->
+  <line x1="360" y1="20" x2="300" y2="92" stroke="#4f7cff" stroke-width="1.6" opacity="0.7"/>
+  <line x1="360" y1="20" x2="420" y2="92" stroke="#4f7cff" stroke-width="1.6" opacity="0.7"/>
+  <rect x="312" y="44" width="96" height="10" rx="2" fill="none" stroke="#4f7cff" stroke-width="1.6"/>
+  <text x="360" y="38" fill="#4f7cff" font-size="12" text-anchor="middle">1 laser &#8594; SLM / AOD</text>
+  <text x="430" y="70" fill="#4f7cff" font-size="11.5" text-anchor="start">splits into thousands of tweezers</text>
+  <!-- grid of sites: 5 cols x 4 rows -->
+  <!-- row 1 y=140 -->
+  <circle cx="180" cy="140" r="13" fill="none" stroke="#3b3f4a" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+  <circle cx="180" cy="140" r="7" fill="#14b8a6" fill-opacity="0.25" stroke="#14b8a6" stroke-width="2"/>
+  <circle cx="270" cy="140" r="13" fill="none" stroke="#3b3f4a" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+  <circle cx="270" cy="140" r="7" fill="#14b8a6" fill-opacity="0.25" stroke="#14b8a6" stroke-width="2"/>
+  <circle cx="360" cy="140" r="13" fill="none" stroke="#3b3f4a" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+  <circle cx="360" cy="140" r="7" fill="#14b8a6" fill-opacity="0.25" stroke="#14b8a6" stroke-width="2"/>
+  <circle cx="450" cy="140" r="13" fill="none" stroke="#3b3f4a" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+  <circle cx="450" cy="140" r="7" fill="#14b8a6" fill-opacity="0.25" stroke="#14b8a6" stroke-width="2"/>
+  <circle cx="540" cy="140" r="13" fill="none" stroke="#3b3f4a" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+  <!-- empty -->
+  <!-- row 2 y=210 -->
+  <circle cx="180" cy="210" r="13" fill="none" stroke="#3b3f4a" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+  <circle cx="180" cy="210" r="7" fill="#14b8a6" fill-opacity="0.25" stroke="#14b8a6" stroke-width="2"/>
+  <circle cx="270" cy="210" r="13" fill="none" stroke="#3b3f4a" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+  <!-- empty -->
+  <circle cx="360" cy="210" r="13" fill="none" stroke="#3b3f4a" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+  <circle cx="360" cy="210" r="7" fill="#14b8a6" fill-opacity="0.25" stroke="#14b8a6" stroke-width="2"/>
+  <circle cx="450" cy="210" r="13" fill="none" stroke="#3b3f4a" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+  <!-- Rydberg atom, amber, puffed -->
+  <circle cx="450" cy="210" r="22" fill="#e0a106" fill-opacity="0.10" stroke="#e0a106" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="450" cy="210" r="11" fill="#e0a106" fill-opacity="0.30" stroke="#e0a106" stroke-width="2.2"/>
+  <text x="450" y="183" fill="#e0a106" font-size="12" text-anchor="middle">Rydberg</text>
+  <circle cx="540" cy="210" r="13" fill="none" stroke="#3b3f4a" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+  <circle cx="540" cy="210" r="7" fill="#14b8a6" fill-opacity="0.25" stroke="#14b8a6" stroke-width="2"/>
+  <!-- row 3 y=280 -->
+  <circle cx="180" cy="280" r="13" fill="none" stroke="#3b3f4a" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+  <circle cx="180" cy="280" r="7" fill="#14b8a6" fill-opacity="0.25" stroke="#14b8a6" stroke-width="2"/>
+  <circle cx="270" cy="280" r="13" fill="none" stroke="#3b3f4a" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+  <circle cx="270" cy="280" r="7" fill="#14b8a6" fill-opacity="0.25" stroke="#14b8a6" stroke-width="2"/>
+  <circle cx="360" cy="280" r="13" fill="none" stroke="#3b3f4a" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+  <circle cx="360" cy="280" r="7" fill="#14b8a6" fill-opacity="0.25" stroke="#14b8a6" stroke-width="2"/>
+  <circle cx="450" cy="280" r="13" fill="none" stroke="#3b3f4a" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+  <circle cx="450" cy="280" r="7" fill="#14b8a6" fill-opacity="0.25" stroke="#14b8a6" stroke-width="2"/>
+  <circle cx="540" cy="280" r="13" fill="none" stroke="#3b3f4a" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+  <circle cx="540" cy="280" r="7" fill="#14b8a6" fill-opacity="0.25" stroke="#14b8a6" stroke-width="2"/>
+  <!-- shuttle arrow: from (270,280) reservoir to empty (270,210) -->
+  <path d="M285 268 q 40 -34 0 -50" fill="none" stroke="#3b3f4a" stroke-width="1.6" marker-end="url(#na1a)"/>
+  <text x="332" y="246" fill="#3b3f4a" font-size="11.5" text-anchor="start">shuttle</text>
+  <text x="360" y="350" fill="#3b3f4a" font-size="13.5" text-anchor="middle">load ~50% at random (collisional blockade) &#8594; rearrange into a defect-free array</text>
+</svg>

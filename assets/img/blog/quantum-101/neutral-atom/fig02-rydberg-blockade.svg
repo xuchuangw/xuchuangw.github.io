@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 360" role="img" aria-label="The Rydberg blockade. A left atom is driven to a giant Rydberg state, drawn amber and puffed up with a dashed halo, surrounded by a dashed blockade-radius circle that reaches past a second atom on the right. The second atom sits within the blockade radius. An energy-level inset on the right shows that the second atom's Rydberg level is pushed up by the interaction energy V, detuning it from the drive, so its excitation is blocked." style="width:100%; height:auto; font-family:sans-serif;">
+  <defs>
+    <marker id="na2a" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto"><path d="M0 0 L9 4.5 L0 9 Z" fill="#3b3f4a"/></marker>
+    <marker id="na2b" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="#4f7cff"/></marker>
+  </defs>
+  <!-- blockade radius -->
+  <circle cx="200" cy="190" r="180" fill="#e0a106" fill-opacity="0.05" stroke="#e0a106" stroke-width="1.4" stroke-dasharray="6 5"/>
+  <text x="200" y="28" fill="#e0a106" font-size="12.5" text-anchor="middle">blockade radius R_b</text>
+  <!-- atom A: driven to Rydberg, puffed -->
+  <circle cx="200" cy="190" r="30" fill="#e0a106" fill-opacity="0.12" stroke="#e0a106" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle cx="200" cy="190" r="15" fill="#e0a106" fill-opacity="0.30" stroke="#e0a106" stroke-width="2.4"/>
+  <text x="200" y="246" fill="#e0a106" font-size="13" text-anchor="middle">atom A &#8594; |r&#x27E9; (excited)</text>
+  <!-- drive on A -->
+  <line x1="160" y1="150" x2="182" y2="174" stroke="#4f7cff" stroke-width="2" marker-end="url(#na2b)"/>
+  <text x="150" y="146" fill="#4f7cff" font-size="12" text-anchor="end">&#x3A9;</text>
+  <!-- separation -->
+  <line x1="232" y1="190" x2="368" y2="190" stroke="#3b3f4a" stroke-width="1" stroke-dasharray="4 4" opacity="0.5"/>
+  <text x="300" y="180" fill="#3b3f4a" font-size="11.5" text-anchor="middle">R &lt; R_b</text>
+  <!-- atom B: stays ground -->
+  <circle cx="392" cy="190" r="11" fill="#14b8a6" fill-opacity="0.25" stroke="#14b8a6" stroke-width="2.4"/>
+  <text x="392" y="246" fill="#14b8a6" font-size="13" text-anchor="middle">atom B: blocked</text>
+  <!-- drive on B (crossed out) -->
+  <line x1="392" y1="150" x2="392" y2="172" stroke="#4f7cff" stroke-width="2" marker-end="url(#na2b)"/>
+  <line x1="384" y1="156" x2="400" y2="170" stroke="#ef4444" stroke-width="2.2"/>
+  <!-- energy inset for atom B -->
+  <line x1="560" y1="300" x2="560" y2="70" stroke="#3b3f4a" stroke-width="1.2"/>
+  <text x="548" y="60" fill="#3b3f4a" font-size="11.5" text-anchor="middle">E</text>
+  <line x1="540" y1="280" x2="660" y2="280" stroke="#14b8a6" stroke-width="2.4"/>
+  <text x="668" y="284" fill="#14b8a6" font-size="12">|1&#x27E9;</text>
+  <!-- bare Rydberg level (where drive points) -->
+  <line x1="540" y1="150" x2="660" y2="150" stroke="#3b3f4a" stroke-width="1.6" stroke-dasharray="5 4" opacity="0.6"/>
+  <text x="668" y="154" fill="#3b3f4a" font-size="11.5" opacity="0.7">|r&#x27E9; bare</text>
+  <!-- shifted Rydberg level -->
+  <line x1="540" y1="108" x2="660" y2="108" stroke="#ef4444" stroke-width="2.4"/>
+  <text x="668" y="112" fill="#ef4444" font-size="12">|r&#x27E9; + V</text>
+  <!-- drive arrow on inset -->
+  <line x1="556" y1="280" x2="556" y2="152" stroke="#4f7cff" stroke-width="2" marker-end="url(#na2b)"/>
+  <text x="528" y="216" fill="#4f7cff" font-size="12" text-anchor="middle">&#x3A9;</text>
+  <!-- shift bracket -->
+  <line x1="600" y1="150" x2="600" y2="108" stroke="#ef4444" stroke-width="1.2" marker-start="url(#na2a)" marker-end="url(#na2a)"/>
+  <text x="612" y="132" fill="#ef4444" font-size="12">shift V</text>
+  <text x="600" y="332" fill="#3b3f4a" font-size="12.5" text-anchor="middle">V &#8811; &#x210F;&#x3A9; &#8594; the drive misses &#8594; B cannot be excited</text>
+</svg>
