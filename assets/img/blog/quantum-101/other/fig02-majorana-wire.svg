@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" role="img" aria-label="A topological-superconductor nanowire. A semiconductor nanowire lies under a superconducting shell. Two Majorana zero modes, drawn as teal and amber half-discs, sit at the two ends of the wire. A label notes that one fermion mode is split into two spatially separated halves and that the qubit is the shared parity, delocalized across the whole wire. A red noise squiggle touches only the left end, and a note explains that local noise on one end cannot flip the parity; the splitting is exponentially small in the wire length." style="width:100%; height:auto; font-family:sans-serif;">
+  <defs>
+    <marker id="tp1a" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="currentColor"/></marker>
+  </defs>
+  <rect x="150" y="120" width="420" height="26" rx="4" fill="#4f7cff" fill-opacity="0.12" stroke="#4f7cff" stroke-width="1.6"/>
+  <text x="360" y="112" fill="#4f7cff" font-size="12" text-anchor="middle">superconductor</text>
+  <rect x="150" y="146" width="420" height="30" rx="6" fill="currentColor" fill-opacity="0.06" stroke="currentColor" stroke-width="1.6"/>
+  <text x="360" y="166" fill="currentColor" font-size="12.5" text-anchor="middle">semiconductor nanowire (length L)</text>
+  <circle cx="150" cy="161" r="14" fill="#14b8a6" fill-opacity="0.35" stroke="#14b8a6" stroke-width="2.4"/>
+  <text x="150" y="205" fill="#14b8a6" font-size="13" text-anchor="middle">&#947;&#8321;</text>
+  <circle cx="570" cy="161" r="14" fill="#e0a106" fill-opacity="0.35" stroke="#e0a106" stroke-width="2.4"/>
+  <text x="570" y="205" fill="#e0a106" font-size="13" text-anchor="middle">&#947;&#8322;</text>
+  <text x="360" y="232" fill="currentColor" font-size="13" text-anchor="middle">one fermion split into two ends &#8594; qubit = shared parity (delocalized)</text>
+  <path d="M120 100 q 8 -10 16 0 q 8 10 16 0" fill="none" stroke="#ef4444" stroke-width="2"/>
+  <line x1="150" y1="105" x2="150" y2="140" stroke="#ef4444" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#tp1a)"/>
+  <line x1="138" y1="118" x2="162" y2="134" stroke="#ef4444" stroke-width="2.4"/>
+  <text x="150" y="92" fill="#ef4444" font-size="11.5" text-anchor="middle">local noise</text>
+  <text x="360" y="266" fill="currentColor" font-size="12.5" text-anchor="middle">splitting &#8764; e^(&#8722;L/&#958;): touching one end can't flip it &#8212; in theory</text>
+  <text x="360" y="294" fill="#ef4444" font-size="11.5" text-anchor="middle" font-style="italic">idealized picture; whether real devices host MZMs is disputed</text>
+</svg>

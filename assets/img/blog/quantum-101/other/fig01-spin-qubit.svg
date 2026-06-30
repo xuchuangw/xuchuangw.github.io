@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 380" role="img" aria-label="A gate-defined silicon quantum-dot spin qubit. A layered Si/SiGe heterostructure is drawn in cross-section, with a buried isotopically purified silicon-28 quantum well. Metal gate electrodes sit on top; their voltages pinch out a small potential well holding a single electron, shown as a teal dot with an up spin arrow labelled as the zero state and a down arrow as the one state. A second, neighbouring dot is shown with a tunable exchange coupling J between the two, the two-qubit gate." style="width:100%; height:auto; font-family:sans-serif;">
+  <defs>
+    <marker id="sq1a" markerWidth="8" markerHeight="8" refX="4" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8 Z" fill="currentColor"/></marker>
+  </defs>
+  <rect x="80" y="250" width="560" height="34" fill="currentColor" fill-opacity="0.05" stroke="currentColor" stroke-width="1.1"/>
+  <rect x="80" y="216" width="560" height="34" fill="#14b8a6" fill-opacity="0.10" stroke="#14b8a6" stroke-width="1.4"/>
+  <rect x="80" y="182" width="560" height="34" fill="currentColor" fill-opacity="0.05" stroke="currentColor" stroke-width="1.1"/>
+  <text x="650" y="203" fill="currentColor" font-size="11" text-anchor="start">SiGe barrier</text>
+  <text x="650" y="237" fill="#14b8a6" font-size="11" text-anchor="start">&#178;&#8312;Si well</text>
+  <text x="650" y="271" fill="currentColor" font-size="11" text-anchor="start">SiGe barrier</text>
+  <text x="80" y="305" fill="#14b8a6" font-size="11.5" text-anchor="start">isotopically purified &#178;&#8312;Si: nuclear-spin-free host</text>
+  <rect x="150" y="150" width="36" height="22" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+  <rect x="206" y="150" width="36" height="22" rx="2" fill="#e0a106" fill-opacity="0.18" stroke="#e0a106" stroke-width="1.8"/>
+  <rect x="262" y="150" width="36" height="22" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+  <rect x="430" y="150" width="36" height="22" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+  <rect x="486" y="150" width="36" height="22" rx="2" fill="#e0a106" fill-opacity="0.18" stroke="#e0a106" stroke-width="1.8"/>
+  <rect x="542" y="150" width="36" height="22" rx="2" fill="none" stroke="currentColor" stroke-width="1.6"/>
+  <text x="360" y="140" fill="currentColor" font-size="12.5" text-anchor="middle">gate voltages "pinch out" single-electron dots</text>
+  <circle cx="224" cy="233" r="11" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2.2"/>
+  <line x1="224" y1="241" x2="224" y2="225" stroke="#14b8a6" stroke-width="2.2" marker-end="url(#sq1a)"/>
+  <text x="224" y="338" fill="#14b8a6" font-size="12.5" text-anchor="middle">|&#8593;&#x27E9; = |0&#x27E9;</text>
+  <circle cx="504" cy="233" r="11" fill="#14b8a6" fill-opacity="0.30" stroke="#14b8a6" stroke-width="2.2"/>
+  <line x1="504" y1="225" x2="504" y2="241" stroke="#14b8a6" stroke-width="2.2" marker-end="url(#sq1a)"/>
+  <text x="504" y="338" fill="#14b8a6" font-size="12.5" text-anchor="middle">|&#8595;&#x27E9; = |1&#x27E9;</text>
+  <line x1="240" y1="233" x2="488" y2="233" stroke="#4f7cff" stroke-width="1.6" stroke-dasharray="5 4" marker-start="url(#sq1a)" marker-end="url(#sq1a)"/>
+  <text x="364" y="227" fill="#4f7cff" font-size="13" text-anchor="middle">tunable exchange J  &#8594; &#8730;SWAP</text>
+</svg>
