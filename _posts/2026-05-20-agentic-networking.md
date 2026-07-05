@@ -17,8 +17,6 @@ toc:
   - name: Where my research fits
 ---
 
-> **A 5-minute primer on what agentic networks are, why they matter, how they work — and the algorithmic questions my group works on.**
-
 The next wave of intelligent systems will not be a single, monolithic model behind an API. It will be **many AI agents** — LLMs, planners, tool-users, sensors, controllers — **talking to each other** to act in the world. This page is a quick tour of where the field is heading, and where my recent research fits in.
 
 ## What is an agentic network?

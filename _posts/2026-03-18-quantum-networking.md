@@ -17,8 +17,6 @@ toc:
   - name: Where my research fits
 ---
 
-> **A 5-minute primer on what quantum networks are, why they matter, how they work — and the algorithmic questions my group works on.**
-
 The internet you are reading this on moves **bits**. The next one will also move **qubits and entanglement** — a fundamentally different kind of resource that unlocks computing, sensing, and security guarantees no classical network can match. This page is a quick tour of where the field is heading, and where my recent research fits in.
 
 ## What is a quantum network?
