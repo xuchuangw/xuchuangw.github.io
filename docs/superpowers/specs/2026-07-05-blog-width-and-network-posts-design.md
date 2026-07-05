@@ -44,8 +44,8 @@ Both are polished pieces with a `What / Why / How / Where-my-research-fits` stru
 Dated with each page's original git creation date (per user decision). Distill frontmatter: `title`, `description`, `date`, `tags`, `categories`, `authors` (Xuchuang Wang), and a `toc:` list matching the four sections. Body content carries over verbatim — the `<div class="row">` figure markup and `/assets/img/*.svg` references work unchanged in distill.
 
 Proposed metadata:
-- Quantum: `tags: quantum networking entanglement`, `categories: research`, toc = What is a quantum network? / Why quantum networks? / How do quantum networks work? / Where my research fits.
-- Agentic: `tags: agents llm networking`, `categories: research`, toc = What is an agentic network? / Why agentic networks? / How do agentic networks work? / Where my research fits.
+- Quantum: `tags: quantum`, `categories: research`, toc = What is a quantum network? / Why quantum networks? / How do quantum networks work? / Where my research fits.
+- Agentic: `tags: agentic`, `categories: research`, toc = What is an agentic network? / Why agentic networks? / How do agentic networks work? / Where my research fits.
 
 ### Old URLs → redirect (no new plugin)
 The site has no `jekyll-redirect-from` plugin, and adding one would touch the Gemfile/CI. Instead:
