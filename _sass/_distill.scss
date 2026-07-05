@@ -194,20 +194,107 @@ d-appendix {
   }
 }
 
-@media (max-width: 1024px) {
-  d-article {
-    d-contents {
-      display: block;
-      grid-column-start: 2;
-      grid-column-end: -2;
-      padding-bottom: 0.5em;
-      margin-bottom: 1em;
-      padding-top: 0.5em;
-      width: 100%;
-      border: 1px solid var(--global-divider-color);
-      nav {
-        grid-column: none;
-      }
+/*******************************************************************************
+ * Blog reading layout — two modes, chosen by orientation, not just width.
+ *
+ * LANDSCAPE desktop (>1024px, wider than tall): the reading column is centred
+ * in the viewport and the table of contents rides in the left margin as a
+ * STICKY sidebar. We redefine d-title / d-article / d-appendix as one shared,
+ * symmetric grid so the title, body and references all line up. Distill's
+ * named grid lines (text / page / middle / gutter / screen) are re-declared —
+ * text = page = middle all collapse onto the centred reading column so figures
+ * (.l-body, .l-page, .row …) still place correctly; only .l-screen goes full
+ * width. An empty mirror column on the right balances the ToC so the body
+ * stays visually centred.
+ *
+ * PORTRAIT (any width, taller than wide — e.g. a rotated monitor) and every
+ * narrow viewport (<=1024px): the ToC becomes a full-width box on top and the
+ * body text fills the screen width. This is what a portrait 4K panel wants —
+ * width alone (2160px) would otherwise trigger the desktop sidebar and waste
+ * most of the screen.
+ ******************************************************************************/
+
+/* --- Landscape desktop: centred body + sticky left-sidebar ToC ------------ */
+@media (min-width: 1025px) and (orientation: landscape) {
+  d-title,
+  d-article,
+  d-appendix {
+    grid-template-columns:
+      [screen-start] minmax(1rem, 1fr)
+      [toc-start] minmax(0, 200px) [toc-end]
+      2rem
+      [page-start kicker-start gutter-start text-start middle-start] minmax(0, 760px)
+      [text-end middle-end gutter-end kicker-end page-end]
+      2rem
+      minmax(0, 200px)
+      minmax(1rem, 1fr)
+      [screen-end] !important;
+    column-gap: 0;
+  }
+
+  d-article > d-contents {
+    grid-column: toc-start / toc-end;
+    /* Full-height cell so position:sticky has room to travel. grid-row:1/-1
+       fails here (rows are implicit → resolves to a single row), so span a
+       large, safely-oversized count; the extra rows are zero-height. */
+    grid-row: 1 / span 999;
+    align-self: start;
+    justify-self: stretch;
+    width: auto;
+    margin: 0;
+    padding: 0 1.25rem 0 0;
+    border-right: 1px solid var(--global-divider-color);
+    position: sticky;
+    top: 5rem;
+    max-height: calc(100vh - 6.5rem);
+    overflow-y: auto;
+    /* replace distill's inner grid (toc / toc-line) with a simple stack */
+    display: block;
+
+    nav {
+      grid-column: auto;
+    }
+    toc-line {
+      display: none;
+    }
+  }
+}
+
+/* --- Portrait or narrow: full-width body, ToC as a box on top ------------- */
+@media (max-width: 1024px), (orientation: portrait) {
+  d-title,
+  d-article,
+  d-appendix {
+    grid-template-columns:
+      [screen-start] minmax(1rem, 1fr)
+      [page-start kicker-start gutter-start text-start middle-start] minmax(0, 100%)
+      [text-end middle-end gutter-end kicker-end page-end] minmax(1rem, 1fr)
+      [screen-end] !important;
+    column-gap: 0;
+  }
+
+  d-article > * {
+    grid-column: text;
+  }
+
+  d-article > d-contents {
+    display: block;
+    position: static;
+    grid-column: text;
+    grid-row: auto;
+    justify-self: stretch;
+    width: 100%;
+    max-height: none;
+    overflow: visible;
+    margin: 0 0 1.5em;
+    padding: 0.75em 1em;
+    border: 1px solid var(--global-divider-color);
+
+    nav {
+      grid-column: auto;
+    }
+    toc-line {
+      display: none;
     }
   }
 }
