@@ -28,8 +28,8 @@ social: true # includes social icons at the bottom of the page
 
 My research builds the **algorithmic foundations of two emerging networks**:
 
-- **[quantum networking](/quantum-network/)** — networks that distribute **qubits and entanglement** across distant nodes to enable distributed quantum computing, quantum-enhanced sensing, and provably-secure communication;
-- **[agentic networking](/agentic-network/)** — networks of AI/LLM agents that **communicate, coordinate, and learn** together to act in the world.
+- **[quantum networking](/blog/2026/quantum-networking/)** — networks that distribute **qubits and entanglement** across distant nodes to enable distributed quantum computing, quantum-enhanced sensing, and provably-secure communication;
+- **[agentic networking](/blog/2026/agentic-networking/)** — networks of AI/LLM agents that **communicate, coordinate, and learn** together to act in the world.
 
 A single methodology runs through both: **sequential decision-making under uncertainty** (online learning, bandits, and reinforcement learning). I use it to design rigorous, communication-efficient, and provably-good algorithms that hold up under realistic, noisy, and even adversarial feedback.
 
