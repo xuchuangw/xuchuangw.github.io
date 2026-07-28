@@ -58,8 +58,8 @@ Ideal background: strong fundamentals in probability, optimization, or theoretic
 <div class="research-highlights" markdown="1">
 
 - **quantum networking — algorithms for the quantum internet:**
+  - quantum network tomography and evaluation (QCE'26, [Mergecast Preprint](https://arxiv.org/abs/2511.01074), [QCNC'26](https://arxiv.org/abs/2504.21549)),
   - entanglement routing and resource optimization ([INFOCOM'25](https://www.arxiv.org/pdf/2506.12462), [INFOCOM'24](https://ieeexplore.ieee.org/document/10621263)),
-  - quantum network tomography and evaluation ([Mergecast Preprint](https://arxiv.org/abs/2511.01074), [QCNC'26](https://arxiv.org/abs/2504.21549)),
   - quantum-enhanced sequential learning ([AAAI'25b](https://ojs.aaai.org/index.php/AAAI/article/view/35432)).
 - **agentic networking — learning algorithms for networked AI agents:**
   - communication-efficient cooperation across agents ([SIGMETRICS'25](https://dl.acm.org/doi/10.1145/3711696), NeurIPS'25, [ICLR'23](https://openreview.net/forum?id=QTXKTXJKIh), [AISTATS'23](https://proceedings.mlr.press/v206/chen23c)),
