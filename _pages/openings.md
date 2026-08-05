@@ -9,7 +9,7 @@ nav_order: 3
 
 <a id="Openning"></a>
 
-I am recruiting across **quantum networking** and **agentic networking** — most positions below are **fully funded**. More openings are added regularly.
+I am recruiting across **quantum networking**, **quantum machine learning**, and **agentic networking** — most positions below are **fully funded**. More openings are added regularly.
 
 <div class="openings-grid">
 
@@ -19,6 +19,20 @@ I am recruiting across **quantum networking** and **agentic networking** — mos
       <span class="opening-qty">1 position</span>
     </div>
     <h3 class="opening-title">Quantum Networking</h3>
+    <ul class="opening-tags">
+      <li><i class="fa-solid fa-location-dot"></i>Hong Kong (HKBU)</li>
+      <li><i class="fa-regular fa-calendar"></i>Spring / Fall 2027</li>
+      <li>Fully funded</li>
+    </ul>
+    <a class="opening-apply" href="#how-to-apply">Apply &rarr;</a>
+  </div>
+
+  <div class="opening-card">
+    <div class="opening-card-head">
+      <span class="opening-badge">Ph.D.</span>
+      <span class="opening-qty">1 position</span>
+    </div>
+    <h3 class="opening-title">Quantum Machine Learning</h3>
     <ul class="opening-tags">
       <li><i class="fa-solid fa-location-dot"></i>Hong Kong (HKBU)</li>
       <li><i class="fa-regular fa-calendar"></i>Spring / Fall 2027</li>
@@ -100,6 +114,12 @@ Research directions include:
   - Entanglement routing and resource allocation
   - Quantum network tomography, evaluation, and monitoring
   - Quantum-enhanced sequential decision-making and learning
+
+- **Quantum Machine Learning** — _learning and decision-making with quantum data and systems_
+
+  - Quantum-enhanced learning and optimization
+  - Learning algorithms for quantum networked systems
+  - Sequential decision-making with quantum information
 
 - **Agentic Networking** — _learning algorithms for networked AI agents_
 
