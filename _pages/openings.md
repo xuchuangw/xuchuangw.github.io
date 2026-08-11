@@ -131,7 +131,7 @@ Research directions include:
   - Robustness to adversarial / corrupted / multi-modal feedback
   - Multi-fidelity and human-in-the-loop learning
 
-**Ideal background:** strong fundamentals in probability, optimization, or theoretical CS; experience with one of RL/bandits, networking/systems, or quantum information is a plus but **not required** — what matters most is mathematical maturity and curiosity. RA positions are a good fit if you want to try out research before committing to a Ph.D., build a paper around a concrete project, or strengthen your application for the next admissions cycle.
+**Ideal background:** strong fundamentals in probability, optimization, or theoretical CS; experience with one of RL/bandits, networking/systems, or quantum information is a plus but **not required** — what matters most is mathematical maturity and curiosity. Besides computer science, students with a mathematics or physics background are also highly welcome to apply. RA positions are a good fit if you want to try out research before committing to a Ph.D., build a paper around a concrete project, or strengthen your application for the next admissions cycle.
 
 ## how to apply
 

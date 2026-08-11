@@ -12,6 +12,7 @@ nav_order: 5
 
 ### Technical Program Committee Member
 
+- IEEE INFOCOM (2027)
 - ACM SIGMETRICS (2026, 2027)
 - ACM MobiHoc (2025, 2026)
 

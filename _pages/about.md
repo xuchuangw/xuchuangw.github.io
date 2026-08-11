@@ -51,7 +51,7 @@ Students in my group publish at leading venues (NeurIPS, ICML, ICLR, AAAI, SIGME
 
 Beyond Ph.D. positions, I host **Research Assistants** (remote or onsite at HKBU) on **3- or 6-month terms** — suitable for senior undergraduates, master's students, or recent graduates who wish to gain research experience before applying to a Ph.D. program, or to develop a concrete project toward publication.
 
-Ideal background: strong fundamentals in probability, optimization, or theoretical computer science. Prospective applicants should consult the [openings](/openings/) page for research directions and application instructions.
+Ideal background: strong fundamentals in probability, optimization, or theoretical computer science. Besides computer science, students with a mathematics or physics background are also highly welcome to apply. Prospective applicants should consult the [openings](/openings/) page for research directions and application instructions.
 
 ## research highlights
 
