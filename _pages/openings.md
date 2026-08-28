@@ -135,7 +135,7 @@ Research directions include:
 
 ## how to apply
 
-Email me at **xuchuangw [@] comp [dot] hkbu [dot] edu [dot] hk** with one of the following subject lines:
+Email me at **xuchuangw [@] hkbu [dot] edu [dot] hk** with one of the following subject lines:
 
 - **"Application for Ph.D. in [Start Cycle]"** — e.g., _Application for Ph.D. in Fall 2027_
 - **"Application for RA ([Remote/Onsite/Guangzhou], [Start Month])"** — e.g., _Application for RA (Remote, ASAP)_
