@@ -23,7 +23,7 @@ social: true # includes social icons at the bottom of the page
 ---
 
 <div class="recruiting-notice">
-<strong>Prospective students:</strong> I am recruiting fully-funded Ph.D. students (Spring / Fall 2027) and Research Assistants (Hong Kong, Guangzhou, or remote). See <a href="/openings/">openings and how to apply</a>.
+<strong>Prospective postdocs and students:</strong> I am recruiting a fully-funded Postdoc, fully-funded Ph.D. students (Spring / Fall 2027), and Research Assistants (Hong Kong, Guangzhou, or remote). See <a href="/openings/">openings and how to apply</a>.
 </div>
 
 My research builds the **algorithmic foundations of two emerging networks**:
