@@ -33,7 +33,7 @@ My research builds the **algorithmic foundations of two emerging networks**:
 
 A single methodology runs through both: **sequential decision-making under uncertainty** (online learning, bandits, and reinforcement learning). I use it to design rigorous, communication-efficient, and provably-good algorithms that hold up under realistic, noisy, and even adversarial feedback.
 
-I am an Assistant Professor in the [Department of Computer Science](https://www.comp.hkbu.edu.hk/v1/) at [Hong Kong Baptist University](https://www.hkbu.edu.hk/). Before joining HKBU, I was a [RGC Junior Research Fellow](https://www.ugc.edu.hk/eng/rgc/funding_opport/jrfs/) in the [Department of Computer Science and Engineering](https://www.cse.cuhk.edu.hk/) at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/).
+I am an Assistant Professor in the [Department of Computer Science](https://www.comp.hkbu.edu.hk/v1/) at [Hong Kong Baptist University](https://www.hkbu.edu.hk/). Before joining HKBU, I was a [RGC Junior Research Fellow](https://www.ugc.edu.hk/eng/rgc/funding_opport/jrfs/) in the [Department of Computer Science and Engineering](https://www.cse.cuhk.edu.hk/) at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/). My work has received the <span style="color: var(--global-theme-color);">**Best Paper Award**</span> at IEEE Quantum Week (QCE) 2026 and the <span style="color: var(--global-theme-color);">**Best Paper Runner-Up**</span> at ACM SIGMETRICS 2025.
 
 Prior to that, I was a postdoctoral researcher for three years in the [Manning College of Information & Computer Science](https://www.cics.umass.edu/) at [University of Massachusetts Amherst](https://www.umass.edu/), working with [Don Towsley](https://www-net.cs.umass.edu/personnel/towsley.html) at [ACQUIRE Lab](https://acquire.cs.umass.edu/) and [Mohammad Hajiesmaili](https://groups.cs.umass.edu/hajiesmaili/) at [SOLAR Lab](https://solar.cs.umass.edu/).
 I received my Ph.D. in the Department of Computer Science & Engineering at [The Chinese University of Hong Kong](https://www.cuhk.edu.hk/english/index.html) under the guidance of [John C.S. Lui](https://www.cse.cuhk.edu.hk/~cslui/) at [ANSR Lab](http://ansrlab.cse.cuhk.edu.hk/).
@@ -58,7 +58,7 @@ Ideal background: strong fundamentals in probability, optimization, or theoretic
 <div class="research-highlights" markdown="1">
 
 - **quantum networking — algorithms for the quantum internet:**
-  - quantum network tomography and evaluation ([QCE'26](https://arxiv.org/abs/2608.09364), [Mergecast Preprint](https://arxiv.org/abs/2511.01074), [QCNC'26](https://arxiv.org/abs/2504.21549)),
+  - quantum network tomography and evaluation ([QCE'26](https://arxiv.org/abs/2608.09364) <span style="color: var(--global-theme-color);">(Best Paper Award)</span>, [Mergecast Preprint](https://arxiv.org/abs/2511.01074), [QCNC'26](https://arxiv.org/abs/2504.21549)),
   - entanglement routing and resource optimization ([INFOCOM'25](https://www.arxiv.org/pdf/2506.12462), [INFOCOM'24](https://ieeexplore.ieee.org/document/10621263)).
 - **quantum machine learning and AI — learning and decision-making with quantum data and systems:**
   - quantum-enhanced learning and optimization ([AAAI'25a](/publications/#wang2025best), [QCE'25](/publications/#wang2025toparms)).

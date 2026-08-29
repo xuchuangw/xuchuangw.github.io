@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper **Quantum-Classical Coexistence Network Tomography** received the **Best Paper Award** at **IEEE Quantum Week (QCE) 2026**.
+Our paper **Quantum-Classical Coexistence Network Tomography** received the **<span style="color: var(--global-theme-color);">Best Paper Award</span>** at **IEEE Quantum Week (QCE) 2026**.

@@ -150,6 +150,9 @@
     <div class="periodical">
       {{ periodical | strip }}
     </div>
+    {% if entry.award %}
+      <div class="award" style="color: var(--global-theme-color); font-weight: 600;"><i class="fa-solid fa-trophy"></i> {{ entry.award }}</div>
+    {% endif %}
     <div class="periodical">
       {{ entry.note | strip }}
     </div>
