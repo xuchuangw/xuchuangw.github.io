@@ -8,9 +8,9 @@ middle_name:
 last_name: Wang
 email: xuchuangw@hkbu.edu.hk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Xuchuang Wang is an Assistant Professor of Computer Science at Hong Kong Baptist University. His research develops the algorithmic foundations of quantum and agentic networks via online learning, bandits, and sequential decision-making under uncertainty.
+  Xuchuang Wang is an Assistant Professor of Computer Science at Hong Kong Baptist University. His research focuses on quantum networking, quantum machine learning, and distributed quantum computing, grounded in learning theory, optimization, and sequential decision-making under uncertainty.
 footer_text:
-keywords: Xuchuang Wang, online learning, multi-armed bandits, reinforcement learning, quantum networks, agentic AI, multi-agent learning, sequential decision-making, HKBU, machine learning theory # add your own keywords or leave empty
+keywords: Xuchuang Wang, quantum information, quantum computing, quantum networking, quantum networks, quantum internet, quantum machine learning, distributed quantum computing, quantum algorithms, online learning, multi-armed bandits, learning theory, HKBU # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: hkbu_icon.png # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 

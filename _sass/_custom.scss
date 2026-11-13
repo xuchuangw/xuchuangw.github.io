@@ -587,6 +587,12 @@ footer.sticky-bottom .container {
 //     (.post > article > .clearfix a:not(.btn):not(.navbar-brand) is (0,4,2));
 //     this selector is (0,5,2) and therefore wins.
 // ---------------------------------------------------------------------------
+.post > article > .clearfix > .research-overview {
+  // Keep each research direction aligned beside the floated profile photo.
+  display: flow-root;
+  padding-left: 1.25em;
+}
+
 .post > article > .clearfix > .research-highlights {
   a:not(.btn):not(.navbar-brand) {
     text-decoration: none;
