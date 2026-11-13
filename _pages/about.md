@@ -26,6 +26,7 @@ I am an Assistant Professor in the [Department of Computer Science](https://www.
 
 I study how quantum resources can be used efficiently for communication, learning, and computation:
 
+<!-- prettier-ignore -->
 - **Quantum networking:** how to distribute entanglement, select reliable paths, and characterize noisy quantum links.
 - **Quantum machine learning:** when quantum access to information can accelerate learning and sequential decision-making.
 - **Distributed quantum computing:** how to coordinate entanglement, communication, and computation across interconnected quantum processors.
